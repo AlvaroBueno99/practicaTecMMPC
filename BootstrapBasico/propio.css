@@ -1,0 +1,74 @@
+/** 
+* Adaptación de la imagen de intro según el tamaño de la pantalla
+*/
+  @media (max-width: 750px) {
+    #intro {
+      background-image: url('https://www.texfoto.com/895/cuadro-vertical-de-la-alhambra-de-granada-n02.jpg');
+        height: 100vh; background-size: 100% 100%; 
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1100px)  {
+    #intro {
+      background-image: url('https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1629972378341-NDFI2DXRB2SEXL9OVZ2I/monumentos-mas-importantes-espana-al-segovia.jpg');
+      height: 750px; background-size: 100% 100%; 
+    }
+  }
+
+  @media (min-width: 1101px)  {
+    #intro {
+      background-image: url('https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1629972378341-NDFI2DXRB2SEXL9OVZ2I/monumentos-mas-importantes-espana-al-segovia.jpg');
+      height: 100vh; background-size: 100% 100%; 
+    }
+  }
+
+/**
+* Propiedades título página principal
+*/
+  #title{
+    font-family: Cochin ;
+    font-size: 75px;
+    color: white;
+    text-align: center;
+  }
+/**
+* Propiedades de la barra de navegación lateral
+*/
+  .sidenav {
+    width: auto;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    top: 20px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+  
+/**
+* Propiedades modificadas del carrousel de la página principal
+*/
+  .carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+/**
+* Propiedades modificadas del carrousel de la página principal
+*/
+.overflow {
+    position: relative;
+    overflow: hidden;
+}
+.zoom img {
+    transition: all 0.2s linear;
+}
+.zoom:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
