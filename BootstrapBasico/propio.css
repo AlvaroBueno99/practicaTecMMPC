@@ -36,7 +36,7 @@
 */
   .sidenav {
     width: 250px;
-    height: fit-content;
+    height: auto;
     position: relative;
     z-index: 1;
     margin-left: 22px;
@@ -44,7 +44,6 @@
     background: #eee;
     overflow-x: hidden;
     padding: 8px 0;
-    border: /*#008cba*/black 2px solid;
   }
   
 /**
