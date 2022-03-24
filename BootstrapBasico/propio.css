@@ -35,14 +35,16 @@
 * Propiedades de la barra de navegación lateral
 */
   .sidenav {
-    width: auto;
-    height: auto;
+    width: 250px;
+    height: fit-content;
     position: relative;
     z-index: 1;
-    top: 20px;
+    margin-left: 22px;
+    margin-top: 20px;
     background: #eee;
     overflow-x: hidden;
     padding: 8px 0;
+    border: /*#008cba*/black 2px solid;
   }
   
 /**
