@@ -102,7 +102,7 @@
   height: fit-content;
   position: relative;
   z-index: 1;
-  margin-left: 0rem;
+  margin-left: 2rem;
   margin-top: 1.5rem;
   background: #eee;
 
@@ -113,10 +113,10 @@
 
 .sidenav .sidenav-content {
   position: relative;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .sidenav .dropdown-menu {
