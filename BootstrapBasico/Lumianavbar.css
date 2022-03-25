@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 #header {
     height: 70px;
+    width: 100%;
     transition: all 0.5s;
     z-index: 997;
     transition: all 0.5s;

@@ -1,0 +1,44 @@
+{
+    "monumentos": [
+        {
+            "Andalucia": [
+                {
+                    "name": "Puente Nuevo de Ronda",
+                    "image": "/img/Comunidades/puenteRonda.jpg",
+                    "latitude": 36.74093,
+                    "longitude": -5.16589,
+                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga"
+                },
+                {
+                    "name": "Catedral de Cádiz",
+                    "image": "/img/Comunidades/puenteRonda.jpg",
+                    "latitude": 36.74093,
+                    "longitude": -5.16589,
+                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga"
+                }
+            ]
+        },
+        {
+            "Aragón": [
+                {
+                    "name": "Monumento a los caídos",
+                    "image": "/img/Comunidades/Canarias/monumento-a-los-caidos.jpg",
+                    "latitude": 36.74093,
+                    "longitude": -5.16589,
+                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga"
+                }
+            ]
+        },
+        {
+            "IslasBaleares": [
+                {
+                    "name": "Catedral de Mallorca",
+                    "image": "/img/Comunidades/puenteRonda.jpg",
+                    "latitude": 36.74093,
+                    "longitude": -5.16589,
+                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga"
+                }
+            ]
+        }
+    ]
+}
