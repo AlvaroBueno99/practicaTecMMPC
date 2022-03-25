@@ -113,10 +113,10 @@
 
 .sidenav .sidenav-content {
   position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .sidenav .dropdown-menu {
