@@ -85,3 +85,42 @@
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+
+/* styling search bar */
+.search input[type=text]{
+  width:300px;
+  height:37px;
+  border: black solid 2px;
+}
+    
+.search{
+  float:right;
+  margin:7px;
+}
+    
+.search button{
+  background-color: #4f5a62;
+  color: #f2f2f2;
+  float: right;
+  padding: 5px 10px;
+  margin-right: 16px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+} 
+
+.search input[type=text]:hover{
+  border: #3498db solid 2px;
+}
+
+.search button:hover{
+  background-color: #3498db;
+} 
+
+@media (max-width: 770px)  {
+  .search input[type=text]{
+    width: 60px;
+  }
+  }
+
+
