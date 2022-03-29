@@ -24,8 +24,9 @@
     <title>Monumentos de España!</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/seleccionarComunidad.js"></script>
-
+    <!-- <script src="js/seleccionarComunidad.js"></script> -->
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 
 </head>
 
@@ -69,13 +70,13 @@
                     </ul>
                     <!-- search bar right align -->
                     <div class="search">
-                        <form action="#">
-                            <input type="text" placeholder="Buscar un monumento" name="search">
-                            <button>
+                        
+                            <input type="text" placeholder="Buscar un monumento" name="search" id="searchBar">
+                            <button onclick="setSearch()">
                                 <i class="bi bi-search" style="font-size: 1.125rem;">
                                 </i>
                             </button>
-                        </form>
+                        
                     </div>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav><!-- .navbar -->
@@ -202,181 +203,68 @@
                 <div class="sidenav">
 
                     <div class="sidenav-content">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Comunidad
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <li><button class="dropdown-item" type="button" id="botonAndalucia"
-                                        onclick="crearTarjeta(PuenteRonda)">Andalucía</button></li>
-                                <li><button class="dropdown-item" type="button" id="botonAragon">Aragón</button></li>
-                                <li><button class="dropdown-item" type="button" id="botonBaleares">Islas
-                                        Baleares</button>
-                                </li>
-                                <li><button class="dropdown-item" type="button" id="botonCanarias">Canarias</button>
-                                </li>
-                                <li><button class="dropdown-item" type="button">Cantabria</button></li>
-                                <li><button class="dropdown-item" type="button">Castilla-La Mancha</button></li>
-                                <li><button class="dropdown-item" type="button">Castilla y León</button></li>
-                                <li><button class="dropdown-item" type="button">Cataluña</button></li>
-                                <li><button class="dropdown-item" type="button" id="botonMadrid">Comunidad de
-                                        Madrid</button>
-                                </li>
-                            </ul>
-                        </div>
+
+                        <select class="form-select" aria-label="Default select example" id="selectComunidad"> 
+                            <option selected value="">Comunidad</option>
+                            <option value="Andalucía">Andalucía</option>
+                            <option value="Aragón">Aragón</option>
+                            <option value="Islas Baleares">Islas Baleares</option>
+                            <option value="Canarias">Canarias</option>
+                            <option value="Cantabria">Cantabria</option>
+                            <option value="Castilla-La Mancha">Castilla-La Mancha</option>
+                            <option value="Castilla y León">Castilla y León</option>
+                            <option value="Cataluña">Cataluña</option>
+                            <option value="Comunidad de Madrid">Comunidad de Madrid</option>
+                        </select>
+
+                        
+
+
+                        
                     </div>
 
                     <div class="sidenav-content" style="margin-top: 2rem">
                         <label><strong>Ordernar por:</strong></label>
                         <div class="form-check " id="firstCheck">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="filter" id="flexRadioDefault1" value="name" checked>
                             <label class="form-check-label" for="flexRadioDefault1">
                                 Nombre
                             </label>
                         </div>
                         <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                                checked>
+                            <input class="form-check-input" type="radio" name="filter" id="flexRadioDefault2" value="year">
                             <label class="form-check-label" for="flexRadioDefault2">
                                 Antigüedad
                             </label>
                         </div>
+                        <hr>
+                        <div class="form-check " id="firstCheck">
+                            <input class="form-check-input" type="radio" name="order" id="flexRadioDefault1" value="asc" checked>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Ascendente
+                            </label>
+                        </div>
                         <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                                checked>
+                            <input class="form-check-input" type="radio" name="order" id="flexRadioDefault2" value="desc">
                             <label class="form-check-label" for="flexRadioDefault2">
-                                Otra opción
+                                Descendente
                             </label>
                         </div>
                     </div>
+                    <button class="btn btn-primary mt-2" id="filterButton" onclick="filter()">Filtrar</button>
                 </div>
             </div>
 
             <!-- Propiedades cartas monumentos-->
             <div class="col-xl-10 col-lg-10 col-md-10 col-sm-7 col-auto" id="cartas">
 
-                <div class="row justify-content-center gx-5" id="fila1Cartas">
+                <div class="row justify-content-center gx-5" id="filaCartas">
 
-                    <div class="col-auto m-4">
-                        <div class="card overflow zoom" style="width: 18rem;">
-                            <img class="card-img-top" src="img/Comunidades/Andalucia/catedralCadiz.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-auto m-4">
-                        <div class="card overflow zoom" style="width: 18rem;">
-                            <img class="card-img-top" src="img/Comunidades/Andalucia/alhambraGranada.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-auto m-4">
-                        <div class="card overflow zoom" style="width: 18rem;">
-                            <img class="card-img-top" src="img/Comunidades/Andalucia/puenteRonda.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-auto m-4">
-                        <div class="card overflow zoom" style="width: 18rem;">
-                            <img class="card-img-top" src="img/Comunidades/Andalucia/catedralCadiz.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-auto m-4">
-                        <div class="card overflow zoom" style="width: 18rem;">
-                            <img class="card-img-top" src="img/Comunidades/Andalucia/puenteRonda.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-auto m-4">
-                        <div class="card overflow zoom" style="width: 18rem;">
-                            <img class="card-img-top" src="img/Comunidades/Andalucia/puenteRonda.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-auto m-4">
-                        <div class="card overflow zoom" style="width: 18rem;">
-                            <img class="card-img-top" src="img/Comunidades/Andalucia/puenteRonda.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-auto m-4">
-                        <div class="card overflow zoom" style="width: 18rem; ">
-                            <img class="card-img-top" src="img/Comunidades/Andalucia/catedralCadiz.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
             </div>

@@ -1,39 +1,36 @@
 /** 
 * Adaptación de la imagen de intro según el tamaño de la pantalla
 */
-@media (max-width: 750px) {
-  #intro {
-    background-image: url('https://www.texfoto.com/895/cuadro-vertical-de-la-alhambra-de-granada-n02.jpg');
-    height: 100vh;
-    background-size: 100% 100%;
+  @media (max-width: 750px) {
+    #intro {
+      background-image: url('https://www.texfoto.com/895/cuadro-vertical-de-la-alhambra-de-granada-n02.jpg');
+        height: 100vh; background-size: 100% 100%; 
+    }
   }
-}
 
-@media (min-width: 601px) and (max-width: 1100px) {
-  #intro {
-    background-image: url('https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1629972378341-NDFI2DXRB2SEXL9OVZ2I/monumentos-mas-importantes-espana-al-segovia.jpg');
-    height: 750px;
-    background-size: 100% 100%;
+  @media (min-width: 601px) and (max-width: 1100px)  {
+    #intro {
+      background-image: url('https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1629972378341-NDFI2DXRB2SEXL9OVZ2I/monumentos-mas-importantes-espana-al-segovia.jpg');
+      height: 750px; background-size: 100% 100%; 
+    }
   }
-}
 
-@media (min-width: 1101px) {
-  #intro {
-    background-image: url('https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1629972378341-NDFI2DXRB2SEXL9OVZ2I/monumentos-mas-importantes-espana-al-segovia.jpg');
-    height: 100vh;
-    background-size: 100% 100%;
+  @media (min-width: 1101px)  {
+    #intro {
+      background-image: url('https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1629972378341-NDFI2DXRB2SEXL9OVZ2I/monumentos-mas-importantes-espana-al-segovia.jpg');
+      height: 100vh; background-size: 100% 100%; 
+    }
   }
-}
 
 /**
 * Propiedades título página principal
 */
-#title {
-  font-family: Cochin;
-  font-size: 75px;
-  color: white;
-  text-align: center;
-}
+  #title{
+    font-family: Cochin ;
+    font-size: 75px;
+    color: white;
+    text-align: center;
+  }
 
 /*
 */
@@ -46,12 +43,12 @@
 
 
 #todo {
-
+  
   overflow-x: hidden;
 }
 
 
-#contenidoExposicion {
+#contenidoExposicion{
   background-image: url(img/wood.jpg);
 }
 
@@ -97,84 +94,83 @@
 /**
 * Propiedades de la barra de navegación lateral
 */
-.sidenav {
-  width: 10rem;
-  height: fit-content;
-  position: relative;
-  z-index: 1;
-  margin-left: 2rem;
-  margin-top: 1.5rem;
-  background: #eee;
+  .sidenav {
+    width: 10rem;
+    height: fit-content;
+    position: relative;
+    z-index: 1;
+    margin-left: 0rem;
+    margin-top: 1.5rem;
+    background: #eee;
+    
+    padding: 0rem;
+    border: 2px black solid;
+    align-items:flex-start
+    
+  }
 
-  padding: 0rem;
-  border: 2px black solid;
-  align-items: flex-start
-}
+  .sidenav .sidenav-content{
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-.sidenav .sidenav-content {
-  position: relative;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.sidenav .dropdown-menu {
-  position: absolute;
-}
-
+  .sidenav .dropdown-menu{
+    position: absolute;
+  }
+  
 /**
 * Propiedades modificadas del carrousel de la página principal
 */
-.carousel-item {
-  height: 100vh;
-  min-height: 350px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+  .carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 /**
 * Propiedades modificadas de las cartas
 */
 .overflow {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
-
 .zoom img {
-  transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
-
 .zoom:hover img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .card {
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.450), 0 6px 20px 0 rgba(0, 0, 0, 0.450);
 }
 
-.card:hover {
+.card:hover{
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.900), 0 4px 8px rgba(0, 0, 0, 0.900);
 }
 
 /* styling search bar */
-.search input[type=text] {
+.search input[type=text]{
   width: 18.75rem;
-  height: 2.313rem;
+  height:2.313rem;
   border: black solid 0.125rem;
 }
-
-.search {
-  float: right;
-  margin: 0.438rem;
+    
+.search{
+  float:right;
+  margin:0.438rem;
 }
-
-.search button {
+    
+.search button{
   background-color: #4f5a62;
   color: #f2f2f2;
   float: right;
@@ -183,19 +179,19 @@
   font-size: 0.75rem;
   border: none;
   cursor: pointer;
-}
+} 
 
-.search input[type=text]:hover {
+.search input[type=text]:hover{
   border: #3498db solid 0.125rem;
 }
 
-.search button:hover {
+.search button:hover{
   background-color: #3498db;
-}
+} 
 
 
-@media (max-width: 770px) {
-  .search input[type=text] {
+@media (max-width: 770px)  {
+  .search input[type=text]{
     width: 6rem;
   }
-}
+  }
