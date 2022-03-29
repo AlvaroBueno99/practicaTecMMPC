@@ -200,7 +200,8 @@
   Tamaño mapa Monumento
   */
   #contenedormapa{
-    align-items: center;
+    display: flex;
+    justify-content: center;
     height: 3rem;
-    width: fit-content;
+    width: 3rem;
   }
