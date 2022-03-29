@@ -199,7 +199,7 @@
   /**
   Tamaño mapa Monumento
   */
-  #contenedormapa{
+  #map{
     display: flex;
     justify-content: center;
     height: 3rem;
