@@ -216,12 +216,9 @@
 /**
 * Propiedades carousel Monumento
 */
-#carouselMonumento .carousel-inner .carousel-item {
+#carouselMonumento {
+  position:static;
+  left: 25%;
   height: 20rem;
-  min-height: 10rem;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  width: 50rem;
 }
