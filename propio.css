@@ -197,7 +197,7 @@
   }
 
   /**
-  Tamaño mapa Monumento
+  * Propiedades mapa Monumento
   */
   #map {
     position: relative;
@@ -207,5 +207,14 @@
     right: 0;
     height: 20rem;
     width: 50rem;
+}
 
+/**
+* Propiedades carousel Monumento
+*/
+#carouselMonumento{
+  position: relative;
+  left: 25%;
+  height: 10rem;
+  width: 10rem;
 }
