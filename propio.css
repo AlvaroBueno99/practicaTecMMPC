@@ -101,7 +101,7 @@
   height: fit-content;
   position: relative;
   z-index: 1;
-  margin-left: 0rem;
+  margin-left: 1.5rem;
   margin-top: 1.5rem;
   background: #eee;
 
@@ -120,6 +120,13 @@
 
 .sidenav .dropdown-menu {
   position: absolute;
+}
+
+.sidenav #filterButton{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
 }
 
 /**
@@ -267,4 +274,10 @@
   font-size: 5rem;
   height: 30rem;
   width: 10rem;
+}
+
+#graph{
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
 }
