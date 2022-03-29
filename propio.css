@@ -127,8 +127,7 @@
 * Propiedades modificadas del carrousel de la página principal
 */
 .carousel-item {
-  height: 10rem;
-  min-height: 100px;
+  height: 5rem;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
