@@ -199,9 +199,15 @@
   /**
   Tamaño mapa Monumento
   */
-  #map{
+  #map {
     display: flex;
     justify-content: center;
-    height: 3rem;
-    width: 3rem;
-  }
+    position: relative;
+    top: 0,5rem;
+    bottom: 0,5rem;
+    left: 0,5rem;
+    right: 0,5rem;
+    height: 20rem;
+    width: 50rem;
+
+}
