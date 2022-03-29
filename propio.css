@@ -216,9 +216,10 @@
 /**
 * Propiedades carousel Monumento
 */
-#carouselMonumento {
-  position:static;
+#sliderMonumento {
+  position: relative;
   left: 25%;
   height: 20rem;
   width: 50rem;
+  
 }
