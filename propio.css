@@ -215,6 +215,6 @@
 #carouselMonumento{
   position: relative;
   left: 25%;
-  height: 50rem;
-  width: 20rem;
+  height: 20rem;
+  width: 50rem;
 }
