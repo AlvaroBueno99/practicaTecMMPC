@@ -212,8 +212,8 @@
 /**
 * Propiedades carousel Monumento
 */
-/* #carouselMonumento{
-  margin-top: 2rem;
+#carouselMonumento{
+  margin-top: 1rem;
   height: 20rem;
   width: 50rem;
-} */
+}
