@@ -195,3 +195,12 @@
     width: 6rem;
   }
   }
+
+  /**
+  Tamaño mapa Monumento
+  */
+  #contenedormapa{
+    align-items: center;
+    height: 3rem;
+    width: fit-content;
+  }
