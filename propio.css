@@ -20,7 +20,7 @@
 @media (min-width: 1101px) {
   #intro {
     background-image: url('https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1629972378341-NDFI2DXRB2SEXL9OVZ2I/monumentos-mas-importantes-espana-al-segovia.jpg');
-    height: 20rem;
+    height: 100vh;
     background-size: 100% 100%;
   }
 }
