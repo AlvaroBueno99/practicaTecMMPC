@@ -51,7 +51,7 @@
 
 
 #contenidoExposicion {
-  background-image: url(img/wood.jpg);
+  background-image: url(/img/wood.jpg);
 }
 
 
@@ -261,7 +261,7 @@
 }
 
 #carouselMonumento .carousel-inner #slide1 {
-  background-image: url(img/Comunidades/Canarias/monumento-a-los-caidos.jpg);
+  background-image: url(/img/Comunidades/Canarias/monumento-a-los-caidos.jpg);
 }
 
 /**
