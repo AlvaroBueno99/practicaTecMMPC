@@ -280,4 +280,6 @@
   display: flex;
   justify-content: center;
   margin: 1rem;
+  background-image: url(/img/ImagenesGen/Fondo\ graficos.png);
+  background-size: contain;
 }
