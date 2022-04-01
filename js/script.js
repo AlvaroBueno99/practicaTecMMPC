@@ -86,9 +86,45 @@ function setSearch() {
   filter();
 }
 
+// Weather API
+$(document).ready(function(){
+
+    function getWeather(){
+        let lat = 39.57391699749901  
+        let long = 2.6421308114331445 
+        let API_KEY = "bd1dd16fb46e8746f274b42dd40b7008";
+        console.log(API_KEY);
+        let baseURL = `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${API_KEY}&lang={es}`;
+
+        $.get(baseURL,function(res){
+            let data = res.current;
+            let temp = Math.floor(data.temp - 273);
+            let condition = data.weather[0].description;
+            let icon = data.weather[0].icon;
+            let iconURL = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+            let humidity = data.humidity;
+
+            $('#temp-main').html(`${temp}°`);
+            console.log(`${temp}°`);
+            $('#condition').html(condition);
+            $("#weatherIcon").attr("src", iconURL);
+            $('#humidity').html(`${humidity} %`); 
+
+        })
+        
+    }
+
+    getWeather();
+})
+
+
+
+
 window.onload = async function () {
   // ¿Lo tiene que hacer el usuario, o tiene que salir "inmediatamente" cuando cargue la pagina?
   // dentro del onload cuando hay que acceder al DOM "instantaneamente".
   await getJSONFile();
   filter();
 };
+
+

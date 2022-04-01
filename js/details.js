@@ -1,11 +1,11 @@
-let data;
+let detailsData;
 let comunidad;
 
 async function getJSONFile() {
   // lo guarda en la memoria principal (RAM)
   const response = await fetch("./json/monumentos.json");
   const { monumentos } = await response.json();
-  data = monumentos;
+  detailsData = monumentos;
 }
 
 function getQueryParams() {
@@ -60,7 +60,7 @@ window.onload = async function () {
   await getJSONFile();
   const query = getQueryParams();
   let monument = null;
-  data.forEach((comunidades) => {
+  detailsData.forEach((comunidades) => {
     Object.keys(comunidades).forEach((nombreComunidad) => {
       comunidades[nombreComunidad].forEach((monumento) => {
         if (monumento.name === query) {
