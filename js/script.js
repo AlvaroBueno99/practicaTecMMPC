@@ -13,7 +13,7 @@ function generateCard(monumento) {
 
     `
       <div class="col-auto m-4">
-        <div class="card overflow zoom" style="width: 18rem;">
+        <div class="card overflow zoom" id="hoverCard" style="width: 18rem;">
           <img
             class="card-img-top"
             src="${monumento.image}"
