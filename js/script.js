@@ -94,7 +94,7 @@ $(document).ready(function(){
         let long = 2.6421308114331445 
         let API_KEY = "bd1dd16fb46e8746f274b42dd40b7008";
         console.log(API_KEY);
-        let baseURL = `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${API_KEY}&lang={es}`;
+        let baseURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${API_KEY}&lang=es`;
 
         $.get(baseURL,function(res){
             let data = res.current;
