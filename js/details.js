@@ -25,7 +25,7 @@ function generateInformationCard(monumento) {
   </div>
   <div class="card-body">
       <h5 class="card-title">${monumento.name}</h5>
-      <p class="card-text">The Monument to Alfonso XII (Spanish: Monumento a Alfonso XII) is
+      <p class="card-text" id="monumentCardText">The Monument to Alfonso XII (Spanish: Monumento a Alfonso XII) is
           located in Buen Retiro Park (El Retiro), Madrid, Spain. The monument is situated on
           the
           east edge of an artificial lake near the center of the park.

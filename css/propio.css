@@ -1,11 +1,9 @@
-
-
 /** 
 * Adaptación de la imagen de intro según el tamaño de la pantalla
 */
 @media (max-width: 750px) {
   #intro {
-    background-image: url('https://www.texfoto.com/895/cuadro-vertical-de-la-alhambra-de-granada-n02.jpg');
+    background-image: url("https://www.texfoto.com/895/cuadro-vertical-de-la-alhambra-de-granada-n02.jpg");
     height: 100vh;
     background-size: 100% 100%;
   }
@@ -13,7 +11,7 @@
 
 @media (min-width: 601px) and (max-width: 1100px) {
   #intro {
-    background-image: url('https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1629972378341-NDFI2DXRB2SEXL9OVZ2I/monumentos-mas-importantes-espana-al-segovia.jpg');
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1629972378341-NDFI2DXRB2SEXL9OVZ2I/monumentos-mas-importantes-espana-al-segovia.jpg");
     height: 750px;
     background-size: 100% 100%;
   }
@@ -21,7 +19,7 @@
 
 @media (min-width: 1101px) {
   #intro {
-    background-image: url('https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1629972378341-NDFI2DXRB2SEXL9OVZ2I/monumentos-mas-importantes-espana-al-segovia.jpg');
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1629972378341-NDFI2DXRB2SEXL9OVZ2I/monumentos-mas-importantes-espana-al-segovia.jpg");
     height: 100vh;
     background-size: 100% 100%;
   }
@@ -46,18 +44,19 @@
 }
 */
 
-
 #todo {
   overflow-x: hidden;
 }
 
+/**Contenedor principal página Monumentos*/
+#todoMon {
+  overflow-x: hidden;
+  background-image: url(/img/wood.jpg);
+}
 
 #contenidoExposicion {
   background-image: url(/img/wood.jpg);
 }
-
-
-
 
 #filaSlider {
   margin-left: none;
@@ -92,9 +91,6 @@
   margin-right: none;
 }
 
-
-
-
 /**
 * Propiedades de la barra de navegación lateral
 */
@@ -109,7 +105,7 @@
 
   padding: 0rem;
   border: 2px black solid;
-  align-items: flex-start
+  align-items: flex-start;
 }
 
 .sidenav .sidenav-content {
@@ -124,7 +120,7 @@
   position: absolute;
 }
 
-.sidenav #filterButton{
+.sidenav #filterButton {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -162,16 +158,16 @@
 }
 
 .card {
-  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.450), 0 6px 20px 0 rgba(0, 0, 0, 0.450);
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.45), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
 }
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.900), 0 4px 8px rgba(0, 0, 0, 0.900);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9), 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
 /* styling search bar */
-.search input[type=text] {
+.search input[type="text"] {
   width: 18.75rem;
   height: 2.313rem;
   border: black solid 0.125rem;
@@ -193,7 +189,7 @@
   cursor: pointer;
 }
 
-.search input[type=text]:hover {
+.search input[type="text"]:hover {
   border: #3498db solid 0.125rem;
 }
 
@@ -201,41 +197,64 @@
   background-color: #3498db;
 }
 
-
 @media (max-width: 770px) {
-  .search input[type=text] {
+  .search input[type="text"] {
     width: 6rem;
   }
 }
 
 /**
-* Propiedades tarjeta de texto
+* Propiedades carta de texto monumento
 */
-#cartaInformacion {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 5.5rem;
-  height: fit-content;
-  width: 40rem;
 
+#contCarta {
+  display: flex;
+  justify-content: center;
+}
+#cartaInformacion {
+  height: fit-content;
+  width: 50rem;
+  border: 0.375rem black solid;
+}
+/** Propiedades texto carta*/
+#monumentCardText{
+  text-align: justify;
 }
 
 /**
   * Propiedades mapa Monumento
   */
+
+#contMapa {
+  display: flex;
+  justify-content: center;
+}
+
 #map {
   margin-top: 1rem;
   margin-bottom: 1rem;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 30rem;
-  width: 60rem;
+  height: 25rem;
+  width: 50rem;
   border: 0.375rem black solid;
-  border-style: double;
 }
 
+/**
+* Propiedades vídeo Monumento
+*/
+#contVideo{
+  display: flex;
+  justify-content: center;
+}
+
+#vid{
+  height: 25rem;
+  width: 50rem;
+  object-fit:cover;
+  border: 0.375rem black solid;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
 
 /**
 * Propiedades carousel Monumento
@@ -249,9 +268,9 @@
 #carouselMonumento .carousel-inner {
   height: 25rem;
   width: 50rem;
+  margin-top: 5.5rem;
   margin-bottom: 1rem;
   border: 0.375rem black solid;
-  border-style: double;
 }
 
 #carouselMonumento .carousel-item {
@@ -278,10 +297,12 @@
   width: 10rem;
 }
 
-#graph{
+#graph {
   display: flex;
   justify-content: center;
   margin: 1rem;
   background-image: url(/img/ImagenesGen/Fondo\ graficos.png);
   background-size: contain;
 }
+
+
