@@ -104,7 +104,7 @@ $(document).ready(function(){
             let iconURL = `http://openweathermap.org/img/wn/${icon}@2x.png`;
             let humidity = data.humidity;
 
-            $('#temp-main').html(`${temp}°`);
+            $('#temp-main').html(`${temp}°C`);
             console.log(`${temp}°`);
             $('#condition').html(condition);
             $("#weatherIcon").attr("src", iconURL);
