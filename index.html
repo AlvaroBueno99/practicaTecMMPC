@@ -59,23 +59,27 @@
 
                 <nav id="navbar" class="navbar order-last order-lg-0">
                     <ul>
-                        <li><a class="nav-link scrollto " href="#hero">Inicio</a></li>
-                        <li><a class="nav-link scrollto" href="/monumento.html?name=Canarias1">Monumento</a></li>
+                        <li><a class="nav-link scrollto " href="/">Inicio</a></li>
                         <li><a class="nav-link scrollto" href="/rutas.html">Rutas</a></li>
-
-
-
+                        <li><a class="nav-link scrollto" href="#">Iniciar Sesión</a></li>
                     </ul>
                     <!-- search bar right align -->
                     <div class="search">
-
                         <input type="text" placeholder="Buscar un monumento" name="search" id="searchBar">
-                        <button onclick="setSearch()">
+                        <button onclick="setSearch()" id="searchButton">
                             <i class="bi bi-search" style="font-size: 1.125rem;">
                             </i>
                         </button>
-
                     </div>
+                    <script>
+                        var input = document.getElementById("searchBar");
+                        input.addEventListener("keyup", function (event) {
+                            if (event.keyCode === 13) {
+                                event.preventDefault();
+                                document.getElementById("searchButton").click();
+                            }
+                        });
+                    </script>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav><!-- .navbar -->
 
@@ -83,7 +87,7 @@
                     <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                     <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                     <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
                 </div>
 
             </div>
@@ -110,8 +114,9 @@
 
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active" id="intro">
-                            <div class="mask mt-5" style="background-color: rgba(0, 0, 0, 0.2);">
+                        <div class="carousel-item active" id="intro"
+                            style="height: 100vh; background-image: url(img/SliderMenu5.jpg)">
+                            <div class="mask mt-5">
                                 <div class="container d-flex justify-content-center align-items-center h-100">
                                     <div class="row align-items-center">
                                         <div class="col-12">
@@ -121,9 +126,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item"
-                            style="height: 100vh; background-image: url(https://media.architecturaldigest.com/photos/5817c28fca98fd04309ae421/16:9/w_2560%2Cc_limit/sagrada-familia-01.jpg)">
-                            <div class="mask mt-5" style="background-color: rgba(0, 0, 0, 0.2);">
+                        <div class="carousel-item" style="height: 100vh; background-image: url(img/SliderMenu1.webp)">
+                            <div class="mask mt-5">
                                 <div class="container d-flex justify-content-center align-items-center h-100">
                                     <div class="row align-items-center">
                                         <div class="col-12">
@@ -133,9 +137,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item"
-                            style="height: 100vh; background-size: 100% 100%; background-image: url('https://source.unsplash.com/lHGeqh3XhRY/1920x1080')">
-                            <div class="mask mt-5" style="background-color: rgba(0, 0, 0, 0.2);">
+                        <div class="carousel-item" style="height: 100vh; background-image: url(/img/SliderMenu2.webp)">
+                            <div class="mask mt-5">
                                 <div class="container d-flex justify-content-center align-items-center h-100">
                                     <div class="row align-items-center">
                                         <div class="col-12">
@@ -145,9 +148,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item"
-                            style="height: 100vh; background-size: 100% 100%; background-image: url('https://source.unsplash.com/lHGeqh3XhRY/1920x1080')">
-                            <div class="mask mt-5" style="background-color: rgba(0, 0, 0, 0.2);">
+                        <div class="carousel-item" style="height: 100vh; background-image: url(/img/SliderMenu3.jpg)">
+                            <div class="mask mt-5">
                                 <div class="container d-flex justify-content-center align-items-center h-100">
                                     <div class="row align-items-center">
                                         <div class="col-12">
@@ -157,9 +159,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item"
-                            style="height: 100vh; background-size: 100% 100%; background-image: url('https://source.unsplash.com/lHGeqh3XhRY/1920x1080')">
-                            <div class="mask mt-5" style="background-color: rgba(0, 0, 0, 0.2);">
+                        <div class="carousel-item" style="height: 100vh; background-image: url(/img/SliderMenu4.jpg)">
+                            <div class="mask mt-5">
                                 <div class="container d-flex justify-content-center align-items-center h-100">
                                     <div class="row align-items-center">
                                         <div class="col-12">
@@ -194,8 +195,8 @@
         <!-- Contenido debajo del slider -->
         <div class="row gx-5" id="contenidoExposicion">
             <div class="row justify-content-center">
-                    <img src="/img/ImagenesGen/Diagrama Barras.gif" alt="" id="graph">
-                    <img src="/img/ImagenesGen/Diagrama Tarta.gif" alt="" id="graph">
+                <img src="/img/ImagenesGen/Diagrama Barras.gif" alt="" id="graph">
+                <img src="/img/ImagenesGen/Diagrama Tarta.gif" alt="" id="graph">
             </div>
 
             <div class="col-xl-2 col-lg-2 col-md-2 col-sm-5 col-auto" id="menu">
@@ -267,32 +268,13 @@
                 <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                     <!-- Left -->
                     <div class="me-5 d-none d-lg-block">
-                        <span>Visita nuestras redes sociales:</span>
+                        <span>Visita nuestras redes sociales:&nbsp;</span>
+                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
                     </div>
                     <!-- Left -->
-
-                    <!-- Right -->
-                    <div>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                    <!-- Right -->
                 </section>
                 <!-- Section: Social media -->
 
@@ -307,30 +289,9 @@
                                 <h6 class="text-uppercase fw-bold mb-4">
                                     <i class="fas fa-gem me-3"></i>Monumentos España
                                 </h6>
-                                <p>
-                                    Here you can use rows and columns to organize your footer content. Lorem ipsum
-                                    dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                                <!-- Links -->
-                                <h6 class="text-uppercase fw-bold mb-4">
-                                    Products
-                                </h6>
-                                <p>
-                                    <a href="#!" class="text-reset">Angular</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">React</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Vue</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Laravel</a>
+                                <p align="justify">
+                                    Mostramos un catálogo de los monumentos más importantes de España distribuidos en
+                                    las 17 comunidades autónomas. Ofrecemos rutas guiadas en todas las comunidades.
                                 </p>
                             </div>
                             <!-- Grid column -->
@@ -339,19 +300,19 @@
                             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                                 <!-- Links -->
                                 <h6 class="text-uppercase fw-bold mb-4">
-                                    Useful links
+                                    Links de interés
                                 </h6>
                                 <p>
-                                    <a href="#!" class="text-reset">Pricing</a>
+                                    <a href="https://www.netlify.com/" class="text-reset">Netlify</a>
                                 </p>
                                 <p>
-                                    <a href="#!" class="text-reset">Settings</a>
+                                    <a href="https://github.com/" class="text-reset">GitHub</a>
                                 </p>
                                 <p>
-                                    <a href="#!" class="text-reset">Orders</a>
+                                    <a href="https://www.w3schools.com/" class="text-reset">W3schools</a>
                                 </p>
                                 <p>
-                                    <a href="#!" class="text-reset">Help</a>
+                                    <a href="https://getbootstrap.com/" class="text-reset">Bootstrap</a>
                                 </p>
                             </div>
                             <!-- Grid column -->
@@ -360,15 +321,15 @@
                             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                                 <!-- Links -->
                                 <h6 class="text-uppercase fw-bold mb-4">
-                                    Contact
+                                    Contacto
                                 </h6>
-                                <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                                <p><i class="fas fa-home me-3"></i> Palma de Mallorca, PM 07001, ESP</p>
                                 <p>
                                     <i class="fas fa-envelope me-3"></i>
-                                    info@example.com
+                                    MonumentosEspaña@gmail.com
                                 </p>
-                                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                                <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                                <p><i class="fas fa-phone me-3"></i> + 34 971 567 885</p>
+                                <p><i class="fas fa-print me-3"></i> + 34 971 567 898</p>
                             </div>
                             <!-- Grid column -->
                         </div>
@@ -379,13 +340,12 @@
 
                 <!-- Copyright -->
                 <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-                    © 2021 Copyright:
-                    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+
+                    <p class="text-reset fw-bold"> © 2022 Copyright: Álvaro&Adri</p>
                 </div>
                 <!-- Copyright -->
             </footer>
             <!-- Footer -->
-
         </div>
     </div>
 

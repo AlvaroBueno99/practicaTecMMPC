@@ -15,13 +15,15 @@ function getQueryParams() {
 
 function generateInformationCard(monumento) {
   const infoCard = // HTML
-    
+
     `
   <div class="card-header">
-      <i class="bi bi-twitter">${monumento.name}</i>
-      <i class="bi bi-twitter">Descripcion</i>
-      <i class="bi bi-twitter">Direccion</i>
-      <i class="bi bi-twitter">LongitudLatitud</i>
+  <div class="d-flex justify-content-between align-items-center">
+      <i class="bi bi-ticket"> ${monumento.name}</i>
+      <i class="bi bi-calendar"> Antiguedad</i>
+      <i class="bi bi-house"> Dirección</i>
+      <i class="bi bi-map"> Longitud/Latitud</i>
+  </div>
   </div>
   <div class="card-body">
       <h5 class="card-title">${monumento.name}</h5>
@@ -65,7 +67,7 @@ window.onload = async function () {
       comunidades[nombreComunidad].forEach((monumento) => {
         if (monumento.name === query) {
           monument = monumento;
-          comunidad = nombreComunidad; 
+          comunidad = nombreComunidad;
         }
       });
     });
