@@ -90,8 +90,8 @@ function setSearch() {
 $(document).ready(function(){
 
     function getWeather(){
-        let lat = 39.57391699749901  
-        let long = 2.6421308114331445 
+        let lat = 39.567727402259074 
+        let long = 2.6512464232098596 
         let API_KEY = "bd1dd16fb46e8746f274b42dd40b7008";
         console.log(API_KEY);
         let baseURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${API_KEY}&lang=es`;
@@ -107,7 +107,7 @@ $(document).ready(function(){
             $('#temp-main').html(`${temp}°C`);
             console.log(`${temp}°`);
             $('#condition').html(condition);
-            $("#weatherIcon").attr("src", iconURL);
+            $('#weatherIcon').attr("src", iconURL);
             $('#humidity').html(`${humidity} %`); 
 
         })
