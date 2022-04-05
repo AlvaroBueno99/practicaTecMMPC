@@ -74,17 +74,17 @@
 /**Contenedor principal página Monumentos*/
 #todoMon {
   overflow-x: hidden;
-  background-image: url(/img/wood.jpg);
+  background-image: url(/img/Fondo.jpg);
 }
 
 #contenidoExposicion {
-  background-image: url(/img/wood.jpg);
+  background-image: url(/img/Fondo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-#filaSlider {
-  margin-left: none;
-  margin-right: none;
-}
 
 /*
 #contenedorSlider {
@@ -131,7 +131,7 @@
   align-items: flex-start;
 }
 
-.sidenav .sidenav-content {
+.sidebar .sidenav-content {
   position: relative;
   margin-left: 10px;
   margin-right: 10px;
@@ -139,11 +139,11 @@
   margin-bottom: 10px;
 }
 
-.sidenav .dropdown-menu {
+.sidebar .dropdown-menu {
   position: absolute;
 }
 
-.sidenav #filterButton {
+.sidebar #filterButton {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -152,8 +152,8 @@
 
 #sidenavRutas {
   margin-top: 6rem;
-
 }
+
 
 /**
 * Propiedades modificadas del carrousel de la página principal
@@ -191,7 +191,7 @@
 
 #hoverCard:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9), 0 4px 8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 10px 20px rgba(174, 233, 255, 0.9), 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
 /* styling search bar */
@@ -476,4 +476,67 @@
   background-image: url(/img/twitter.png);
   background-size:contain;
 
+}
+
+.sidebar {
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  width: 11rem;
+  background-color: #f1f1f1;
+  background-image: url(/img/marmol.jpg);
+  position: sticky;
+  height: fit-content;
+  overflow: auto;
+  border: 0.1rem black solid;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar .sidenav-content #selectComunidad:hover {
+  border: #3498db solid 0.01rem;
+  cursor: pointer;
+}
+
+.sidebar .sidenav-content .form-check-input:hover {
+  background-color: #3498db;
+  cursor: pointer;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 767px) {
+  .sidebar {
+    height: auto;
+    position: relative;
+    width: 100vw;
+    margin: 0;
+  }
+  .sidebar a {float: left;}
+  .sidebar .sidenav-content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }}
+
+#filaCatalogo{
+  margin-top: 4rem;
+  background-color: rgba(0, 0, 0, 0.658);
 }
