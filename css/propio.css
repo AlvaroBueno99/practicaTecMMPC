@@ -540,3 +540,7 @@ div.content {
   margin-top: 4rem;
   background-color: rgba(0, 0, 0, 0.658);
 }
+
+footer{
+  background-image: url(/img/marmol.jpg);
+}
