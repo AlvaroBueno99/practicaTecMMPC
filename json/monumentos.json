@@ -4,19 +4,23 @@
             "Andalucía": [
                 {
                     "name": "Puente Nuevo de Ronda",
+                    "id": 1,
                     "image": "img/Comunidades/Andalucia/alhambraGranada.jpg",
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "year": 1873
+                    "year": 1873,
+                    "prueba": "textoInicial"
                 },
                 {
                     "name": "Catedral de Cádiz",
+                    "id": 2,
                     "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "year": 1876
+                    "year": 1876,
+                    "prueba": "textoInicial"
                 }
             ]
         },
@@ -24,19 +28,23 @@
             "Aragón": [
                 {
                     "name": "Monumento a los caídos",
+                    "id": 3,
                     "image": "img/Comunidades/Canarias/monumento-a-los-caidos.jpg",
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "year": 1920
+                    "year": 1920,
+                    "prueba": "textoInicial"
                 },
                 {
                     "name": "Catedral de Cádiz",
+                    "id": 4,
                     "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "year": 1624
+                    "year": 1624,
+                    "prueba": "textoInicial"
                 }
             ]
         },
@@ -44,19 +52,23 @@
             "Islas Baleares": [
                 {
                     "name": "IslasBaleares1",
+                    "id": 5,
                     "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "year": 1758
+                    "year": 1922,
+                    "prueba": "textoInicial"
                 },
                 {
                     "name": "IslasBaleares2",
+                    "id": 6,
                     "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "year": 1234
+                    "year": 1922,
+                    "prueba": "textoInicial"
                 }
             ]
         },
@@ -64,19 +76,23 @@
             "Canarias": [
                 {
                     "name": "Canarias1",
+                    "id": 7,
                     "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "year": 1467
+                    "year": 1467,
+                    "prueba": "textoInicial"
                 },
                 {
                     "name": "Canarias2",
+                    "id": 8,
                     "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "year": 1812
+                    "year": 1812,
+                    "prueba": "textoInicial"
                 }
             ]
         },
@@ -84,19 +100,33 @@
             "Cantabria": [
                 {
                     "name": "Cantabria1",
+                    "id": 9,
                     "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "year": 1364
+                    "year": 1364,
+                    "prueba": "textoInicial"
                 },
                 {
                     "name": "Cantabria2",
+                    "id": 10,
                     "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "year": 1894
+                    "year": 1894,
+                    "prueba": "textoInicial"
+                },
+                {
+                    "name": "Cantabria3",
+                    "id": 10,
+                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "latitude": 36.74093,
+                    "longitude": -5.16589,
+                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
+                    "year": 1894,
+                    "prueba": "textoInicial"
                 }
             ]
         },
@@ -104,19 +134,23 @@
             "Castilla-La Mancha": [
                 {
                     "name": "CastillaLaMancha1",
+                    "id": 11,
                     "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "year": 1551
+                    "year": 1551,
+                    "prueba": "textoInicial"
                 },
                 {
                     "name": "CastillaLaMancha2",
+                    "id": 12,
                     "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "year": 1629
+                    "year": 1629,
+                    "prueba": "textoInicial"
                 }
             ]
         }

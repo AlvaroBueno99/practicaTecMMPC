@@ -10,7 +10,7 @@ async function getJSONFile() {
 
 function getQueryParams() {
   const search = new URLSearchParams(window.location.search);
-  return search.get("name");
+  return search.get("id");
 }
 
 function generateInformationCard(monumento) {
@@ -58,6 +58,49 @@ function generateInformationCard(monumento) {
   return infoCard;
 }
 
+// Weather API
+$(document).ready(function(){
+
+  function getWeather(){
+      let lat = 39.567727402259074 
+      let long = 2.6512464232098596 
+      let API_KEY = "bd1dd16fb46e8746f274b42dd40b7008";
+      console.log(API_KEY);
+      let baseURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${API_KEY}&lang=es`;
+
+      $.get(baseURL,function(res){
+          let data = res.current;
+          let temp = Math.floor(data.temp - 273);
+          let condition = data.weather[0].description;
+          let icon = data.weather[0].icon;
+          let iconURL = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+          let humidity = data.humidity;
+
+          $('#temp-main').html(`${temp}°C`);
+          console.log(`${temp}°`);
+          $('#condition').html(condition);
+          $('#weatherIcon').attr("src", iconURL);
+          $('#humidity').html(`${humidity} %`); 
+
+      })
+      
+  }
+
+  getWeather();
+})
+
+// Search bar especifica de la pagina monumento
+function submitSearch(e){
+  e.preventDefault();
+  const term = document
+  .getElementById("searchBarMonum")
+  .value.trim()
+  .toLowerCase()
+  .normalize("NFD")
+  .replace(/[\u0300-\u036f]/g, "")
+  window.location.href = `/?term=${term}#filaTituloCatalogo`;
+}
+
 window.onload = async function () {
   await getJSONFile();
   const query = getQueryParams();
@@ -65,7 +108,7 @@ window.onload = async function () {
   detailsData.forEach((comunidades) => {
     Object.keys(comunidades).forEach((nombreComunidad) => {
       comunidades[nombreComunidad].forEach((monumento) => {
-        if (monumento.name === query) {
+        if (monumento.id === parseInt(query)) {
           monument = monumento;
           comunidad = nombreComunidad;
         }
@@ -78,4 +121,6 @@ window.onload = async function () {
 
   const infoCard = document.getElementById("cartaInformacion");
   infoCard.innerHTML = generateInformationCard(monument);
+
+  document.getElementById("botonRutaRelacionada").href=`rutas.html?comunidad=${comunidad}`
 };

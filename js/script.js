@@ -1,19 +1,29 @@
-let data;
+let dataJSON;
 let term = "";
+
+// para los favoritos:
+let favorites = [];
 
 async function getJSONFile() {
   // lo guarda en la memoria principal (RAM)
   const response = await fetch("./json/monumentos.json");
   const { monumentos } = await response.json();
-  data = monumentos;
+  dataJSON = monumentos;
 }
 
+// Generate HTML dinamically with JS
+
 function generateCard(monumento) {
-  const card = /* HTML */
+  const card =
+    /* HTML */
 
     `
       <div class="col-auto m-4">
-        <div class="card overflow zoom" id="hoverCard" style="width: 18rem;">
+        <div
+          class="card overflow zoom hoverCard"
+          id="card-${monumento.id}"
+          style="width: 18rem;"
+        >
           <img
             class="card-img-top"
             src="${monumento.image}"
@@ -23,11 +33,19 @@ function generateCard(monumento) {
             <h5 class="card-title">${monumento.name}</h5>
             <p class="card-text ">${monumento.address}</p>
             <p class="card-text">${monumento.year}</p>
-            <a
-              href="/monumento.html?name=${monumento.name}"
-              class="btn btn-primary"
+            <a href="/monumento.html?id=${monumento.id}" class="btn btn-primary"
               >Go somewhere</a
             >
+            <button
+              type="button"
+              data-id="${monumento.id}"
+              class="favorite-btn btn btn-outline-info ${monumento.isFavorite
+                ? "is-favorite"
+                : ""}"
+              onclick="resultsDelegation(event)"
+            >
+              ${monumento.isFavorite ? "♥" : "♡"}
+            </button>
           </div>
         </div>
       </div>
@@ -36,8 +54,196 @@ function generateCard(monumento) {
   return card;
 }
 
-function filter() {
-  // console.log(data);
+function getQueryParams() {
+  const search = new URLSearchParams(window.location.search);
+  return search.get("term") || "";
+}
+
+function pruebaObtencionDatosJSON() {
+  let totalMonuments = 0;
+  console.log("number of comunities in JSON: ", dataJSON.length);
+  dataJSON.forEach((comunidades) => {
+    Object.keys(comunidades).forEach((nombreComunidad) => {
+      console.log("comunidad: ", nombreComunidad);
+      console.log(
+        "monuments found in ",
+        nombreComunidad,
+        ": ",
+        comunidades[nombreComunidad].length
+      );
+      comunidades[nombreComunidad].forEach((monumento) => {
+        console.log("monumento: ", monumento);
+        totalMonuments++;
+      });
+    });
+  });
+  console.log("number of monuments found in JSON: ", totalMonuments);
+}
+
+// ----------------------- Dynamic charts -----------------------------
+
+// Set options
+
+function setHighchartsOptions() {
+  // Radialize the colors
+  Highcharts.setOptions({
+    colors: Highcharts.map(Highcharts.getOptions().colors, function (color) {
+      return {
+        radialGradient: {
+          cx: 0.5,
+          cy: 0.3,
+          r: 0.7,
+        },
+        stops: [
+          [0, color],
+          [1, Highcharts.color(color).brighten(-0.3).get("rgb")], // darken
+        ],
+      };
+    }),
+  });
+}
+
+// Pie chart
+function generatePieChart() {
+  
+  // Obtencion de los datos necesarios del JSON
+  let totalMonuments = 0;
+  let jsonArray = [];
+  dataJSON.forEach((comunidades) => {
+    Object.keys(comunidades).forEach((nombreComunidad) => {
+      comunidades[nombreComunidad].forEach((monumento) => {
+        totalMonuments++;
+      });
+    });
+  });
+
+  dataJSON.forEach((comunidades) => {
+    Object.keys(comunidades).forEach((nombreComunidad) => {
+      jsonArray.push({ name: nombreComunidad, y: (comunidades[nombreComunidad].length / totalMonuments)*100});
+    });
+  });
+
+
+  // Build the chart
+  Highcharts.chart("pieChartContainer", {
+    chart: {
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      type: "pie",
+    },
+    title: {
+      text: "Distribución de monumentos en cada comunidad",
+    },
+    tooltip: {
+      pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
+    },
+    accessibility: {
+      point: {
+        valueSuffix: "%",
+      },
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: "pointer",
+        dataLabels: {
+          enabled: true,
+          format: "<b>{point.name}</b>: {point.percentage:.1f} %",
+          connectorColor: "silver",
+        },
+      },
+    },
+    series: [
+      {
+        name: "Share",
+        data: jsonArray,
+      },
+    ],
+  });
+}
+
+// Column chart
+function generateColumChart() {
+
+  // Obtención de los datos del necesarios del JSON
+  let arrayComunidades = [];
+  let arrayAntigüedades = [];
+  let antigüedadTotalComunidad = 0;
+  var currentYear = new Date().getFullYear(); // obtenemos el año actual.
+
+  // Obtenemos los nombres de todas las comunidades.
+  dataJSON.forEach((comunidades) => {
+    Object.keys(comunidades).forEach((nombreComunidad) => {
+      arrayComunidades.push(nombreComunidad);  
+    });
+  });
+
+  // Obtenemos la antigüedad media de los monumentos de todas las comunidades.
+  dataJSON.forEach((comunidades) => {
+    Object.keys(comunidades).forEach((nombreComunidad) => {
+      // console.log("comunidad: ", nombreComunidad);
+      comunidades[nombreComunidad].forEach((monumento) => {
+        // console.log("monumento: ", monumento);
+        antigüedadTotalComunidad += (currentYear - monumento.year);
+      });
+      arrayAntigüedades.push(antigüedadTotalComunidad / comunidades[nombreComunidad].length);
+      antigüedadTotalComunidad = 0;
+    });
+  });
+
+  Highcharts.chart("columnChartContainer", {
+    chart: {
+      type: "column",
+    },
+    title: {
+      text: "Antigüedad media de monumentos en cada comunidad",
+    },
+    subtitle: {
+      // text: "Source: WorldClimate.com",
+    },
+    xAxis: {
+      categories: arrayComunidades,
+      crosshair: true,
+    },
+    yAxis: {
+      min: 0,
+      title: {
+        text: "Antigüedad (años)",
+      },
+    },
+    tooltip: {
+      headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+      pointFormat:
+        '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+        '<td style="padding:0"><b>{point.y:.1f} años</b></td></tr>',
+      footerFormat: "</table>",
+      shared: true,
+      useHTML: true,
+    },
+    plotOptions: {
+      column: {
+        pointPadding: 0.2,
+        borderWidth: 0,
+      },
+    },
+    series: [
+      {
+        name: "Antigüedad media (años)",
+        data: arrayAntigüedades,
+      },
+    ],
+  });
+}
+
+// Filters
+
+function filter(displayFavorites = false, search = false) {
+  // favorites
+  favorites = JSON.parse(localStorage.getItem("monuments"));
+  if (favorites === null) {
+    favorites = [];
+  }
   let cards = "";
   let monumentsArray = [];
   let select = document.getElementById("selectComunidad").value;
@@ -46,11 +252,18 @@ function filter() {
   let filter = document.querySelector('input[name="filter"]:checked').value;
   let order = document.querySelector('input[name="order"]:checked').value;
 
-  data.forEach((comunidades) => {
+  dataJSON.forEach((comunidades) => {
     Object.keys(comunidades).forEach((nombreComunidad) => {
       if (nombreComunidad === select || select === "") {
         comunidades[nombreComunidad].forEach((monumento) => {
-          monumentsArray.push(monumento);
+          if (
+            !displayFavorites ||
+            (displayFavorites && favorites.includes(monumento.id))
+          ) {
+            monumento.isFavorite = favorites.includes(monumento.id);
+            // console.log("favorites", favorites);
+            monumentsArray.push(monumento);
+          }
         });
       }
     });
@@ -59,6 +272,7 @@ function filter() {
   const filtered = _.filter(monumentsArray, (monumento) => {
     return (
       term === "" ||
+      !search ||
       monumento.name
         .toLowerCase()
         .normalize("NFD")
@@ -68,7 +282,8 @@ function filter() {
   });
 
   _.orderBy(filtered, [filter], [order]).forEach((monumento) => {
-    // libreri lodash
+    // Libreria lodash
+
     cards += generateCard(monumento);
   });
 
@@ -76,55 +291,102 @@ function filter() {
   cardRow.innerHTML = cards;
 }
 
-function setSearch() {
+function setSearch(id) {
   term = document
-    .getElementById("searchBar")
+    .getElementById(id)
     .value.trim()
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
-  filter();
+  filter(false, true);
+  location.href = "#filaTituloCatalogo"; // sitúa al usuario en la sección de cartas.
 }
 
-// Weather API
-$(document).ready(function(){
+// Favourites
 
-    function getWeather(){
-        let lat = 39.567727402259074 
-        let long = 2.6512464232098596 
-        let API_KEY = "bd1dd16fb46e8746f274b42dd40b7008";
-        console.log(API_KEY);
-        let baseURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${API_KEY}&lang=es`;
+function saveIntoDB(monument) {
+  const monuments = this.getFromDB();
 
-        $.get(baseURL,function(res){
-            let data = res.current;
-            let temp = Math.floor(data.temp - 273);
-            let condition = data.weather[0].description;
-            let icon = data.weather[0].icon;
-            let iconURL = `http://openweathermap.org/img/wn/${icon}@2x.png`;
-            let humidity = data.humidity;
+  monuments.push(parseInt(monument.id));
 
-            $('#temp-main').html(`${temp}°C`);
-            console.log(`${temp}°`);
-            $('#condition').html(condition);
-            $('#weatherIcon').attr("src", iconURL);
-            $('#humidity').html(`${humidity} %`); 
+  // Add the new array into the localstorage
+  localStorage.setItem("monuments", JSON.stringify(monuments));
+}
 
-        })
-        
+function removeFromDB(id) {
+  const monuments = this.getFromDB();
+
+  // Loop
+  monuments.forEach((monumentID, index) => {
+    if (id === monumentID) {
+      monuments.splice(index, 1);
     }
+  });
+  // Set the array into local storage
+  localStorage.setItem("monuments", JSON.stringify(monuments));
+}
 
-    getWeather();
-})
+function getFromDB() {
+  let monuments;
+  // Check from localstorage
 
+  if (localStorage.getItem("monuments") === null) {
+    monuments = [];
+  } else {
+    monuments = JSON.parse(localStorage.getItem("monuments"));
+  }
+  return monuments;
+}
 
+function resultsDelegation(e) {
+  e.stopPropagation();
 
+  e.preventDefault();
+  console.log(e);
+  console.log(e.target);
+  console.log(`#card-${e.target.dataset.id} > div > button > i`);
+  icon = document.querySelector(
+    `#card-${e.target.dataset.id} > div > button > i`
+  );
+
+  // When favourite btn is clicked
+  if (e.target.classList.contains("favorite-btn")) {
+    if (e.target.classList.contains("is-favorite")) {
+      removeFromDB(parseInt(e.target.dataset.id));
+      // Remove the class
+      e.target.classList.remove("is-favorite");
+      e.target.textContent = "♡";
+    } else {
+      // Add the class
+      e.target.classList.add("is-favorite");
+      e.target.textContent = "♥";
+
+      // Get Info
+      const cardBody = e.target.parentElement;
+
+      const monumentInfo = {
+        id: e.target.dataset.id,
+      };
+
+      // console.log(drinkInfo);
+      // Add into the storage
+      saveIntoDB(monumentInfo);
+    }
+  }
+}
 
 window.onload = async function () {
   // ¿Lo tiene que hacer el usuario, o tiene que salir "inmediatamente" cuando cargue la pagina?
   // dentro del onload cuando hay que acceder al DOM "instantaneamente".
   await getJSONFile();
-  filter();
+
+  pruebaObtencionDatosJSON();
+
+  generateColumChart();
+  setHighchartsOptions();
+  generatePieChart();
+
+  term = getQueryParams();
+
+  filter(false, true);
 };
-
-

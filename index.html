@@ -5,7 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- prueba a ver si va -->
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/da740475ec.js" crossorigin="anonymous" defer></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -16,7 +17,7 @@
     <link rel="stylesheet" href="css/Lumianavbar.css">
     <link rel="stylesheet" href="css/propio.css">
 
-
+    <link rel="stylesheet" href="css/highcharts.css">
 
 
     <title>Monumentos de España!</title>
@@ -25,6 +26,12 @@
     <!-- <script src="js/seleccionarComunidad.js"></script> -->
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+    <!-- Highcharts library for dynamic graphs -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
 </head>
 
@@ -65,14 +72,14 @@
                     </ul>
                     <!-- search bar right align -->
                     <div class="search">
-                        <input type="text" placeholder="Buscar un monumento" name="search" id="searchBar">
-                        <button onclick="setSearch()" id="searchButton">
+                        <input type="text" placeholder="Buscar un monumento" name="search" id="searchBarMain">
+                        <button onclick="setSearch('searchBarMain')" id="searchButton">
                             <i class="bi bi-search" style="font-size: 1.125rem;">
                             </i>
                         </button>
                     </div>
                     <script>
-                        var input = document.getElementById("searchBar");
+                        var input = document.getElementById("searchBarMain");
                         input.addEventListener("keyup", function (event) {
                             if (event.keyCode === 13) {
                                 event.preventDefault();
@@ -99,7 +106,7 @@
 
         <!--Section: Design Block-->
         <div class="row table-bordered" id="filaSlider">
-            <div class="container-fluid" style="border:1px solid #0e0b0b;" id="contenedorSlider">
+            <div class="container-fluid" id="contenedorSlider">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -195,12 +202,35 @@
 
         <!-- Contenido debajo del slider -->
         <div class="row gx-5" id="contenidoExposicion">
+            <div class="row justify-content-center" id="filaTituloCatalogo">
+                <div class="title-mask mt-5">
+                    <div class="container d-flex justify-content-center align-items-center h-100">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <h1 id="title" class="mt-4 text-white display-1">Datos de interés</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row justify-content-center">
-                <img src="/img/ImagenesGen/Diagrama Barras.gif" alt="" id="graph">
-                <img src="/img/ImagenesGen/Diagrama Tarta.gif" alt="" id="graph">
+                <!-- <img src="/img/ImagenesGen/Diagrama Barras.gif" alt="" id="graph">
+                <img src="/img/ImagenesGen/Diagrama Tarta.gif" alt="" id="graph"> -->
+                <figure class="highcharts-figure">
+                    <div id="pieChartContainer"></div>
+                    <p class="highcharts-description">
+                        En este gráfico se muestra la cantidad de monumentos que esta web contiene para cada comunidad.
+                    </p>
+                </figure>
+                <figure class="highcharts-figure">
+                    <div id="columnChartContainer"></div>
+                    <p class="highcharts-description">
+                       En este gráfico se muestra la antigüedad media de los monumentos que esta web contiene de cada comunidad.
+                    </p>
+                  </figure>
             </div>
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" id="filaTituloCatalogo">
                 <div class="title-mask mt-5">
                     <div class="container d-flex justify-content-center align-items-center h-100">
                         <div class="row align-items-center">
@@ -212,58 +242,62 @@
                 </div>
             </div>
             <div class="row justify-content-center" id="filaCatalogo">
-                <div class="col-xl-2 col-lg-5 col-md-4 col-sm-auto col-auto" id="menu">
-                    <div class="sidebar">
+                <div class="col-xl-2 col-lg-5 col-md-4 col-sm-auto col-auto menuPagPrincipal" id="menu">
+                    <div class="row justify-content-center">
+                        <div class="sidebar">
 
-                        <div class="sidenav-content">
+                            <div class="sidenav-content">
 
-                            <select class="form-select" aria-label="Default select example" id="selectComunidad">
-                                <option selected value="">Comunidad</option>
-                                <option value="Andalucía">Andalucía</option>
-                                <option value="Aragón">Aragón</option>
-                                <option value="Islas Baleares">Islas Baleares</option>
-                                <option value="Canarias">Canarias</option>
-                                <option value="Cantabria">Cantabria</option>
-                                <option value="Castilla-La Mancha">Castilla-La Mancha</option>
-                                <option value="Castilla y León">Castilla y León</option>
-                                <option value="Cataluña">Cataluña</option>
-                                <option value="Comunidad de Madrid">Comunidad de Madrid</option>
-                            </select>
+                                <select class="form-select" aria-label="Default select example" id="selectComunidad">
+                                    <option selected value="">Comunidad</option>
+                                    <option value="Andalucía">Andalucía</option>
+                                    <option value="Aragón">Aragón</option>
+                                    <option value="Islas Baleares">Islas Baleares</option>
+                                    <option value="Canarias">Canarias</option>
+                                    <option value="Cantabria">Cantabria</option>
+                                    <option value="Castilla-La Mancha">Castilla-La Mancha</option>
+                                    <option value="Castilla y León">Castilla y León</option>
+                                    <option value="Cataluña">Cataluña</option>
+                                    <option value="Comunidad de Madrid">Comunidad de Madrid</option>
+                                </select>
+                            </div>
+
+                            <div class="sidenav-content" style="margin-top: 2rem">
+                                <label><strong>Ordernar por:</strong></label>
+                                <div class="form-check " id="firstCheck">
+                                    <input class="form-check-input" type="radio" name="filter" id="flexRadioDefault1"
+                                        value="name" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Nombre
+                                    </label>
+                                </div>
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="radio" name="filter" id="flexRadioDefault2"
+                                        value="year">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Antigüedad
+                                    </label>
+                                </div>
+                                <hr>
+                                <div class="form-check " id="firstCheck">
+                                    <input class="form-check-input" type="radio" name="order" id="flexRadioDefault3"
+                                        value="asc" checked>
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                        Ascendente
+                                    </label>
+                                </div>
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="radio" name="order" id="flexRadioDefault4"
+                                        value="desc">
+                                    <label class="form-check-label" for="flexRadioDefault4">
+                                        Descendente
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary mt-2" id="filterButton" onclick="filter()">Filtrar</button>
+                            <button class="btn btn-primary mt-2" id="favoritesButton" onclick="filter(true)">Filtrar
+                                favoritos</button>
                         </div>
-
-                        <div class="sidenav-content" style="margin-top: 2rem">
-                            <label><strong>Ordernar por:</strong></label>
-                            <div class="form-check " id="firstCheck">
-                                <input class="form-check-input" type="radio" name="filter" id="flexRadioDefault1"
-                                    value="name" checked>
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Nombre
-                                </label>
-                            </div>
-                            <div class="form-check ">
-                                <input class="form-check-input" type="radio" name="filter" id="flexRadioDefault2"
-                                    value="year">
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    Antigüedad
-                                </label>
-                            </div>
-                            <hr>
-                            <div class="form-check " id="firstCheck">
-                                <input class="form-check-input" type="radio" name="order" id="flexRadioDefault3"
-                                    value="asc" checked>
-                                <label class="form-check-label" for="flexRadioDefault3">
-                                    Ascendente
-                                </label>
-                            </div>
-                            <div class="form-check ">
-                                <input class="form-check-input" type="radio" name="order" id="flexRadioDefault4"
-                                    value="desc">
-                                <label class="form-check-label" for="flexRadioDefault4">
-                                    Descendente
-                                </label>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary mt-2" id="filterButton" onclick="filter()">Filtrar</button>
                     </div>
                 </div>
                 <!-- Propiedades cartas monumentos-->

@@ -1,3 +1,4 @@
+
 /** 
 * Adaptación de la imagen de intro según el tamaño de la pantalla
 */
@@ -83,12 +84,11 @@
   background-size: cover;
 }
 
-#contenidoExposicion {
-  background-image: url(/img/Fondo.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+/* Contenedor fluid global de la página rutas */
+#todoRut {
+  overflow-x: hidden;
+  /* padding: 0;
+  margin-left: 0; */
 }
 
 #contenidoExposicion {
@@ -100,13 +100,10 @@
 }
 
 
-/*
 #contenedorSlider {
-  margin-left: none;
-  margin-right: none;
-    border: 3rem black; 
+  border-bottom:1px solid #0e0b0b;
 }
-*/
+
 
 #carouselExampleCaptions {
   margin-left: none;
@@ -147,10 +144,15 @@
 
 .sidebar .sidenav-content {
   position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.menuPagPrincipal {
+  padding-left: 2rem;
+  /* margin-left: 0.5rem; */
 }
 
 .sidebar .dropdown-menu {
@@ -199,11 +201,11 @@
   transform: scale(1.1);
 }
 
-#hoverCard {
+.hoverCard {
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.45), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
 }
 
-#hoverCard:hover {
+.hoverCard:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(174, 233, 255, 0.9), 0 4px 8px rgba(0, 0, 0, 0.9);
 }
@@ -288,8 +290,37 @@
   z-index: 0;
 }
 
+/* Mapa de las rutas */
+
 .rutas #map {
   margin-top: 6rem;
+}
+
+/* .leaflet-control-container .leaflet-routing-container-hide {
+  display: none;
+} */
+
+ /* .leaflet-routing-container {
+ 
+
+  
+}  */
+
+
+.leaflet-routing-collapse-btn {
+  position: absolute;
+  /* margin: 2rem; */
+  right: 2rem;
+  font-size: 2rem;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+
+.leaflet-routing-container-hide {
+  position: absolute;
+  right: 2rem;
+  display: block;
+  background-image: url('routing-icon.png');
 }
 
 /**
@@ -572,4 +603,9 @@ div.content {
 
 footer {
   background-image: url(/img/marmol.jpg);
+}
+
+/* css del corazon del boton favoritos */
+.favorite-btn {
+  font-size: 18px;
 }
