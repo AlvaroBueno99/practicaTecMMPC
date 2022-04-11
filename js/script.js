@@ -129,8 +129,9 @@ function generatePieChart() {
     chart: {
       plotBackgroundColor: null,
       backgroundColor: 'rgba(0, 0, 0, 0.658)',
+      borderColor: 'transparent',
       plotBorderWidth: null,
-      plotShadow: false,
+      plotShadow: true,
       type: "pie",
     },
     title: {
