@@ -40,8 +40,8 @@ function generateCard(monumento) {
               type="button"
               data-id="${monumento.id}"
               class="favorite-btn btn btn-outline-info ${monumento.isFavorite
-                ? "is-favorite"
-                : ""}"
+      ? "is-favorite"
+      : ""}"
               onclick="resultsDelegation(event)"
             >
               ${monumento.isFavorite ? "♥" : "♡"}
@@ -105,7 +105,7 @@ function setHighchartsOptions() {
 
 // Pie chart
 function generatePieChart() {
-  
+
   // Obtencion de los datos necesarios del JSON
   let totalMonuments = 0;
   let jsonArray = [];
@@ -119,7 +119,7 @@ function generatePieChart() {
 
   dataJSON.forEach((comunidades) => {
     Object.keys(comunidades).forEach((nombreComunidad) => {
-      jsonArray.push({ name: nombreComunidad, y: (comunidades[nombreComunidad].length / totalMonuments)*100});
+      jsonArray.push({ name: nombreComunidad, y: (comunidades[nombreComunidad].length / totalMonuments) * 100 });
     });
   });
 
@@ -131,11 +131,15 @@ function generatePieChart() {
       backgroundColor: 'rgba(0, 0, 0, 0.658)',
       borderColor: 'transparent',
       plotBorderWidth: null,
-      plotShadow: true,
+      plotShadow: false,
       type: "pie",
     },
     title: {
       text: "Distribución de monumentos en cada comunidad",
+      style: {
+        color: '#FFFF',
+      }
+
     },
     tooltip: {
       pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
@@ -177,7 +181,7 @@ function generateColumChart() {
   // Obtenemos los nombres de todas las comunidades.
   dataJSON.forEach((comunidades) => {
     Object.keys(comunidades).forEach((nombreComunidad) => {
-      arrayComunidades.push(nombreComunidad);  
+      arrayComunidades.push(nombreComunidad);
     });
   });
 
@@ -197,9 +201,17 @@ function generateColumChart() {
   Highcharts.chart("columnChartContainer", {
     chart: {
       type: "column",
+      backgroundColor: 'rgba(0, 0, 0, 0.658)',
+      borderColor: 'transparent',
+      legend:{
+        "color": 'rgb(255,255,255)'
+      }
     },
     title: {
       text: "Antigüedad media de monumentos en cada comunidad",
+      style: {
+        color: '#FFFF',
+      }
     },
     subtitle: {
       // text: "Source: WorldClimate.com",
@@ -207,12 +219,23 @@ function generateColumChart() {
     xAxis: {
       categories: arrayComunidades,
       crosshair: true,
+      labels: {
+        style: {
+            color: '#FFFF'
+        }}
     },
     yAxis: {
       min: 0,
       title: {
         text: "Antigüedad (años)",
+        style: {
+          color: '#FFFF',
+        }
       },
+      labels: {
+        style: {
+            color: '#FFFF'
+        }}
     },
     tooltip: {
       headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
@@ -362,7 +385,6 @@ function resultsDelegation(e) {
       // Add the class
       e.target.classList.add("is-favorite");
       e.target.textContent = "♥";
-
       // Get Info
       const cardBody = e.target.parentElement;
 

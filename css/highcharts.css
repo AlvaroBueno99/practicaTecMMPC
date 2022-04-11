@@ -64,3 +64,8 @@
   width: auto;
   max-width: 100%;
 }
+
+.highcharts-title {
+  color: white;
+  font-weight: bold;
+}
