@@ -128,6 +128,7 @@ function generatePieChart() {
   Highcharts.chart("pieChartContainer", {
     chart: {
       plotBackgroundColor: null,
+      backgroundColor: 'rgba(0, 0, 0, 0.658)',
       plotBorderWidth: null,
       plotShadow: false,
       type: "pie",
