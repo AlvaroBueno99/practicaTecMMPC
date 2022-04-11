@@ -9,7 +9,9 @@
 .highcharts-data-table table {
   font-family: Verdana, sans-serif;
   border-collapse: collapse;
-  border: 1px solid #ebebeb;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0);
+  color: white;
   margin: 10px auto;
   text-align: center;
   width: 100%;
@@ -19,7 +21,10 @@
 .highcharts-data-table caption {
   padding: 1em 0;
   font-size: 1.2em;
-  color: #555;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.90);
+  font-weight: bold;
+  text-align: center;
 }
 
 .highcharts-data-table th {
@@ -36,10 +41,11 @@
 .highcharts-data-table thead tr,
 .highcharts-data-table tr:nth-child(even) {
   background: #f8f8f8;
+  color: black;
 }
 
 .highcharts-data-table tr:hover {
-  background: #f1f7ff;
+  background: rgb(146, 215, 245,0.7);
 }
 
 /* own code */

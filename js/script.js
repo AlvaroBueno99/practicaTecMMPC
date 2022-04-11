@@ -203,9 +203,11 @@ function generateColumChart() {
       type: "column",
       backgroundColor: 'rgba(0, 0, 0, 0.658)',
       borderColor: 'transparent',
-      legend:{
-        "color": 'rgb(255,255,255)'
-      }
+    },
+    legend:{
+      itemStyle:{
+        color:'#FFFF',
+      },
     },
     title: {
       text: "Antigüedad media de monumentos en cada comunidad",

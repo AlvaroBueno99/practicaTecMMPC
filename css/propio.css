@@ -77,7 +77,7 @@
 /**Contenedor principal página Monumentos*/
 #todoMon {
   overflow-x: hidden;
-  background-image: url(/img/Fondo3.jpg);
+  background-image: url(/img/Fondo2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -87,6 +87,11 @@
 /* Contenedor fluid global de la página rutas */
 #todoRut {
   overflow-x: hidden;
+  background-image: url(/img/Fondo3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   /* padding: 0;
   margin-left: 0; */
 }
