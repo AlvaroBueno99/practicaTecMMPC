@@ -10,7 +10,7 @@ async function getJSONFile() {
 
 function getQueryParams() {
   const search = new URLSearchParams(window.location.search);
-  return search.get("id");
+  return search.get("identifier");
 }
 
 function generateInformationCard(monumento) {
@@ -108,7 +108,7 @@ window.onload = async function () {
   detailsData.forEach((comunidades) => {
     Object.keys(comunidades).forEach((nombreComunidad) => {
       comunidades[nombreComunidad].forEach((monumento) => {
-        if (monumento.id === parseInt(query)) {
+        if (monumento.identifier === query) {
           monument = monumento;
           comunidad = nombreComunidad;
         }
