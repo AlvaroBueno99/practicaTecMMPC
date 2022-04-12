@@ -21,7 +21,7 @@ function generateCard(monumento) {
       <div class="col-auto m-4">
         <div
           class="card overflow zoom hoverCard"
-          id="card-${monumento.id}"
+          id="card-${monumento.identifier}"
           style="width: 18rem;"
         >
           <img
@@ -32,13 +32,13 @@ function generateCard(monumento) {
           <div class="card-body">
             <h5 class="card-title">${monumento.name}</h5>
             <p class="card-text ">${monumento.address}</p>
-            <p class="card-text">${monumento.year}</p>
-            <a href="/monumento.html?id=${monumento.id}" class="btn btn-primary"
+            <p class="card-text">${monumento.yearBuilt}</p>
+            <a href="/monumento.html?id=${monumento.identifier}" class="btn btn-primary"
               >Go somewhere</a
             >
             <button
               type="button"
-              data-id="${monumento.id}"
+              data-id="${monumento.identifier}"
               class="favorite-btn btn btn-outline-info ${monumento.isFavorite
       ? "is-favorite"
       : ""}"
@@ -191,7 +191,7 @@ function generateColumChart() {
       // console.log("comunidad: ", nombreComunidad);
       comunidades[nombreComunidad].forEach((monumento) => {
         // console.log("monumento: ", monumento);
-        antigüedadTotalComunidad += (currentYear - monumento.year);
+        antigüedadTotalComunidad += (currentYear - monumento.yearBuilt);
       });
       arrayAntigüedades.push(antigüedadTotalComunidad / comunidades[nombreComunidad].length);
       antigüedadTotalComunidad = 0;
@@ -285,9 +285,9 @@ function filter(displayFavorites = false, search = false) {
         comunidades[nombreComunidad].forEach((monumento) => {
           if (
             !displayFavorites ||
-            (displayFavorites && favorites.includes(monumento.id))
+            (displayFavorites && favorites.includes(monumento.identifier))
           ) {
-            monumento.isFavorite = favorites.includes(monumento.id);
+            monumento.isFavorite = favorites.includes(monumento.identifier);
             // console.log("favorites", favorites);
             monumentsArray.push(monumento);
           }
@@ -334,7 +334,7 @@ function setSearch(id) {
 function saveIntoDB(monument) {
   const monuments = this.getFromDB();
 
-  monuments.push(parseInt(monument.id));
+  monuments.push(monument.identifier);
 
   // Add the new array into the localstorage
   localStorage.setItem("monuments", JSON.stringify(monuments));
@@ -379,7 +379,7 @@ function resultsDelegation(e) {
   // When favourite btn is clicked
   if (e.target.classList.contains("favorite-btn")) {
     if (e.target.classList.contains("is-favorite")) {
-      removeFromDB(parseInt(e.target.dataset.id));
+      removeFromDB(e.target.dataset.id);
       // Remove the class
       e.target.classList.remove("is-favorite");
       e.target.textContent = "♡";
@@ -391,7 +391,7 @@ function resultsDelegation(e) {
       const cardBody = e.target.parentElement;
 
       const monumentInfo = {
-        id: e.target.dataset.id,
+        identifier: e.target.dataset.id,
       };
 
       // console.log(drinkInfo);
