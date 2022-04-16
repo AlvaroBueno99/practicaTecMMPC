@@ -70,6 +70,8 @@ function getRouteMap() {
   // Bucle para generar un marcador para cada monumento de la comunidad.
 
   var markers = [];
+  var name = [];
+  var identifier = [];
   let iteration = 0;
 
   dataRutas.forEach((comunidades) => {
@@ -86,6 +88,12 @@ function getRouteMap() {
           iteration++;
           markers.push(
             L.latLng(`${monumento.latitude}`, `${monumento.longitude}`)
+          ),
+          name.push(
+            `${monumento.name}`
+          ),
+          identifier.push(
+            `${monumento.identifier}`
           );
           /*
           markers[markerIndex] = L.marker([`${monumento.latitude}`, `${monumento.longitude}`], {
@@ -132,6 +140,12 @@ function getRouteMap() {
     draggableWaypoints: false,
     addWaypoints: false,
     waypoints: markers,
+    createMarker: function(i,wp,nWps){
+      return L.marker(wp.latLng)
+      .bindPopup(function(){
+        return ' <a href="/monumento.html?identifier='+ identifier[i] +'">'+ name[i] + '</a>';
+      });
+    },
     router: L.Routing.mapbox(
       "pk.eyJ1IjoiYWRyaWJlbm5hc2FyIiwiYSI6ImNsMGprcDMyMTAxZHczYmwxaXNsZWp3NjcifQ.5tEEAlSEDIIbUx4NS5E0lQ"
     ),
@@ -151,6 +165,7 @@ function getRouteMap() {
 
   // L.control._container.style.display = "None";
 }
+
 
 window.onload = async function () {
   await getJSONFile();

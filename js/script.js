@@ -26,7 +26,7 @@ function generateCard(monumento) {
         >
           <img
             class="card-img-top"
-            src="${monumento.image}"
+            src="${monumento.image[0]}"
             alt="Card image cap"
           />
           <div class="card-body">
