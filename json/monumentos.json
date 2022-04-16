@@ -5,20 +5,34 @@
                 {
                     "name": "Puente Nuevo de Ronda",
                     "identifier": "and1",
-                    "image": "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                    "latitude": 36.74093,
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
+                    "latitude": 47.23,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1873
+                    "yearBuilt": 1873,
+                    "video": [
+                        
+                    ]
                 },
                 {
                     "name": "Catedral de Cádiz",
                     "identifier": "and2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
+                    "latitude": 59.74093,
+                    "longitude": -9.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1876
+                    "yearBuilt": 1876,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -27,20 +41,34 @@
                 {
                     "name": "Monumento a los caídos",
                     "identifier": "ara1",
-                    "image": "img/Comunidades/Canarias/monumento-a-los-caidos.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920
+                    "yearBuilt": 1920,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "Catedral de Cádiz",
                     "identifier": "ara2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624
+                    "yearBuilt": 1624,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -49,20 +77,34 @@
                 {
                     "name": "Monumento a los caídos",
                     "identifier": "ast1",
-                    "image": "img/Comunidades/Canarias/monumento-a-los-caidos.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920
+                    "yearBuilt": 1920,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "Catedral de Cádiz",
                     "identifier": "ast2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624
+                    "yearBuilt": 1624,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -71,20 +113,35 @@
                 {
                     "name": "IslasBaleares1",
                     "identifier": "bal1",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1922
+                    "yearBuilt": 1922,
+                    "video": [
+                        "videos/alhambraGranada.mp4",
+                        "videos/alhambraGranada.webm"
+                    ]
                 },
                 {
                     "name": "IslasBaleares2",
                     "identifier": "bal2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1922
+                    "yearBuilt": 1922,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -93,20 +150,34 @@
                 {
                     "name": "Canarias1",
                     "identifier": "can1",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1467
+                    "yearBuilt": 1467,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "Canarias2",
                     "identifier": "can2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1812
+                    "yearBuilt": 1812,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -115,29 +186,50 @@
                 {
                     "name": "Cantabria1",
                     "identifier": "cant1",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
-                    "longitude": -5.16589,
+                    "longitude": -7.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1364
+                    "yearBuilt": 1364,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "Cantabria2",
                     "identifier": "cant2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
-                    "longitude": -5.16589,
+                    "longitude": -6.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1894
+                    "yearBuilt": 1894,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "Cantabria3",
                     "identifier": "cant3",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1894
+                    "yearBuilt": 1894,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -146,20 +238,34 @@
                 {
                     "name": "CastillaLaMancha1",
                     "identifier": "man1",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1551
+                    "yearBuilt": 1551,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "CastillaLaMancha2",
                     "identifier": "man2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1629
+                    "yearBuilt": 1629,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -168,20 +274,34 @@
                 {
                     "name": "Monumento a los caídos",
                     "identifier": "leo1",
-                    "image": "img/Comunidades/Canarias/monumento-a-los-caidos.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920
+                    "yearBuilt": 1920,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "Catedral de Cádiz",
                     "identifier": "leo2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624
+                    "yearBuilt": 1624,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -190,20 +310,34 @@
                 {
                     "name": "Monumento a los caídos",
                     "identifier": "cat1",
-                    "image": "img/Comunidades/Canarias/monumento-a-los-caidos.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920
+                    "yearBuilt": 1920,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "Catedral de Cádiz",
                     "identifier": "cat2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624
+                    "yearBuilt": 1624,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -212,20 +346,34 @@
                 {
                     "name": "Monumento a los caídos",
                     "identifier": "ext1",
-                    "image": "img/Comunidades/Canarias/monumento-a-los-caidos.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920
+                    "yearBuilt": 1920,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "Catedral de Cádiz",
                     "identifier": "ext2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624
+                    "yearBuilt": 1624,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -234,20 +382,34 @@
                 {
                     "name": "Monumento a los caídos",
                     "identifier": "gal1",
-                    "image": "img/Comunidades/Canarias/monumento-a-los-caidos.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920
+                    "yearBuilt": 1920,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "Catedral de Cádiz",
                     "identifier": "gal2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624
+                    "yearBuilt": 1624,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -256,20 +418,34 @@
                 {
                     "name": "Monumento a los caídos",
                     "identifier": "mad1",
-                    "image": "img/Comunidades/Canarias/monumento-a-los-caidos.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920
+                    "yearBuilt": 1920,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "Catedral de Cádiz",
                     "identifier": "mad2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624
+                    "yearBuilt": 1624,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -278,20 +454,34 @@
                 {
                     "name": "Monumento a los caídos",
                     "identifier": "mur1",
-                    "image": "img/Comunidades/Canarias/monumento-a-los-caidos.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920
+                    "yearBuilt": 1920,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "Catedral de Cádiz",
                     "identifier": "mur2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624
+                    "yearBuilt": 1624,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -300,20 +490,34 @@
                 {
                     "name": "Monumento a los caídos",
                     "identifier": "nav1",
-                    "image": "img/Comunidades/Canarias/monumento-a-los-caidos.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920
+                    "yearBuilt": 1920,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "Catedral de Cádiz",
                     "identifier": "nav2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624
+                    "yearBuilt": 1624,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -322,20 +526,34 @@
                 {
                     "name": "Monumento a los caídos",
                     "identifier": "pai1",
-                    "image": "img/Comunidades/Canarias/monumento-a-los-caidos.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920
+                    "yearBuilt": 1920,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "Catedral de Cádiz",
                     "identifier": "pai2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624
+                    "yearBuilt": 1624,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -344,20 +562,34 @@
                 {
                     "name": "Monumento a los caídos",
                     "identifier": "lar1",
-                    "image": "img/Comunidades/Canarias/monumento-a-los-caidos.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920
+                    "yearBuilt": 1920,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "Catedral de Cádiz",
                     "identifier": "lar2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624
+                    "yearBuilt": 1624,
+                    "video": [
+
+                    ]
                 }
             ]
         },
@@ -366,20 +598,34 @@
                 {
                     "name": "Monumento a los caídos",
                     "identifier": "val1",
-                    "image": "img/Comunidades/Canarias/monumento-a-los-caidos.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920
+                    "yearBuilt": 1920,
+                    "video": [
+
+                    ]
                 },
                 {
                     "name": "Catedral de Cádiz",
                     "identifier": "val2",
-                    "image": "img/Comunidades/Andalucia/puenteRonda.jpg",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
                     "latitude": 36.74093,
                     "longitude": -5.16589,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624
+                    "yearBuilt": 1624,
+                    "video": [
+
+                    ]
                 }
             ]
         }    

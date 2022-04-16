@@ -375,20 +375,31 @@
 }
 
 #carouselMonumento .carousel-inner #slide1 {
-  background-image: url(/img/Comunidades/Canarias/monumento-a-los-caidos.jpg);
-  background-position-y: top;
-
+  /* background-image: url(/img/Comunidades/Canarias/monumento-a-los-caidos.jpg); */
+  /* background-position-y: top; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position: bottom;  */
 }
 
 #carouselMonumento .carousel-inner #slide2 {
-  background-image: url(/img/Comunidades/Aragon/Torre\ Del\ Pilar.jpg);
-  background-position-y: center;
-  background-position-x: right;
+  /* background-image: url(/img/Comunidades/Aragon/Torre\ Del\ Pilar.jpg); */
+  /* background-position-y: center;
+  background-position-x: right; */
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  /* object-position: right; */
 }
 
 #carouselMonumento .carousel-inner #slide3 {
-  background-image: url(/img/Comunidades/Andalucia/catedralCadiz.jpg);
-  background-position-y: bottom;
+  /* background-image: url(/img/Comunidades/Andalucia/catedralCadiz.jpg); */
+  /* background-position-y: bottom; */
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  /* object-position: bottom; */
 }
 
 /* CAMBIADO -----------------------------------------------------------------------------------------*/
@@ -445,7 +456,7 @@
   text-align: center;
 } */
 
-#contenedorAPITiempo {
+.contenedorAPITiempo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -486,7 +497,7 @@
   text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
 }
 
-.app #titulo {
+.app .tituloContApi {
   font-size: 2em;
   margin-bottom: 0.5rem;
   font-weight: bold;

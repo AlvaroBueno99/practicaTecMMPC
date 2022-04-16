@@ -54,6 +54,7 @@ function generateCard(monumento) {
   return card;
 }
 
+
 function getQueryParams() {
   const search = new URLSearchParams(window.location.search);
   return search.get("term") || "";

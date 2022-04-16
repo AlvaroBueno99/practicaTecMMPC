@@ -100,7 +100,7 @@
 
                             <select class="form-select" aria-label="Default select example" id="selectComunidad">
                                 <option selected value="">Comunidad</option>
-                                <option value="Andalucía">Andalucía</option>
+                                <option selected value="Andalucía">Andalucía</option>
                                 <option value="Aragón">Aragón</option>
                                 <option value="Islas Baleares">Islas Baleares</option>
                                 <option value="Canarias">Canarias</option>
@@ -113,39 +113,8 @@
 
                         </div>
 
-                        <div class="sidenav-content" style="margin-top: 2rem">
-                            <label><strong>Ordernar por:</strong></label>
-                            <div class="form-check " id="firstCheck">
-                                <input class="form-check-input" type="radio" name="filter" id="flexRadioDefault1"
-                                    value="name" checked>
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Nombre
-                                </label>
-                            </div>
-                            <div class="form-check ">
-                                <input class="form-check-input" type="radio" name="filter" id="flexRadioDefault2"
-                                    value="year">
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    Antigüedad
-                                </label>
-                            </div>
-                            <hr>
-                            <div class="form-check " id="firstCheck">
-                                <input class="form-check-input" type="radio" name="order" id="flexRadioDefault1"
-                                    value="asc" checked>
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Ascendente
-                                </label>
-                            </div>
-                            <div class="form-check ">
-                                <input class="form-check-input" type="radio" name="order" id="flexRadioDefault2"
-                                    value="desc">
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    Descendente
-                                </label>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary mt-2" id="filterButton" onclick="getRuta()">Filtrar</button>
+                        
+                        <button class="btn btn-primary mt-2" id="filterButton" onclick="getRouteMap()">Filtrar</button>
                     </div>
                 </div>
             </div>
@@ -163,66 +132,11 @@
                         </div>
                     </div>
 
-                    <script>
+                    
 
-                        // Para los monumentos
-                        var blueIcon = new L.Icon({
-                            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
-                            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-                            iconSize: [25, 41],
-                            iconAnchor: [12, 41],
-                            popupAnchor: [1, -34],
-                            shadowSize: [41, 41]
-                        });
-
-                        var map = L.map('map').setView([39.56771199239134, 2.648343010456217], zoom = 9);
-                        L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Xnyz2NNvIPyLSREOwih7', {
-                            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
-                        }).addTo(map);
-                        var marker = L.marker([39.56771199239134, 2.648343010456217], { icon: blueIcon }).addTo(map);
-                        marker.bindPopup('Catedral-Basílica de Santa María')
-
-                        // Para la posición del usuario
-                        var greenIcon = new L.Icon({
-                            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
-                            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-                            iconSize: [25, 41],
-                            iconAnchor: [12, 41],
-                            popupAnchor: [1, -34],
-                            shadowSize: [41, 41]
-                        });
-
-                        navigator.geolocation.getCurrentPosition(showCurrentPos);
-                        function showCurrentPos(position) {
-                            var currentPos = L.marker([position.coords.latitude, position.coords.longitude], { icon: greenIcon }).addTo(map);
-                            currentPos.bindPopup('Tu posición actual')
-                        }
-
-
-                        L.Routing.control({
-                            // show: false,
-                            collapsible: true,
-                            waypoints: [
-                                L.latLng(39.56771199239134, 2.648343010456217),
-                                L.latLng(39.60, 2.79)
-                            ],
-                            router: L.Routing.mapbox('pk.eyJ1IjoiYWRyaWJlbm5hc2FyIiwiYSI6ImNsMGprcDMyMTAxZHczYmwxaXNsZWp3NjcifQ.5tEEAlSEDIIbUx4NS5E0lQ')
-                        }).addTo(map)
-
-
-                        /*
-                        L.Routing.control({
-                            waypoints: [
-                                L.latLng(39.56771199239134, 2.648343010456217),
-                                L.latLng(39.60, 2.70),
-                                L.latLng(39.64, 2.75)
-                            ],
-                            router: L.Routing.graphHopper('ed1f5692-1b9d-4de6-a4e3-694fd5868ce1')
-                        }).addTo(map);
-                        */
-
-                        L.control._container.style.display = "None";
-                    </script>
+                        
+                        
+                    
 
 
                     <div class="row justify-content-center">

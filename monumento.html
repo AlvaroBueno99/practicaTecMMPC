@@ -104,9 +104,9 @@
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="contenedor" id="contenedorAPITiempo">
+                        <div class="contenedor contenedorAPITiempo"  id="contTemperatura">
                             <div class="app">
-                                <h1 id="titulo">Tiempo en Monumento</h1>
+                                <h1 class="tituloContApi" id="tituloTemperatura"></h1>
                                 <h1 id="temp-main">0°</h1>
                                 <img id="weatherIcon" src="" alt="">
                                 <h2 id="condition">unknown</h2>
@@ -115,9 +115,9 @@
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="contenedor" id="contenedorAPITiempo">
+                        <div class="contenedor contenedorAPITiempo"  id="contHumedad">
                             <div class="app">
-                                <h1 id="titulo">Humedad en la zona</h1>
+                                <h1 class="tituloContApi" id="tituloHumedad"></h1>
                                 <i class="bi bi-droplet" id="iconoHumedad"></i></i>
                                 <h2 id="humidity">unknown</h2>
                                 <p id="aclaracion">*Datos actualizados cada 10 min</p>
@@ -137,34 +137,8 @@
             <div class="col-xl-8 col-lg-auto col-md-auto col-sm-auto col-auto" id="contenidoDerecha">
                 <div class="row justify-content-center">
                     <div class="col-auto">
-                        <div id="carouselMonumento" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselMonumento" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselMonumento" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselMonumento" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active" id="slide1">
-                                    <!-- <img class="slides" src="/img/Comunidades/Canarias/monumento-a-los-caidos.jpg" alt=""> -->
-                                </div>
-                                <div class="carousel-item" id="slide2"></div>
-                                <div class="carousel-item" id="slide3"></div>
-
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMonumento"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselMonumento"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
+                        <div id="carouselImagenes">
+                            
                         </div>
 
                         <div class="card" id="cartaInformacion">
@@ -176,48 +150,12 @@
                     <div class="col-auto" id="contMapa">
                         <div id="map"></div>
                     </div>
-                    <script>
-                        // Para los monumentos
-                        var blueIcon = new L.Icon({
-                            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
-                            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-                            iconSize: [25, 41],
-                            iconAnchor: [12, 41],
-                            popupAnchor: [1, -34],
-                            shadowSize: [41, 41]
-                        });
-
-                        var map = L.map('map').setView([39.56771199239134, 2.648343010456217], zoom = 9);
-                        L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Xnyz2NNvIPyLSREOwih7', {
-                            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
-                        }).addTo(map);
-                        var marker = L.marker([39.56771199239134, 2.648343010456217], { icon: blueIcon }).addTo(map);
-                        marker.bindPopup('Catedral-Basílica de Santa María')
-
-                        // Para la posición del usuario
-                        var greenIcon = new L.Icon({
-                            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
-                            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-                            iconSize: [25, 41],
-                            iconAnchor: [12, 41],
-                            popupAnchor: [1, -34],
-                            shadowSize: [41, 41]
-                        });
-                        navigator.geolocation.getCurrentPosition(showCurrentPos);
-                        function showCurrentPos(position) {
-                            var currentPos = L.marker([position.coords.latitude, position.coords.longitude], { icon: greenIcon }).addTo(map);
-                            currentPos.bindPopup('Tu posición actual')
-                        }
-                    </script>
+                    
 
 
                     <!-- ------------------------------------------------------------------------------------------------------------------ -->
                     <div class="col-auto" id="contVideo">
-                        <video controls poster="/img/Comunidades/Andalucia/alhambraGranada.jpg" id="vid">
-                            <source src="videos/alhambraGranada.webm" type="video/webm">
-                            <source src="videos/alhambraGranada.mp4" type="video/mp4">
-                            Su navegador no soporta los formatos de video.
-                        </video>
+                        
                     </div>
                 </div>
             </div>
