@@ -164,11 +164,13 @@
   position: absolute;
 }
 
-.sidebar #filterButton {
+.sidebar .btn {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 1rem;
+  width: 100%;
+  height: fit-content;
 }
 
 #sidenavRutas {
