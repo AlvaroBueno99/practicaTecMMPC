@@ -362,6 +362,9 @@
                     "name": "Real Monasterio de Nuestra Señora de Guadalupe",
                     "identifier": "ext2",
                     "image": [
+                        "img/Comunidades/Extremadura/RealMonasteriodeNuestraSeñoradeGuadalupe/RealMonasterioNuestraSeñoraGuadalupe1.jpg",
+                        "img/Comunidades/Extremadura/RealMonasteriodeNuestraSeñoradeGuadalupe/RealMonasterioNuestraSeñoraGuadalupe2.jpg",
+                        "img/Comunidades/Extremadura/RealMonasteriodeNuestraSeñoradeGuadalupe/RealMonasterioNuestraSeñoraGuadalupe3.jpg"
                     ],
                     "description":"",
                     "latitude": 39.45255656938701,
@@ -426,7 +429,7 @@
                     "latitude": 38.880749477437675,  
                     "longitude": -6.975510000289056,
                     "address": "Pl. Reyes Católicos, 6A, 06001 Badajoz",
-                    "yearBuilt": 1578,
+                    "yearBuilt": 1551,
                     "video": [
 
                     ]
