@@ -33,7 +33,7 @@ function generateCard(monumento) {
             <h5 class="card-title">${monumento.name}</h5>
             <p class="card-text ">${monumento.address}</p>
             <p class="card-text">${monumento.yearBuilt}</p>
-            <a href="/monumento.html?identifier=${monumento.identifier}" class="btn btn-primary"
+            <a href="/monumento.html?identifier=${monumento.identifier}" class="btn btn-primary" id="cardBtn"
               >Go somewhere</a
             >
             <button

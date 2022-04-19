@@ -347,9 +347,11 @@
                     "name": "Teatro Romano de Mérida",
                     "identifier": "ext1",
                     "image": [
-
+                        "img/Comunidades/Extremadura/TeatroRomanoMerida/TeatroRomanoMerida1.jpg",
+                        "img/Comunidades/Extremadura/TeatroRomanoMerida/TeatroRomanoMerida2.jpg",
+                        "img/Comunidades/Extremadura/TeatroRomanoMerida/TeatroRomanoMerida3.jpg"
                     ],
-                    "description":"",
+                    "description":"El teatro romano de Mérida es un teatro histórico levantado por la Antigua Roma en la colonia Augusta Emerita, actual Mérida (España). Su creación fue promovida por el cónsul Marco Vipsanio Agripa y, según una fecha inscrita en el propio teatro, su inauguración se produjo hacia los años 16-15 a. C. «Príncipe entre los monumentos emeritenses», como lo denominó el arquitecto José Menéndez-Pidal,el teatro es Patrimonio de la Humanidad desde 1993 como parte del conjunto arqueológico de Mérida.",
                     "latitude": 38.91539050605779, 
                     "longitude": -6.338530424236704,
                     "address": "Plaza Margarita Xirgu, s/n, 06800 Mérida, Badajoz",
@@ -396,6 +398,9 @@
                     "name": "Templo de Diana",
                     "identifier": "ext4",
                     "image": [
+                        "img/Comunidades/Extremadura/TemploDeDiana/TemploDiana1.jpeg",
+                        "img/Comunidades/Extremadura/TemploDeDiana/TemploDiana2.jpeg",
+                        "img/Comunidades/Extremadura/TemploDeDiana/TemploDiana3.jpeg"
                     ],
                     "description":"",
                     "latitude": 38.916710480934796, 
@@ -410,6 +415,9 @@
                     "name": "Catedral de Plasencia",
                     "identifier": "ext5",
                     "image": [
+                        "img/Comunidades/Extremadura/CatedralPlasencia/CatedralPlasencia1.jpg",
+                        "img/Comunidades/Extremadura/CatedralPlasencia/CatedralPlasencia2.jpg",
+                        "img/Comunidades/Extremadura/CatedralPlasencia/CatedralPlasencia3.jpg"
                     ],
                     "description":"",
                     "latitude": 40.028280248317984, 
@@ -424,6 +432,9 @@
                     "name": "Puerta de Palmas",
                     "identifier": "ext6",
                     "image": [
+                        "img/Comunidades/Extremadura/PuertaPalmas/PuertaPalmas1.jpg",
+                        "img/Comunidades/Extremadura/PuertaPalmas/PuertaPalmas2.jpg",
+                        "img/Comunidades/Extremadura/PuertaPalmas/PuertaPalmas3.jpg"
                     ],
                     "description":"",
                     "latitude": 38.880749477437675,  
@@ -439,33 +450,85 @@
         {
             "Galicia": [
                 {
-                    "name": "Monumento a los caídos",
+                    "name": "Catedral de Santiago de Compostela",
                     "identifier": "gal1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Galicia/CatedralSantiagoCompostela/CatedralSantiagoCompostela1.jpg",
+                        "img/Comunidades/Galicia/CatedralSantiagoCompostela/CatedralSantiagoCompostela2.jpg",
+                        "img/Comunidades/Galicia/CatedralSantiagoCompostela/CatedralSantiagoCompostela3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920,
+                    "description":"",
+                    "latitude": 42.880769138632154,  
+                    "longitude": -8.54463583769011,
+                    "address": "Praza do Obradoiro, s/n, 15704 Santiago de Compostela, A Coruña",
+                    "yearBuilt": 1211,
                     "video": [
 
                     ]
                 },
                 {
-                    "name": "Catedral de Cádiz",
+                    "name": "Torre de Hércules",
                     "identifier": "gal2",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Galicia/TorreHercules/TorreHercules1.jpg",
+                        "img/Comunidades/Galicia/TorreHercules/TorreHercules2.jpg",
+                        "img/Comunidades/Galicia/TorreHercules/TorreHercules3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624,
+                    "latitude": 43.38612081805276, 
+                    "longitude": -8.406506030737932,
+                    "address": "Av. Navarra, s/n, 15002 A Coruña",
+                    "yearBuilt": 55,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Muralla Romana de Lugo",
+                    "identifier": "gal3",
+                    "image": [
+                        "img/Comunidades/Galicia/MurallaRomanaLugo/MurallaRomanaLugo1.jpg",
+                        "img/Comunidades/Galicia/MurallaRomanaLugo/MurallaRomanaLugo2.jpg",
+                        "img/Comunidades/Galicia/MurallaRomanaLugo/MurallaRomanaLugo3.jpg"
+                    ],
+                    "description":"",
+                    "latitude": 43.009020869455604,   
+                    "longitude": -7.559169315407374,
+                    "address": "27001 Lugo",
+                    "yearBuilt": 240,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Castillo de Sotomayor",
+                    "identifier": "gal4",
+                    "image": [
+                        "img/Comunidades/Galicia/CastilloSotomayor/CastilloSotomayor1.jpg",
+                        "img/Comunidades/Galicia/CastilloSotomayor/CastilloSotomayor2.jpg",
+                        "img/Comunidades/Galicia/CastilloSotomayor/CastilloSotomayor3.jpg"
+                    ],
+                    "description":"",
+                    "latitude": 42.3298025066966,    
+                    "longitude": -8.568313001933062,
+                    "address": "Rúa do Rial, s/n, 36691 O Rial, Pontevedra",
+                    "yearBuilt": 1150,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Castillo de Pambre",
+                    "identifier": "gal5",
+                    "image": [
+                        "img/Comunidades/Galicia/CastilloPambre/CastilloPambre1.jpg",
+                        "img/Comunidades/Galicia/CastilloPambre/CastilloPambre2.jpg",
+                        "img/Comunidades/Galicia/CastilloPambre/CastilloPambre3.jpg"
+                    ],
+                    "description":"",
+                    "latitude": 42.86002510333093,     
+                    "longitude": -7.948380844247051,
+                    "address": "27203 Palas de Rei, Lugo",
+                    "yearBuilt": 1400,
                     "video": [
 
                     ]
@@ -473,35 +536,71 @@
             ]
         },
         {
-            "Madrid": [
+            "Comunidad de Madrid": [
                 {
-                    "name": "Monumento a los caídos",
+                    "name": "Palacio Real de Madrid",
                     "identifier": "mad1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Madrid/PalacioRealMadrid/PalacioRealMadrid1.jpg",
+                        "img/Comunidades/Madrid/PalacioRealMadrid/PalacioRealMadrid2.jpg",
+                        "img/Comunidades/Madrid/PalacioRealMadrid/PalacioRealMadrid3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920,
+                    "description":"",
+                    "latitude": 40.418167353270576, 
+                    "longitude": -3.714306637567265,
+                    "address": "C. de Bailén, s/n, 28071 Madrid",
+                    "yearBuilt": 1764,
                     "video": [
 
                     ]
                 },
                 {
-                    "name": "Catedral de Cádiz",
+                    "name": "Plaza Mayor",
                     "identifier": "mad2",
+                    "image": [
+                        "img/Comunidades/Madrid/PlazaMayor/PlazaMayor1.jpg",
+                        "img/Comunidades/Madrid/PlazaMayor/PlazaMayor2.jpg",
+                        "img/Comunidades/Madrid/PlazaMayor/PlazaMayor3.jpg"
+                    ],
+                    "description":"",
+                    "latitude": 40.415567355542436, 
+                    "longitude": -3.7073951627718964,
+                    "address": "Pl. Mayor, 28012 Madrid",
+                    "yearBuilt": 1619,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Templo de Debod",
+                    "identifier": "mad3",
                     "image": [
                         "img/Comunidades/Andalucia/catedralCadiz.jpg",
                         "img/Comunidades/Andalucia/alhambraGranada.jpg",
                         "img/Comunidades/Andalucia/puenteRonda.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624,
+                    "description":"",
+                    "latitude": 40.42417676164962, 
+                    "longitude": -3.7177373154803504,
+                    "address": "C. de Ferraz, 1, 28008 Madrid",
+                    "yearBuilt": -178,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Palacio de la Moncloa",
+                    "identifier": "mad4",
+                    "image": [
+                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                    ],
+                    "description":"",
+                    "latitude": 40.44533879181862, 
+                    "longitude": -3.733989133228805,
+                    "address": "Av. Puerta de Hierro, s/n, 28071 Madrid",
+                    "yearBuilt": 1955,
                     "video": [
 
                     ]

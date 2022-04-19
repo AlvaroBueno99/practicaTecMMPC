@@ -611,7 +611,11 @@ div.content {
 
 @media screen and (max-width: 550px) {
   #title {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
+  }
+
+  .datosCartaMon{
+    font-size: small;
   }
 }
 
@@ -627,3 +631,36 @@ footer {
 .favorite-btn {
   font-size: 18px;
 }
+
+.datosCartaMon{
+  text-align: center;
+  height: auto;
+  width: 20rem;
+  font-weight: bold;
+}
+
+.card-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.card{
+  width: fit-content;
+  height:30rem;
+}
+
+.card #cardBtn{
+  position:absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.favorite-btn{
+  position:absolute;
+  left: 9.4rem;
+  bottom: 1rem;
+}
+
+
+
