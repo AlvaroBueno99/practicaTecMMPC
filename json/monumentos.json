@@ -6,14 +6,15 @@
                     "name": "Puente Nuevo de Ronda",
                     "identifier": "and1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Andalucia/puenteRonda/puenteRonda1.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda/puenteRonda2.jpg",
+                        "img/Comunidades/Andalucia/puenteRonda/puenteRonda2.jpg"
                     ],
-                    "latitude": 47.23,
-                    "longitude": -5.16589,
+                    "description": "El puente Nuevo es el monumento más emblemático de la ciudad malagueña de Ronda. Construido entre 1751 y 1793, hasta 1839 fue el puente más alto del mundo con una altura de 98 metros. Une las zonas histórica y moderna de la ciudad salvando el tajo de Ronda, una garganta excavada por el río Guadalevín.<br /><br />En 1735 se construyó el primer puente, derrumbándose seis años más tarde y matando a 50 personas. Al parecer la falta de apoyos, el mal cerramiento del arco y la mala ejecución de la obra hicieron que el puente colapsara.<br /><br />No fue hasta 1751 cuando se decidió emprender la construcción de un nuevo puente. Para sufragarlo hubo que recoger 15.000 reales de la Real Maestranza e imponer un impuesto en la Feria de Mayo. En su realización intervinieron diversos maestros, aunque el más destacado fue José Martín de Aldehuela, quien finalizó la obra. Finalmente fue inaugurado en mayo de 1793.<br /><br />De sillería de piedra, el puente presenta un arco central de medio punto apoyado en otro más pequeño por el que transcurre el río. En la parte superior, se encuentran las dependencias del puente que, en otros tiempos, fueron utilizadas como prisión, a cuyos lados se abren otros dos arcos, también de medio punto, que sostienen la estructura que soporta la calle. Más tarde funcionó como mesón y actualmente, es un centro de interpretación del entorno y la historia de la ciudad.<br /><br />El puente Nuevo fue el puente con el vano más alto del mundo desde su construcción hasta 1839, cuando fue superado por el puente de la Caille, en Francia.<br /><br />",
+                    "latitude": 36.74114322670925, 
+                    "longitude": -5.166323702190054,
                     "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1873,
+                    "yearBuilt": 1793,
                     "video": [
                         
                     ]
@@ -22,16 +23,120 @@
                     "name": "Catedral de Cádiz",
                     "identifier": "and2",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Andalucia/catedralCadiz/catedralCadiz1.jpg",
+                        "img/Comunidades/Andalucia/catedralCadiz/catedralCadiz2.jpg",
+                        "img/Comunidades/Andalucia/catedralCadiz/catedralCadiz3.jpg"
                     ],
-                    "latitude": 59.74093,
-                    "longitude": -9.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1876,
+                    "description": "La Santa y Apostólica Iglesia Catedral de Cádiz es la sede episcopal de la diócesis de Cádiz y Ceuta, en España. Es un edificio de estilo barroco y neoclásico. Se empezó a construir en 1722 y no se terminó hasta el 28 de noviembre de 1838. Las crisis económicas provocaron que la catedral tenga un estilo variado, a causa de las invasiones francesas y la posterior pérdida del poder sobre América. Es Bien de Interés Cultural.<br /><br />Recibe el nombre de la \"Santa Cruz sobre el Mar\" o \"Santa Cruz sobre las Aguas\", aunque los gaditanos la denominan catedral Nueva en contraposición a la catedral Vieja, edificada en el siglo XVI sobre la antigua catedral gótica mandada construir por Alfonso X El Sabio, y que hoy cumple las funciones de iglesia parroquial.<br /><br />Está situada en el centro histórico de Cádiz, casi al borde del mar, y es visible desde casi cualquier punto de la ciudad. Tiene horario de visitas tanto para el interior del templo como para la Torre del Reloj. La misma entrada a la catedral sirve para acceder al museo Catedralicio de Cádiz, situado en la plaza Fray Félix, junto a la catedral Vieja. Además de las piezas expuestas en el museo, tiene un depósito con otras obras de interés.<br /><br />",
+                    "latitude": 36.52918553595062, 
+                    "longitude": -6.295300231031909,
+                    "address": "Pl. de la Catedral, s/n, 11005 Cádiz",
+                    "yearBuilt": 1780,
                     "video": [
 
+                    ]
+                },
+                {
+                    "name": "Alhambra de Granada",
+                    "identifier": "and3",
+                    "image": [
+                        "img/Comunidades/Andalucia/alhambraGranada/alhambraGranada1.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada/alhambraGranada2.jpg",
+                        "img/Comunidades/Andalucia/alhambraGranada/alhambraGranada3.jpg"
+                        
+                    ],
+                    "description":"La Alhambra es un complejo monumental sobre una ciudad palatina andalusí situado en Granada, España. Consiste en un conjunto de antiguos palacios, jardines y fortalezas (alcazaba, del árabe: القصبة al-qaṣbah ‘ciudadela’) inicialmente concebido para alojar al emir y la corte del Reino Nazarí, más tarde como residencia real castellana y de sus representantes. Su singularidad artística radica en los interiores de los palacios nazaríes, cuya decoración está entre las cumbres del arte andalusí, así como en su localización y adaptación, generando un paisaje nuevo pero totalmente integrado con la naturaleza preexistente. Además, alberga un museo de arte andalusí, la pinacoteca principal de la ciudad así como un antiguo convento convertido en Parador nacional.<br /><br />El complejo es gestionado por la institución Patronato de la Alhambra y el Generalife. En 2016 esta reportó ser el segundo espacio más visitado de España, tras la Sagrada Familia de Barcelona, con 2 615 188 visitantes.<br /><br />",
+                    "latitude": 37.17626207339372, 
+                    "longitude": -3.5881413021777706, 
+                    "address": "C. Real de la Alhambra, s/n, 18009 Granada",
+                    "yearBuilt": 1238,
+                    "video": [
+                        
+                    ]
+                },
+                {
+                    "name": "Mezquita-Catedral de Córdoba",
+                    "identifier": "and4",
+                    "image": [
+                        "img/Comunidades/Andalucia/mezquitaCatedralCordoba/mezquitaCatedralCordoba1.jpg",
+                        "img/Comunidades/Andalucia/mezquitaCatedralCordoba/mezquitaCatedralCordoba2.jpg",
+                        "img/Comunidades/Andalucia/mezquitaCatedralCordoba/mezquitaCatedralCordoba3.jpg"
+                    ],
+                    "description":"La mezquita o mezquita-catedral de Córdoba, «Santa María Madre de Dios» o «Gran mezquita de Córdoba», actualmente conocida como la Catedral de la Asunción de Nuestra Señora de forma eclesiástica, es un edificio de la ciudad de Córdoba, España. En 2019 superó los dos millones de visitantes, siendo su récord histórico y convirtiéndolo en uno de los monumentos más visitados de España.<br /><br />Se empezó a construir como mezquita en el año 784; hasta hace poco se creía que tras la apropiación por los conquistadores musulmanes de la basílica hispanorromana de San Vicente Mártir y la reutilización de parte de los materiales, quedando reservada al culto musulmán, pero estudios arqueológicos más recientes disputan esta hipótesis. El edificio fue objeto de ampliaciones durante el Emirato de Córdoba y el Califato de Córdoba. Con 23 400 metros cuadrados, fue la segunda mezquita más grande del mundo en superficie, por detrás de la Mezquita de La Meca, siendo superada posteriormente por la Mezquita Azul (Estambul, 1588). El muro de la qibla no fue orientado hacia La Meca, sino 51º grados hacia el sur; esto era habitual en las mezquitas de al-Ándalus.<br /><br />En 1238, tras la Reconquista cristiana de la ciudad, se llevó a cabo su consagración como catedral de la diócesis con la Ordenación episcopal de su primer obispo, Lope de Fitero. El edificio alberga el cabildo catedralicio de la Diócesis de Córdoba, y por su carácter de templo católico y sede episcopal, está reservado al culto católico. En 1523, bajo la dirección de los arquitectos Hernán Ruiz, el Viejo y su hijo, se construyó su basílica cruciforme renacentista de estilo plateresco.<br /><br />",
+                    "latitude": 37.87908764967428, 
+                    "longitude": -4.779397630993555, 
+                    "address": "C. Cardenal Herrero, 1, 14003 Córdoba",
+                    "yearBuilt": 887,
+                    "video": [
+                        
+                    ]
+                },
+                {
+                    "name": "Real Alcázar de Sevilla",
+                    "identifier": "and5",
+                    "image": [
+                        "img/Comunidades/Andalucia/realAlacazarSevilla/realAlcazarSevilla1.jpg",
+                        "img/Comunidades/Andalucia/realAlacazarSevilla/realAlcazarSevilla2.jpg",
+                        "img/Comunidades/Andalucia/realAlacazarSevilla/realAlcazarSevilla3.jpg"
+                    ],
+                    "description":"El Real Alcázar (o Reales Alcázares) de Sevilla es un conjunto palaciego amurallado construido en diferentes etapas históricas. El palacio original se edificó en la Alta Edad Media. Se conservan algunos vestigios de arte islámico y, de la etapa posterior a la conquista castellana, un espacio palaciego mudéjar y otro de estilo gótico. En reformas posteriores se añadieron elementos renacentistas, manieristas y barrocos.<br /><br />Es la residencia de los miembros de la familia real española cuando visitan Sevilla. Esto hace que sea el palacio real en uso más antiguo de Europa. La Unesco lo declaró Patrimonio de la Humanidad, junto a la catedral de Sevilla y al Archivo de Indias, en el año 1987.<br /><br />En 2019 recibió 2 067 016 visitantes, convirtiéndolo en uno de los monumentos más visitados de España.<br /><br />",
+                    "latitude": 37.383226643589715, 
+                    "longitude": -5.9902257021718786, 
+                    "address": "Patio de Banderas, s/n, 41004 Sevilla",
+                    "yearBuilt": 1361,
+                    "video": [
+                        
+                    ]
+                },
+                {
+                    "name": "Sacra Capilla del Salvador",
+                    "identifier": "and6",
+                    "image": [
+                        "img/Comunidades/Andalucia/sacraCapillaSalvador/sacraCapillaSalvador1.jpg",
+                        "img/Comunidades/Andalucia/sacraCapillaSalvador/sacraCapillaSalvador2.jpg",
+                        "img/Comunidades/Andalucia/sacraCapillaSalvador/sacraCapillaSalvador3.jpg"
+                    ],
+                    "description":"La Sacra Capilla del Salvador del Mundo es un templo construido bajo patrocinio de Francisco de los Cobos como panteón anexo a su palacio de Úbeda (provincia de Jaén), en la actualmente llamada plaza Vázquez de Molina.<br /><br />Mandada construir en 1536, formaba parte de un extenso programa artístico (del que formaban parte su Palacio, una Universidad y un Hospital) destinado a encumbrar la fama, la fortuna y la gloria personal que había alcanzado el secretario personal de Carlos V; para lo que recurrió a artistas de primer nivel. El proyecto inicial se encargó al burgalés Diego de Siloé, mientras que la realización corrió a cargo de Andrés de Vandelvira a partir de 1540. El templo fue consagrado en 1559. Su primer capellán fue el Deán Ortega, para quien se construyó el gran palacio que hay a la izquierda de la fachada principal de la capilla.<br /><br />El Salvador fue la empresa más ambiciosa de toda la arquitectura religiosa privada del Renacimiento español. Declarado monumento histórico-artístico en 1931, se ha convertido, a su vez, en uno de los más divulgados símbolos de esta ciudad cuyo conjunto monumental renacentista, que junto con el de Baeza, fue declarado Patrimonio de la Humanidad por la Unesco en 2003.<br /><br />\n​",
+                    "latitude": 38.0081714301047, 
+                    "longitude": -3.3667641021538945, 
+                    "address": "Pl. Vázquez de Molina, 23400 Úbeda, Jaén",
+                    "yearBuilt": 1559,
+                    "video": [
+                        
+                    ]
+                },
+                {
+                    "name": "Alcazaba de Almería",
+                    "identifier": "and7",
+                    "image": [
+                        "img/Comunidades/Andalucia/alcazabaAlmeria/alcazabaAlmeria1.jpg",
+                        "img/Comunidades/Andalucia/alcazabaAlmeria/alcazabaAlmeria2.jpg",
+                        "img/Comunidades/Andalucia/alcazabaAlmeria/alcazabaAlmeria3.jpg"
+                    ],
+                    "description":"La alcazaba, castillo y murallas del Cerro de San Cristóbal de la ciudad española de Almería es uno de los conjuntos monumentales y arqueológicos andalusíes más importantes de la península ibérica. Sus casi mil años de historia nos ha permitido conocer la evolución experimentada en la arquitectura civil y militar durante la dominación árabe en Al-Ándalus, debido a su construcción en diferentes fases y épocas, como el castillo y torres de época bajomedieval cristiana (siglos XV-XVI), así como el origen y evolución de la ciudad (con un perímetro en total de toda la fortificación, según la Oficina de Turismo de Almería, de 1430 metros, contabilizando el castillo bajomedieval, la alcazaba conservada en la actualidad y el resto de murallas exteriores).<br /><br />Situadas en un cerro aislado, la Alcazaba es una sólida y extensa fortaleza con murallas de más de tres metros de anchura y cinco de altura, formando un recinto cerrado sobre sí mismo, pero conectado con los lienzos de la Muralla que configuran y dan sentido a su propio desarrollo, dentro de una unidad más compleja, como es la fortificación de la ciudad, en el que el barranco de la Hoya y el cerro de San Cristóbal mantiene una conexión directa con la Alcazaba, tanto física como visual, creando un conjunto de extraordinaria magnitud. La Alcazaba-castillo queda al sur conectada con la ciudad, y al norte el Cerro de San Cristóbal, que termina por definir un espacio único, de indudable interés cultural.<br /><br />",
+                    "latitude": 36.84019185110255, 
+                    "longitude": -2.470149415162552, 
+                    "address": "C. Almanzor, s/n, 04002 Almería",
+                    "yearBuilt": 955,
+                    "video": [
+                        
+                    ]
+                },
+                {
+                    "name": "Alcazaba de Málaga",
+                    "identifier": "and8",
+                    "image": [
+                        "img/Comunidades/Andalucia/alcazabaMalaga/alcazabaMalaga1.jpg",
+                        "img/Comunidades/Andalucia/alcazabaMalaga/alcazabaMalaga2.jpg",
+                        "img/Comunidades/Andalucia/alcazabaMalaga/alcazabaMalaga3.jpg"
+                    ],
+                    "description":"La alcazaba de Málaga (del árabe al-qaṣbah, قصبة, al qasbah, 'ciudadela') es una fortificación palaciega de la época islámica, construida sobre una anterior fortificación de origen fenicio-púnico. Se encuentra en las faldas del monte Gibralfaro, en una posición elevada pero contigua y unida al centro histórico de la ciudad, lo que constituía la antigua madina de Mālaqa, y en cuya cumbre se halla el Castillo de Gibralfaro.<br /><br />Ocupaba el extremo oriental del desaparecido recinto amurallado de la ciudad, de manera que los frentes de mediodía, poniente y norte quedaban a intramuros. Su superficie actual de 15 000 metros cuadrados no alcanza ni siquiera la mitad del tamaño que poseía en su época de esplendor, como demuestran los planos históricos conservados.<br /><br />Según el arquitecto restaurador, Leopoldo Torres Balbás, la Alcazaba de Málaga es el prototipo de la arquitectura militar del periodo taifa, siglo XI, con su doble recinto amurallado y gran cantidad de fortificaciones, siendo su único paralelo el castillo del Crac de los Caballeros, fortaleza levantada en Siria por los Cruzados entre los siglos XII y XIII.<br /><br />Este palacio-fortaleza es uno de los monumentos históricos de la ciudad, un espacio muy visitado por conjugar historia y belleza en un mismo recinto.<br /><br />",
+                    "latitude": 36.721319674443826, 
+                    "longitude": -4.415866602190636 , 
+                    "address": "C/ Alcazabilla, 2, 29012 Málaga",
+                    "yearBuilt": 772,
+                    "video": [
+                        
                     ]
                 }
             ]
@@ -39,33 +144,69 @@
         {
             "Aragón": [
                 {
-                    "name": "Monumento a los caídos",
+                    "name": "Palacio de la Aljafería",
                     "identifier": "ara1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Aragon/palacioAljaferia/palacioAljaferia1.jpg",
+                        "img/Comunidades/Aragon/palacioAljaferia/palacioAljaferia2.jpg",
+                        "img/Comunidades/Aragon/palacioAljaferia/palacioAljaferia3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920,
+                    "description":"El palacio de la Aljafería (en árabe, قصر الجعفرية, tr. Qaṣr al-Jaʿfariyah, por derivación de uno de los nombres del rey que lo mandó construir, Abú Yaáfar al-Muqtádir) es un palacio fortificado construido en Zaragoza en la segunda mitad del siglo XI por iniciativa de al-Muqtadir como residencia de los reyes hudíes de Saraqusta. Este palacio de recreo (llamado entonces Qasr al-Surur o 'palacio de la Alegría') refleja el esplendor alcanzado por el reino taifa en el periodo de su máximo apogeo político y cultural.<br /><br />Su importancia radica en que es el único testimonio conservado de un gran edificio del arte hispanomusulmán de la época de las taifas. De modo que, si se conserva un magnífico ejemplo del califato de Córdoba, su mezquita (siglo X), y otro del canto de cisne de la cultura islámica en al-Ándalus, del siglo XIV, la Alhambra de Granada, se debe incluir en la tríada de la arquitectura hispanomusulmana el palacio de la Aljafería de Zaragoza (siglo XI) como muestra de las realizaciones del arte taifa, época intermedia de reinos independientes anterior a la llegada de los almorávides. Los «restos mudéjares del palacio de la Aljafería» fueron declarados individualmente Patrimonio de la Humanidad por la Unesco en 1986 como parte del conjunto «Arquitectura mudéjar de Aragón».<br /><br />",
+                    "latitude": 41.656619206630175, 
+                    "longitude": -0.8971132020441072,
+                    "address": "Calle de los Diputados, s/n, 50003 Zaragoza",
+                    "yearBuilt": 1075,
                     "video": [
 
                     ]
                 },
                 {
-                    "name": "Catedral de Cádiz",
+                    "name": "Basílica de Nuestra Señora del Pilar",
                     "identifier": "ara2",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Aragon/basilicaPilar/basilicaPilar1.jpg",
+                        "img/Comunidades/Aragon/basilicaPilar/basilicaPilar2.jpg",
+                        "img/Comunidades/Aragon/basilicaPilar/basilicaPilar3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624,
+                    "description":"La catedral-basílica de Nuestra Señora del Pilar o Santo Templo Metropolitano de Nuestra Señora del Pilar es una de las dos seos o catedrales metropolitanas de la archidiócesis de Zaragoza, junto con la Seo del Salvador, además de basílica menor. Habitualmente es llamada simplemente «basílica del Pilar» o «el Pilar». Es un importante templo barroco dedicado a Nuestra Señora del Pilar en la ciudad de Zaragoza (Aragón, España).<br /><br />Según la tradición, se trata del primer templo mariano de la Cristiandad, puesto que en él se conserva y venera el pilar —en realidad, una columna de jaspe— que, según la tradición, fue puesto por la Virgen María quien, viviendo aún en Jerusalén, se habría aparecido en carne mortal al apóstol Santiago el día 2 de enero del año 40. Documentalmente no hay pruebas de lo consignado en la tradición, cuyos pormenores datan de 1297 —en una bula del papa Bonifacio VIII— y 1299 —una declaración de los Jurados de Zaragoza—, donde por primera vez se atestigua la advocación de «Santa María del Pilar», tras emprender en 1293 el obispo Hugo de Mataplana una rehabilitación del edificio que amenazaba ruina, gracias a las donaciones propiciadas por la mencionada bula papal.<br /><br />",
+                    "latitude": 41.656927289902306, 
+                    "longitude": -0.8785299308800025,
+                    "address": "Plaza del Pilar, s/n, 50003 Zaragoza",
+                    "yearBuilt": 1680,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Monasterio de nuestra señora de Rueda",
+                    "identifier": "ara3",
+                    "image": [
+                        "img/Comunidades/Aragon/monasterioRueda/monasterioRueda1.jpg",
+                        "img/Comunidades/Aragon/monasterioRueda/monasterioRueda2.jpg",
+                        "img/Comunidades/Aragon/monasterioRueda/monasterioRueda3.jpg"
+                    ],
+                    "description":"El monasterio de Nuestra Señora de Rueda es un monasterio perteneciente a la orden cisterciense situado en Sástago, en la Ribera Baja del Ebro, Zaragoza, Aragón, España.<br /><br />Se encuentra situado a 74 kilómetros de Zaragoza, en dirección a Castellón. Si bien se levanta a orillas del río Ebro, frente a la localidad de Escatrón, el monasterio se encuentra enclavado en terrenos del término municipal de Sástago.<br /><br />Como avanzada para la colonización y evangelización de nuevas tierras fronterizas, prácticamente deshabitadas, los reyes de Aragón impulsan el asentamiento. En un tramo navegable, aprovechando los recursos de una vega fértil y húmeda, con numerosas islas y riberas boscosas, una laguna salina en explotación y montes cercanos para el pastoreo.<br /><br />El origen del Monasterio de Rueda se inicia en 1152 con la fundación de la abadía de Nuestra Señora de Saltz realizada por los monjes de Gimont, que a su vez procedían de la casa madre Morimond. En 1162, a partir de la cesión de tierras en Burjazud (Villanueva de Gállego), se fundó la abadía de Juncería, precedente inmediato de Rueda.<br /><br />",
+                    "latitude": 41.297751079553976, 
+                    "longitude": -0.31439260205529723, 
+                    "address": "Ctra. Sástago-Escatrón, km. 9.50, 50780 Sástago, Zaragoza",
+                    "yearBuilt": 1300,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Acueducto de Teruel",
+                    "identifier": "ara4",
+                    "image": [
+                        "img/Comunidades/Aragon/acueductoTeruel/acueductoTeruel1.PNG",
+                        "img/Comunidades/Aragon/acueductoTeruel/acueductoTeruel2.PNG",
+                        "img/Comunidades/Aragon/acueductoTeruel/acueductoTeruel3.PNG"
+                    ],
+                    "description":"El acueducto de los Arcos o Traída de las Aguas es un acueducto de la ciudad de Teruel (España) y se trata de una de las obras de ingeniería más relevantes del Renacimiento español.<br /><br />Su construcción obedeció a la necesidad de mejorar el suministro de agua a la ciudad de Teruel, que hasta ese momento dependía de los grandes aljibes construidos en el último cuarto del siglo XIV en la actual plaza Carlos Castel y de varios pozos y aljibes más pequeños distribuidos por otros puntos del casco urbano. Las obras de la Traída se iniciaron en 1537, captándose el agua de la Peña del Macho, fuente situada a mitad de camino entre Teruel y Valdecebro; pero pronto debieron abandonarse debido a su elevado coste económico.<br /><br />",
+                    "latitude": 40.34557219895406, 
+                    "longitude": -1.1063884964409287, 
+                    "address": "C. Alcañiz, 23D, 44003 Teruel",
+                    "yearBuilt": 1547,
                     "video": [
 
                     ]
@@ -75,33 +216,69 @@
         {
             "Asturias": [
                 {
-                    "name": "Monumento a los caídos",
+                    "name": "Catedral de El Salvador de Oviedo",
                     "identifier": "ast1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Asturias/catedralSanSalvador/catedralSanSalvador1.jpg",
+                        "img/Comunidades/Asturias/catedralSanSalvador/catedralSanSalvador2.jpg",
+                        "img/Comunidades/Asturias/catedralSanSalvador/catedralSanSalvador3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920,
+                    "description":"La Santa Iglesia Basílica Catedral Metropolitana de San Salvador de Oviedo es una catedral de estilo gótico que se encuentra en la ciudad de Oviedo (Principado de Asturias, España). Es conocida también como Sancta Ovetensis, refiriéndose a la calidad y cantidad de las reliquias que contiene.<br /><br />Comenzó a edificarse a finales del siglo XIII por la sala capitular y el claustro, y su construcción se prolongó durante tres siglos hasta el remate de la torre a mediados del siglo XVI. Posteriormente se añadiría una girola en el siglo XVII además de diversas capillas anexas a las naves laterales.<br /><br />La iglesia está emplazada en el lugar del anterior conjunto catedralicio prerrománico del siglo IX, alguno de cuyos edificios han sobrevivido. Por esta razón y lo dilatado de la construcción del edificio actual, este contiene estructuras de estilo prerrománico (Cámara Santa), románico (bóvedas y apostolado de la Cámara Santa), gótico (fachada, naves y claustro), renacentista (remate de la torre) y barroco (Girola, Capilla del Rey Casto y otras capillas).<br /><br />",
+                    "latitude": 43.36259488175579, 
+                    "longitude": -5.843325401989949,
+                    "address": "Pl. Alfonso II el Casto, s/n, 33003 Oviedo, Asturias",
+                    "yearBuilt": 1288,
                     "video": [
 
                     ]
                 },
                 {
-                    "name": "Catedral de Cádiz",
+                    "name": "Palacio de Revillagigedo",
                     "identifier": "ast2",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Asturias/palacioRevillagigedo/palacioRevillagigedo1.jpg",
+                        "img/Comunidades/Asturias/palacioRevillagigedo/palacioRevillagigedo2.jpg",
+                        "img/Comunidades/Asturias/palacioRevillagigedo/palacioRevillagigedo3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624,
+                    "description":"El Palacio de Revillagigedo (o del Marqués de San Esteban de Natahoyo) es un palacio de la ciudad asturiana de Gijón (España). Ubicado en el barrio de Cimadevilla, forma un único conjunto con la colegiata de San Juan. Es una muestra notable de la arquitectura palaciega asturiana del siglo XVIII. En 1974 fue declarado Bien de Interés Cultural.<br /><br />Tanto el palacio como la Colegiata de San Juan pertenecen a la Fundación Bancaria Caja de Ahorros de Asturias y albergan el Centro Cultural Liberbank Palacio de Revillagigedo.<br /><br />La creación del edificio se debe a Carlos Miguel Ramírez de Jove, primer marqués de San Esteban de Natahoyo (título nobiliario otorgado por Felipe V el 20 de marzo de 1708), quien lo mandó construir en 1704 aprovechando la torre medieval de estilo gótico (siglo XV) preexistente. Es conocido como Palacio de Revillagigedo porque en la misma familia que lo construyó recayó posteriormente el título de condes de Revillagigedo. La obra finalizó en 1721, y estuvo bajo la dirección de Francisco Menéndez Camina, quien también proyectó el Palacio de Camposagrado de Avilés.<br /><br />",
+                    "latitude": 43.545480822192424, 
+                    "longitude": -5.663571201984026,
+                    "address": "Plaza del Marqués, 2, 33201 Gijón, Asturias",
+                    "yearBuilt": 1712,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Universidad Laboral de Gijón",
+                    "identifier": "ast3",
+                    "image": [
+                        "img/Comunidades/Asturias/universidadLaboralGijon/universidadLaboralGijon1.jpg",
+                        "img/Comunidades/Asturias/universidadLaboralGijon/universidadLaboralGijon2.jpg",
+                        "img/Comunidades/Asturias/universidadLaboralGijon/universidadLaboralGijon3.jpg"
+                    ],
+                    "description":"La Universidad Laboral de Gijón se encuentra situada en el municipio de Gijón (Asturias, España), concretamente en la parroquia de Cabueñes, a poco más de tres kilómetros del centro urbano. Construida entre 1946 y 1956, es la obra arquitectónica más importante realizada en el siglo XX en Asturias. Es, con sus 270 000 m², el edificio más grande de España.<br /><br />Está declarada Bien de interés cultural con la categoría de Monumento desde 2016.<br /><br />mediados de los años 1940, como consecuencia de un grave accidente laboral en una mina de la cuenca del Caudal, el subsecretario del Ministerio de Trabajo, Carlos Pinilla Turiño, que acudió al funeral de las víctimas de dicho accidente, se reunió en Gijón con un grupo de personalidades locales como Alejandro Pidal Guilhou; Álvaro Armada Ulloa, octavo conde de Revillagigedo, y Ricardo Heredia Guilhou, tercer conde de Benahavís, lideradas por el industrial minero José María Fernández «el Pontico», para impulsar la creación de un orfanato minero con la intención de ayudar a los afectados.<br /><br />",
+                    "latitude": 43.5250661696031, 
+                    "longitude": -5.622802530820577, 
+                    "address": "Universidad Laboral de Gijón, 33204 Gijón, Asturias",
+                    "yearBuilt": 1946,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Palacio Exposiciones y Congresos Oviedo",
+                    "identifier": "ast4",
+                    "image": [
+                        "img/Comunidades/Asturias/palacioCongresosOviedo/palacioCongresosOviedo1.webp",
+                        "img/Comunidades/Asturias/palacioCongresosOviedo/palacioCongresosOviedo2.webp",
+                        "img/Comunidades/Asturias/palacioCongresosOviedo/palacioCongresosOviedo3.webp"
+                    ],
+                    "description":"El Palacio de Exposiciones y Congresos Ciudad de Oviedo, que se encuentra en la ciudad española del mismo nombre, es obra del arquitecto valenciano Santiago Calatrava. Es uno de los edificios más singulares de Oviedo y se erige en la conocida como parcela de Buenavista, en lo que fueron los terrenos del antiguo estadio de fútbol Carlos Tartiere hasta el año 2003.<br /><br />El centro comercial entró en servicio en 2007 (cerrando en 2019) mientras que la sala de congresos sufrió un parón, no exento de polémica, debido a la crisis económica, inaugurándose en 2011.<br /><br />Según la ficha técnica de contenidos del complejo, el Palacio de Exposiciones y Congresos Ciudad de Oviedo se distribuye en tres plantas; la planta baja donde se encuentran el hall principal o área expositiva, con una superficie de 2300 m², una sala de reuniones con capacidad para 217 personas y una sala multiusos de 410 m²; una planta de acceso al Auditorio que dispone de 2.144 butacas y está cubierto por una gran cúpula de acero blanco de 45 m de altura (diseñada originalmente como un elemento móvil aunque a día de hoy no puede accionarse), y una tercera planta que da acceso a las 12 salas de reuniones.<br /><br />",
+                    "latitude": 43.35890899133832, 
+                    "longitude": -5.860768830825948, 
+                    "address": "C. Arturo Álvarez Buylla, 33005 Oviedo, Asturias",
+                    "yearBuilt": 2011,
                     "video": [
 
                     ]
@@ -111,36 +288,71 @@
         {
             "Baleares": [
                 {
-                    "name": "IslasBaleares1",
+                    "name": "Catedral-Basílica de Santa María",
                     "identifier": "bal1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/IslasBaleares/basilicaSantaMaria/basilicaSantaMaria1.jpg",
+                        "img/Comunidades/IslasBaleares/basilicaSantaMaria/basilicaSantaMaria2.jpg",
+                        "img/Comunidades/IslasBaleares/basilicaSantaMaria/basilicaSantaMaria3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1922,
+                    "description":"La Catedral-Basílica de Santa María en Palma (Mallorca) también llamada Catedral de Mallorca es el principal edificio religioso de la isla de Mallorca. En mallorquín, se la conoce como La Seu (Seu o Seo es el nombre que reciben las catedrales en la Corona de Aragón). Consiste en un templo de estilo gótico levantino construido a la orilla de la bahía de Palma. Se asoma al mar sobre las murallas romana y renacentistas que protegían a la ciudad, siendo la única catedral gótica que cumple con esta peculiaridad. Consiste también en la sede de la diócesis de Mallorca, su titular es la Asunción de María.<br /><br />En 1931 fue declarada Monumento Histórico-artístico. Además, se trata de la catedral con el mayor rosetón del mundo gótico, mayor rosetón original de todas las catedrales góticas europeas (13 metros de diámetro), ya que existen catedrales con rosetones de mayores dimensiones (15m) pero pertenecen al neogótico, y también una de las que tiene una nave de mayor altura entre las catedrales de estilo gótico europeas. El edificio es enorme, su bóveda alcanza una altura de 45 m solo superada por la Catedral de Beauvais 48 m, la catedral gótica más alta del mundo y ligeramente menor que la altura de la Catedral de Milán 45 m, en cambio supera a la Catedral de Colonia 43 m. El edificio abarca 6,655 m². El volumen interior es de 160,000 m³.<br /><br />",
+                    "latitude": 39.567598535301656, 
+                    "longitude": 2.648305840220208,
+                    "address": "Plaça de la Seu, s/n, 07001 Palma, Illes Balears",
+                    "yearBuilt": 1287,
                     "video": [
-                        "videos/alhambraGranada.mp4",
-                        "videos/alhambraGranada.webm"
+                        
                     ]
                 },
                 {
-                    "name": "IslasBaleares2",
+                    "name": "Castell de Bellver",
                     "identifier": "bal2",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/IslasBaleares/castellBellver/castellBellver1.jpg",
+                        "img/Comunidades/IslasBaleares/castellBellver/castellBellver2.jpg",
+                        "img/Comunidades/IslasBaleares/castellBellver/castellBellver3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1922,
+                    "description":"El castillo de Bellver es una fortificación de estilo gótico situada a unos tres kilómetros de la ciudad española de Palma de Mallorca, en Baleares. Fue construido a principios del siglo XIV por orden del rey Jaime II de Mallorca. Se encuentra sobre un monte de 112 metros sobre el nivel del mar, en una zona rodeada de bosque, desde donde se puede contemplar la ciudad, el puerto, la sierra de Tramuntana y el Llano de Mallorca; de hecho, su nombre viene del catalán antiguo bell veer, que significa «bella vista». Una de sus peculiaridades es que se trata de uno de los pocos castillos de toda Europa de planta circular, siendo el más antiguo de estos. Actualmente pertenece al Ayuntamiento de Palma, y en él se encuentra el Museo de Historia de la ciudad de Palma, por lo que está abierto al público.<br /><br />El diseño de planta circular con torres también circulares adosadas parece provenir del conjunto superior del Herodión (en Cisjordania), también circular y con una gran torre maestra y tres torres menores. Las torres menores están adosadas y la del homenaje está atravesada por un muro por lo que está adosada. Este edificio tampoco tiene un pórtico en el patio. A su vez, el castillo de Bellver inspiró el de Michelstetten que, aunque no tiene torres, sí cuenta con una galería superpuesta en el patio con arcos muy rebajados y columnas de planta circular<br /><br />",
+                    "latitude": 39.56398992224041, 
+                    "longitude": 2.6193454709072035,
+                    "address": "Carrer Camilo José Cela, s/n, 07014 Palma, Illes Balears",
+                    "yearBuilt": 1311,
                     "video": [
 
+                    ]
+                },
+                {
+                    "name": "Palacio Real de La Almudaina",
+                    "identifier": "bal3",
+                    "image": [
+                        "img/Comunidades/IslasBaleares/palacioAlmudaina/palacioAlmudaina1.jpg",
+                        "img/Comunidades/IslasBaleares/palacioAlmudaina/palacioAlmudaina2.jpg",
+                        "img/Comunidades/IslasBaleares/palacioAlmudaina/palacioAlmudaina3.jpg"
+                    ],
+                    "description":"La Almudaina es el Palacio Real o Alcázar Real de la ciudad de Palma de Mallorca, en España, y una de las residencias de la familia real española, gestionada por el organismo público Patrimonio Nacional. Recoge en sus muros la historia de las islas desde los asentamientos megalíticos.<br /><br />Este imponente alcázar, conocido en la época de la conquista con el nombre de \"Zuda\", fue reedificado en 1309 por el rey Jaime II, junto con su esposa Esclaramunda de Foix, según modelo del Palacio Real de Perpiñán. En La Almudaina tuvieron sucesivamente su corte los monarcas del reino de Mallorca, los de Aragón y los de España. Felipe II destinó el \"Tinell\" a Real Audiencia e instaló en el resto del edificio la Capitanía General de las Islas.<br /><br />La estructura actual de La Almudaina corresponde a la construida en el siglo XIV con sus diferentes espacios; los palacios del Rey y de la Reina, la capilla de Santa Ana o los baños, son los más destacados.<br /><br />Su decoración presenta dos ambientes: en la planta baja se recrea el estilo medieval con obras del siglo XV al XX. La planta superior, utilizada para la celebración de actos oficiales de la familia real, está decorada con objetos y mobiliario procedentes de otros Reales Sitios de los siglos XVII, XVIII y XIX.<br /><br />",
+                    "latitude": 39.56792359690135, 
+                    "longitude": 2.6474406224917373,
+                    "address": "Carrer del Palau Reial, s/n, 07001 Palma, Illes Balears",
+                    "yearBuilt": 1309,
+                    "video": [
+                        
+                    ]
+                },
+                {
+                    "name": "Castillo de Capdepera",
+                    "identifier": "bal4",
+                    "image": [
+                        "img/Comunidades/IslasBaleares/castilloCapdepera/castilloCapdepera1.jpg",
+                        "img/Comunidades/IslasBaleares/castilloCapdepera/castilloCapdepera2.jpg",
+                        "img/Comunidades/IslasBaleares/castilloCapdepera/castilloCapdepera3.jpg"
+                    ],
+                    "description":"El castillo de Capdepera es una fortaleza con recinto amurallado situada en el municipio español de Capdepera, en la isla de Mallorca. Su construcción comenzó en 1300, aunque en el siglo XIV fue reconstruido sobre los restos de una villa musulmana.<br /><br />Su importancia en la isla radica en que desde ella se llevó a cabo la rendición de Menorca, isla vecina de Mallorca en el archipiélago balear. Habiendo el rey Jaime I de Aragón conquistado Mallorca, pensó que necesitaba las tropas para su futura conquista de Valencia, por lo que ideó una estratagema para engañar a los musulmanes que residían en Menorca y hacer que estos se rindiesen. Para ello, ordenó encender cantidad de grandes hogueras en Capdepera, visibles desde la isla vecina y a modo de hacerles creer a los sarracenos menorquines que tenía ahí un gran ejército acampado y preparado para invadirles.<br /><br />La treta dio resultado, por lo que finalmente, en este mismo castillo, se firmó el tratado de Capdepera, por el cual se permitió a los musulmanes de Menorca permanecer en ella en sumisión al rey aragonés bajo tributaje.<br /><br />",
+                    "latitude": 39.704294591742155, 
+                    "longitude": 3.4333548978960953,
+                    "address": "Carrer Castell, s/n, 07580 Capdepera, Illes Balears",
+                    "yearBuilt": 1300,
+                    "video": [
+                       
                     ]
                 }
             ]
@@ -148,33 +360,69 @@
         {
             "Canarias": [
                 {
-                    "name": "Canarias1",
+                    "name": "Monumento a los caídos",
                     "identifier": "can1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Canarias/monumentoCaidos/monumentoCaidos1.jpg",
+                        "img/Comunidades/Canarias/monumentoCaidos/monumentoCaidos2.jpg",
+                        "img/Comunidades/Canarias/monumentoCaidos/monumentoCaidos3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1467,
+                    "description":"El Monumento a los Caídos es una torre en forma de cruz con un mirador en lo alto, cuya base contiene una cripta ya vacía. Este monumento fue construido por idea del Capitán General García Escámez durante el Mando Económico, tras la Guerra Civil. Rodeando la base se encuentra un conjunto escultórico proyectado por Enrique Cejas Zaldívar y Alonso Reyes.<br /><br />La confección de los bocetos se firmó el 25 de octubre de 1944. Ambos disponían de dos meses para modelarlos, y al cabo de este plazo las obras fueron expuestas en el Museo de Bellas Artes. Está formado en total por cuatro piezas escultóricas: la alegoría de la Patria sosteniendo al Caído; una mujer alada representando la Victoria y en alusión a aquellas expediciones marítimas que retornaron gloriosas a su tierra nativa, y dos figuras de soldados en posición de descanso y con una espada entre sus manos, que representan los valores cívico y militar, respectivamente. Las paredes de la base están cubiertas por bajorrelieves.<br /><br />El Monumento a los Caídos constituye una muestra de la arquitectura monumental franquista, con influencias de la arquitectura fascista italiana.<br /><br />",
+                    "latitude":28.466783434853948, 
+                    "longitude": -16.247125098923245,
+                    "address": "38003 Santa Cruz de Tenerife",
+                    "yearBuilt": 1950,
                     "video": [
 
                     ]
                 },
                 {
-                    "name": "Canarias2",
+                    "name": "Castillo de la Luz",
                     "identifier": "can2",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Canarias/castilloLuz/castilloLuz1.jpg",
+                        "img/Comunidades/Canarias/castilloLuz/castilloLuz2.jpg",
+                        "img/Comunidades/Canarias/castilloLuz/castilloLuz3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1812,
+                    "description":"El Castillo de La Luz o Fortaleza de las Isletas está situado en la calle Juan Rejón en el barrio de La Isleta junto al Puerto de La Luz, en la ciudad de Las Palmas de Gran Canaria, al norte de la isla de Gran Canaria de la que es capital de la provincia de Las Palmas, Canarias, España.<br /><br />Construido en 1494 al incorporarse la isla de Gran Canaria a la Corona de Castilla, su orden de construcción la dio el tercer Gobernador Alonso Fajardo para servir de fortaleza defensiva.<br /><br />Originalmente, la fortaleza estaba situada sobre un arrecife, aislándose en la pleamar, pero el continuo desarrollo de la ciudad lo ha dejado en tierra firme, quedando en la actualidad separado más de 150 metros del mar.<br /><br />Se edificó sobre un fuerte de madera construido por el Capitán Juan Rejón cuando comenzó la conquista de Canarias en 1478. Se construyó en diferentes fases en función de las necesidades defensivas. En primer lugar, la torre cuadrangular de estilo medieval, conocida como la Torre de Alonso Fajardo. A continuación, en torno a 1515, se levantó un baluarte defensivo perimetral que se amplió unos años más tarde. En 1553 recibió unos añadidos y sufrió una reconstrucción tras el incendio de 1599, originado por la armada holandesa capitaneada por Pieter van der Does. Por último, en el último tercio del siglo XVII se construyó la estructura exterior que se puede ver en la actualidad.<br /><br />",
+                    "latitude": 28.14893912897468, 
+                    "longitude": -15.424772187062912,
+                    "address": "C. Juan Rejón, s/n, 35008 Palmas De Gran Canaria ( Las ), Las Palmas",
+                    "yearBuilt": 1494,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Catedral de Arucas",
+                    "identifier": "can3",
+                    "image": [
+                        "img/Comunidades/Canarias/catedralArucas/catedralArucas1.jpg",
+                        "img/Comunidades/Canarias/catedralArucas/catedralArucas1.jpg",
+                        "img/Comunidades/Canarias/catedralArucas/catedralArucas1.jpg"
+                    ],
+                    "description":"La parroquia matriz de san Juan Bautista es un templo católico que se encuentra en el casco histórico de la ciudad de Arucas, en Gran Canaria (Canarias, España). Obra del arquitecto Manuel Vega, comenzó a construirse en 1909, prolongándose las obras durante 70 años. Conocida popularmente como La catedral de Arucas (a pesar de no ser catedral ni basílica), por su aspecto exterior, constituye uno de los edificios emblemáticos de la isla de Gran Canaria.<br /><br />Tras la conquista de la isla de Gran Canaria por los Reyes Católicos en el año 1483, se establece en Arucas un nuevo poblamiento a imagen del recién importado modelo castellano, en el mismo emplazamiento que, previamente, ocupó la población aborigen. Parece que la fundación del nuevo caserío ya era un hecho en 1503, con la concentración de un reducido núcleo de casas en torno a una pequeña ermita dedicada a San Juan Bautista, en una zona entre el llamado \"Teatro nuevo\" y la actual iglesia.<br /><br />El auge de la comarca propició que la ermita fuera elevada a parroquia en 1515. Con el paso del tiempo, la vieja iglesia se fue deteriorando, obligando a una importante reedificación en el siglo XVI, a la que siguieron sucesivas restauraciones.<br /><br />",
+                    "latitude": 28.118927626410844, 
+                    "longitude": -15.523197696319796,
+                    "address": "C. Párroco Cárdenes, 3, 35400 Arucas, Las Palmas",
+                    "yearBuilt": 1943,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Catedral de San Cristóbal de La Laguna",
+                    "identifier": "can4",
+                    "image": [
+                        "img/Comunidades/Canarias/catedralSanCristobal/catedralSanCristobal1.jpg",
+                        "img/Comunidades/Canarias/catedralSanCristobal/catedralSanCristobal2.jpg",
+                        "img/Comunidades/Canarias/catedralSanCristobal/catedralSanCristobal3.jpg"
+                    ],
+                    "description":"La Santa Iglesia Catedral de San Cristóbal de La Laguna o Santa Iglesia Catedral de Nuestra Señora de Los Remedios, en la ciudad de San Cristóbal de La Laguna, en la isla de Tenerife (Canarias, España), es una catedral neogótica en su cuerpo principal y neoclásica en la fachada, sede de la Diócesis de San Cristóbal de La Laguna (más conocida como Diócesis de Tenerife), dependiente de la Archidiócesis de Sevilla. Es por lo tanto, donde se encuentra la sede episcopal del obispo de esta diócesis, actualmente ocupada por Monseñor Bernardo Álvarez Afonso.<br /><br />En la catedral está la sede de la parroquia de Nuestra Señora de los Remedios, advocación mariana a la cual está consagrada la catedral y patrona de la ciudad de La Laguna, de la isla de Tenerife y de la Diócesis Nivariense. Por esta razón, la catedral es también el Santuario Mariano de Nuestra Señora de los Remedios. En este templo reposan los restos de Alonso Fernández de Lugo, conquistador de la isla y fundador de la ciudad, llamado \"El Adelantado\", título que le concedió la Corona española.<br /><br />Los elementos más representativos de la Catedral de La Laguna son: la fachada neoclásica, la cual está inspirada en la de la Catedral de Pamplona y la cúpula, que destaca sobremanera en el paisaje de la ciudad. La catedral se encuentra en el casco histórico de la ciudad de La Laguna, declarado Patrimonio de la Humanidad en 1999, por la Unesco.<br /><br />",
+                    "latitude": 28.48922662007924, 
+                    "longitude": -16.316509431234806,
+                    "address": "Pl. de los Remedios, 38201 San Cristóbal de La Laguna, Santa Cruz de Tenerife",
+                    "yearBuilt": 1910,
                     "video": [
 
                     ]
@@ -184,49 +432,69 @@
         {
             "Cantabria": [
                 {
-                    "name": "Cantabria1",
+                    "name": "El Capricho de Gaudí",
                     "identifier": "cant1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Cantabria/caprichoGaudi/caprichoGaudi1.jpg",
+                        "img/Comunidades/Cantabria/caprichoGaudi/caprichoGaudi2.jpg",
+                        "img/Comunidades/Cantabria/caprichoGaudi/caprichoGaudi3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -7.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1364,
+                    "description":"La Villa Quijano, popularmente conocida como El Capricho, es un edificio modernista situado en la localidad cántabra de Comillas. Fue proyectado por Antoni Gaudí y construido entre 1883 y 1885 bajo la dirección de Cristóbal Cascante, ayudante del arquitecto reusense, por encargo del indiano Máximo Díaz de Quijano. Es una de las pocas obras que Gaudí proyectó fuera de Cataluña.<br /><br />Esta obra pertenece a la etapa orientalista de Gaudí (1883-1888), periodo en que el arquitecto realizó una serie de obras de marcado gusto oriental, inspiradas en el arte del Próximo y Lejano Oriente (India, Persia, Japón), así como en el arte islámico hispánico, principalmente el mudéjar y nazarí. Gaudí empleó con gran profusión la decoración en azulejo cerámico así como los arcos mitrales, cartelas de ladrillo visto y remates en forma de templete o cúpula.<br /><br />El edificio cayó en el abandono tras la Guerra Civil, estado en el que siguió pese a su declaración como Bien de Interés Cultural en 1969. En 1977 la última descendiente de los López-Díaz de Quijano, Pilar Güell Martos, vendió la propiedad al empresario Antonio Díaz quien lo restauró en 1988 y lo convirtió en un restaurante. En 1992 fue comprado por el grupo japonés Mido Development. Por último, en 2009, el edificio se convirtió en museo.<br /><br />",
+                    "latitude": 43.75820075982585, 
+                    "longitude": -4.292907855924643,
+                    "address": "Bo. Sobrellano, s/n, 39520 Comillas, Cantabria",
+                    "yearBuilt": 1884,
                     "video": [
 
                     ]
                 },
                 {
-                    "name": "Cantabria2",
+                    "name": "Palacio de la Magdalena",
                     "identifier": "cant2",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Cantabria/palacioMagdalena/palacioMagdalena1.jpg",
+                        "img/Comunidades/Cantabria/palacioMagdalena/palacioMagdalena2.jpg",
+                        "img/Comunidades/Cantabria/palacioMagdalena/palacioMagdalena3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -6.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1894,
+                    "description":"El Real Palacio de la Magdalena es un edificio situado en la península de la Magdalena, frente a la isla de Mouro, en la ciudad de Santander (Cantabria, España), y que fue construido entre 1909 y 1911, por suscripción popular, para albergar a la familia real española. Obra de los arquitectos Javier González Riancho y Gonzalo Bringas Vega, se enclava en el lugar donde estuvo el antiguo fortín de San Salvador de Hano, que protegía la entrada a la bahía.<br /><br />Costó 700 000 pesetas de 1912 y fue sufragado por el ayuntamiento y un gran número de familias lugareñas que desempeñaron un laborioso micromecenazgo, como las 100 000 pesetas de la Sociedad El Sardinero o las 1000 pesetas de la familia Botín. Los problemas financieros para poder costear la obra hicieron que la Comisión Ejecutiva llegase incluso a comprar lotería de Navidad para probar suerte, sin éxito.<br /><br />Fue amueblado en 1913, pasando de inmediato a ser residencia de verano del rey Alfonso XIII y su familia, quienes lo ocuparon regularmente hasta la proclamación de la Segunda República. En 1914 fueron proyectadas las caballerizas por González Riancho, las cuales emulan a un poblado inglés medieval con tejados puntiagudos de vertientes pronunciadas, entramados de madera vista, etc.<br /><br />",
+                    "latitude": 43.65337849546226, 
+                    "longitude": -3.772085739168198,
+                    "address": "Av. de la Magdalena, 1, 39005 Santander, Cantabria",
+                    "yearBuilt": 1910,
                     "video": [
 
                     ]
                 },
                 {
-                    "name": "Cantabria3",
+                    "name": "Palacio de Festivales de Cantabria",
                     "identifier": "cant3",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Cantabria/palacioFestivales/palacioFestivales1.jpg",
+                        "img/Comunidades/Cantabria/palacioFestivales/palacioFestivales2.jpg",
+                        "img/Comunidades/Cantabria/palacioFestivales/palacioFestivales3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1894,
+                    "description":"El Palacio de Festivales de Cantabria (PFC) es un emblemático teatro de la ciudad de Santander, en Cantabria (España). El edificio está situado frente a la bahía de Santander y sus amplias instalaciones e infraestructura técnica permiten además la celebración de congresos, juntas y convenciones de cualquier tipo. Con una vocación multidisciplinar (teatro, cine, música, danza), este centro cultural ofrece una programación artística continuada durante todo el año, atrayendo personalidades relevantes de la escena, tanto nacional como internacional.<br /><br />Los materiales que predominan en el edificio son el mármol y el cobre. Su entrada principal se inspira en los teatros griegos y su interior destaca por su lograda acústica.<br /><br />El Palacio de Festivales se ha convertido en símbolo arquitectónico y cultural del Santander del siglo XX. Desde 1952 se utilizó la Plaza Porticada para acoger el Festival Internacional de Santander (FIS), pero era una medida provisional.<br /><br />",
+                    "latitude": 43.462579979644424, 
+                    "longitude": -3.7898150191815354,
+                    "address": "Calle de Gamazo, 39004 Santander, Cantabria",
+                    "yearBuilt": 1990,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Colegiata de Santillana del Mar",
+                    "identifier": "cant4",
+                    "image": [
+                        "img/Comunidades/Cantabria/colegiataSantillana/colegiataSantillana1.jpg",
+                        "img/Comunidades/Cantabria/colegiataSantillana/colegiataSantillana2.jpg",
+                        "img/Comunidades/Cantabria/colegiataSantillana/colegiataSantillana3.jpg"
+                    ],
+                    "description":"La colegiata de Santa Juliana de Santillana del Mar (Cantabria, España), a la que debe su nombre esta localidad cántabra (Sant Iuliana-Santillana), es uno de los monumentos románicos más representativos de la región. Fue declarada Monumento Nacional de España el 12 de marzo de 1889.<br /><br />En 2015, en la aprobación por la Unesco de la ampliación del Camino de Santiago en España a «Caminos de Santiago de Compostela: Camino francés y Caminos del Norte de España», fue incluido como uno de los bienes individuales (n.º ref. 669bis-012) del camino costero.<br /><br />Supuestamente la joven Juliana de Nicomedia fue martirizada en Asia Menor (hoy Turquía) durante las persecuciones emprendidas por el emperador Diocleciano a finales del siglo III, y sus restos traídos en el siglo IX a este lugar del Reino de Asturias por algunos monjes peregrinos. En época del rey de Asturias Alfonso III (los documentos lo sitúan en 870) se construyó una ermita bajo la advocación de la santa donde custodiar y venerar sus reliquias, y luego un cenobio que prosperó bajo la protección de la nobleza local.<br /><br />",
+                    "latitude": 43.39252032119922, 
+                    "longitude": -4.105944159660766,
+                    "address": "Pl. las Arenas, 1A, 39330 Santillana del Mar, Cantabria",
+                    "yearBuilt": 1150,
                     "video": [
 
                     ]
@@ -236,33 +504,69 @@
         {
             "Castilla-La Mancha": [
                 {
-                    "name": "CastillaLaMancha1",
+                    "name": "Santa Iglesia Catedral Primada de Toledo",
                     "identifier": "man1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/CastillaLaMancha/catedralPrimada/catedralPrimada1.jpg",
+                        "img/Comunidades/CastillaLaMancha/catedralPrimada/catedralPrimada2.jpg",
+                        "img/Comunidades/CastillaLaMancha/catedralPrimada/catedralPrimada3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1551,
+                    "description":"La catedral de Santa María, llamada también Catedral Primada de España, es un templo católico de arquitectura gótica en Toledo, considerado por algunos como el opus magnum de este estilo en España. Su construcción comenzó en 1226 bajo el reinado de Fernando III el Santo y las últimas aportaciones góticas se dieron en siglo XV cuando en 1493 se cerraron las bóvedas de los pies de la nave central, en tiempos de los Reyes Católicos. Está construida con piedra blanca de Olihuelas (en el término de Olías del Rey).<br /><br />Se la conoce popularmente como Dives Toletana (con el sentido de la rica toledana). Es sede de la Archidiócesis de Toledo.<br /><br />La ciudad había sido sede obispal de la Hispania visigoda. Los numerosos Concilios de Toledo atestiguan su importante pasado eclesiástico. También la abjuración del arrianismo por parte de Recaredo había tenido en ella su lugar y tiempo. La invasión musulmana no eliminó de inmediato la impronta cristiana y el obispado se trasladó y quedó establecido en la iglesia de Santa María de Alfizén.<br /><br />",
+                    "latitude": 39.857269215986406, 
+                    "longitude": -4.023568802099329,
+                    "address": "Calle Cardenal Cisneros, 1, 45002 Toledo",
+                    "yearBuilt": 1227,
                     "video": [
 
                     ]
                 },
                 {
-                    "name": "CastillaLaMancha2",
+                    "name": "Alcázar de Toledo",
                     "identifier": "man2",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/CastillaLaMancha/alcazarToledo/alcazarToledo1.jpg",
+                        "img/Comunidades/CastillaLaMancha/alcazarToledo/alcazarToledo2.jpg",
+                        "img/Comunidades/CastillaLaMancha/alcazarToledo/alcazarToledo3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1629,
+                    "description":"El alcázar de Toledo o Real alcázar de Toledo es una fortificación de carácter civil y militar, ubicada en una de las partes más altas de la ciudad española de Toledo. Se trata de una gran edificación de forma cuadrangular de 60 metros de lado, enmarcada con cuatro grandes torres de 60 metros de altura, cada una coronada por el típico chapitel madrileño de pizarra. Su privilegiada situación ha hecho de él un lugar de gran valor estratégico y así lo intuyeron los diversos pueblos que se asentaron en él. Su nombre se debe a uno de esos dominadores: los árabes, que fueron los que lo llamaron «Al Qasar» القصر, que significa «fortaleza».<br /><br />Una vez utilizado como palacio romano en el siglo III, fue restaurado bajo el reinado de Carlos I y su hijo Felipe II en la década de 1540. En 1521, Hernán Cortés fue recibido por Carlos I en el alcázar, tras la conquista del Imperio azteca. La mayor parte del alcázar fue reconstruida o restaurada entre 1939 y 1957 después del asedio del Alcázar en la guerra civil española.<br /><br />Actualmente el alcázar de Toledo es sede del Museo del Ejército y de la Biblioteca de Castilla-La Mancha. Está protegido como Bien de Interés Cultural.<br /><br />",
+                    "latitude": 39.85793155021721, 
+                    "longitude": -4.020485473263399,
+                    "address": "C. de la Union, s/n, 45001 Toledo",
+                    "yearBuilt": 1540,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Monasterio de San Juan de los Reyes",
+                    "identifier": "man3",
+                    "image": [
+                        "img/Comunidades/CastillaLaMancha/monasterioSanjuanReyes/monasterioSanjuanReyes1.jpg",
+                        "img/Comunidades/CastillaLaMancha/monasterioSanjuanReyes/monasterioSanjuanReyes2.jpg",
+                        "img/Comunidades/CastillaLaMancha/monasterioSanjuanReyes/monasterioSanjuanReyes3.jpg"
+                    ],
+                    "description":"El convento de San Juan de los Reyes es un cenobio de la ciudad española de Toledo perteneciente a la Orden Franciscana, que fue construido bajo el patrocinio de la reina Isabel I de Castilla con la intención de convertirlo en mausoleo real, en conmemoración de la batalla de Toro y del nacimiento del príncipe Juan. Se trata de una de las más valiosas muestras del estilo gótico isabelino y el edificio más importante erigido por los Reyes Católicos. El convento es, además, un monumento conmemorativo de los logros de los Reyes Católicos y de su programa político.<br /><br />El monasterio de San Juan de los Reyes, considerado como el edificio más representativo del gótico toledano, fue mandado construir por los Reyes Católicos bajo el patrocinio directo de la reina, hasta el punto de ser citado varias veces en la documentación como «monasterio de San Juan de la Reina».<br /><br />Dedicado a San Juan para memoria del rey don Juan su padre, fue levantado para conmemorar, también, la victoria de Toro (1476) y el nacimiento del príncipe don Juan (1478), así como para crear una iglesia colegial de canónigos que sirviera como panteón real, según cuenta fray Pedro de Salazar, cronista de la orden franciscana.<br /><br />",
+                    "latitude": 39.85832376745075, 
+                    "longitude": -4.0314855100379186,
+                    "address": "C. de los Reyes Católicos, 17, 45002 Toledo",
+                    "yearBuilt": 1490,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Castillo de Belmonte",
+                    "identifier": "man4",
+                    "image": [
+                        "img/Comunidades/CastillaLaMancha/castilloBelmonte/castilloBelmonte1.jpg",
+                        "img/Comunidades/CastillaLaMancha/castilloBelmonte/castilloBelmonte2.jpg",
+                        "img/Comunidades/CastillaLaMancha/castilloBelmonte/castilloBelmonte3.jpg"
+                    ],
+                    "description":"El castillo de Belmonte es una fortaleza que se eleva en el cerro de San Cristóbal, a las afueras de la villa de Belmonte, al suroeste de la provincia de Cuenca. Fue declarado Monumento histórico-artístico perteneciente al Tesoro Artístico Nacional mediante decreto de 3 de junio de 1931. Actualmente, está considerado como Bien de Interés Cultural (BIC).<br /><br />El castillo de Belmonte es un singular edificio que hace por su estado de conservación, por su especial estructura, y por su aspecto exterior, prácticamente el mismo que tuvo en el momento de su construcción, constituye un valioso tesoro patrimonial. Fue construido en la segunda mitad del siglo XV, por orden de don Juan Pacheco, primer marqués de Villena. Era un momento de convulsiones y luchas internas en la Corona de Castilla. El marqués se proponía acumular territorios y construir fortalezas para hacerse fuerte ante los problemas sucesorios que se avecinaban.<br /><br />En 1456, en el cerro de San Cristóbal, se inician las obras de construcción del castillo que duraron aproximadamente hasta 1468, pues en 1472 don Juan Pacheco contrae terceras nupcias con doña María Velasco de la cual no hay ni un solo escudo en el castillo.<br /><br />",
+                    "latitude": 39.558038647735266, 
+                    "longitude": -2.6966416290929596,
+                    "address": "Calle Eugenia de Montijo, s/n, 16640 Belmonte, Cuenca",
+                    "yearBuilt": 1456,
                     "video": [
 
                     ]
@@ -272,33 +576,69 @@
         {
             "Castilla y León": [
                 {
-                    "name": "Monumento a los caídos",
+                    "name": "Alcázar de Segovia",
                     "identifier": "leo1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/CastillaYLeon/alcazarSegovia/alcazarSegovia1.jpg",
+                        "img/Comunidades/CastillaYLeon/alcazarSegovia/alcazarSegovia2.jpg",
+                        "img/Comunidades/CastillaYLeon/alcazarSegovia/alcazarSegovia3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920,
+                    "description":"El Alcázar de Segovia, que data de principios del siglo XII, es uno de los castillos medievales más famosos del mundo y uno de los monumentos más visitados de España. Por sus estancias han pasado veintidós reyes, además de algunos de los personajes más destacados de la Historia.<br /><br />Su imponente perfil se levanta, majestuoso, sobre el valle del Eresma y es símbolo de la Ciudad vieja de Segovia, declarada Patrimonio Mundial de la Unesco en 1985.<br /><br />Palacio y fortaleza de los Reyes de Castilla, su traza refleja el esplendor de la Corte durante el medievo, y sus muros han sido testigos de batallas, intrigas palaciegas, bodas reales y sucesos asombrosos. En su ya milenaria existencia, el Alcázar ha sido castro romano, fortaleza medieval, palacio real, custodio del tesoro real, prisión de estado, Real Colegio de Artillería y Archivo General Militar.<br /><br />El castillo segoviano es uno de los ejemplos más notables de fortaleza militar del siglo XII y un caso único en la historia de la arquitectura española y europea, castillo y residencia real, cual su apelativo indica: \"alcáçar\", con el que ya se le conoce en 1135, reinando Alfonso VII el emperador.<br /><br />",
+                    "latitude": 40.952916855010194, 
+                    "longitude": -4.132569988573623,
+                    "address": "Pl. Reina Victoria Eugenia, s/n, 40003 Segovia",
+                    "yearBuilt": 1120,
                     "video": [
 
                     ]
                 },
                 {
-                    "name": "Catedral de Cádiz",
+                    "name": "Acueducto de Segovia",
                     "identifier": "leo2",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/CastillaYLeon/acueductoSegovia/acueductoSegovia1.jpg",
+                        "img/Comunidades/CastillaYLeon/acueductoSegovia/acueductoSegovia2.jpg",
+                        "img/Comunidades/CastillaYLeon/acueductoSegovia/acueductoSegovia3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624,
+                    "description":"El acueducto de Segovia es un acueducto romano que llevaba aguas a la ciudad española de Segovia. Su construcción data de principios del siglo II d. C., a finales del reinado del emperador Trajano o principios del de Adriano. La parte más visible, y por lo tanto famosa, es la arquería que cruza la plaza del Azoguejo, en la ciudad.<br /><br />El acueducto de Segovia conduce las aguas del manantial de la Fuenfría, situado en la sierra cercana a 17 kilómetros de la ciudad, en un paraje denominado La Acebeda.<br /><br />Recorre más de 15 km antes de llegar a la ciudad. El agua se recoge primeramente en una cisterna conocida con el nombre de El Caserón, para ser conducida a continuación por un canal de sillares hasta una segunda torre (llamada Casa de Aguas), donde se decanta y desarena, para continuar su camino. Después recorre 813 m (con una pendiente de un 1 %) hasta lo alto del Postigo (el espolón rocoso sobre el que se asentaba la ciudad en torno al Alcázar). Antes, en la plaza de Día Sanz, hace un brusco giro y se dirige hacia la plaza del Azoguejo, donde salva la depresión con una arquería, que presenta todo el esplendor del monumento.<br /><br />En la parte más elevada mide 28 m (con cerca de 6 m de cimientos) y tiene dos órdenes de arcos sobre pilares. En total, tiene 167 arcos.<br /><br />",
+                    "latitude": 40.94833103979135, 
+                    "longitude": -4.11780977670726,
+                    "address": "Plaza del Azoguejo, 1, 40001 Segovia",
+                    "yearBuilt": 114,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Catedral de Burgos",
+                    "identifier": "leo3",
+                    "image": [
+                        "img/Comunidades/CastillaYLeon/catedralBurgos/catedralBurgos1.jpg",
+                        "img/Comunidades/CastillaYLeon/catedralBurgos/catedralBurgos2.jpg",
+                        "img/Comunidades/CastillaYLeon/catedralBurgos/catedralBurgos3.jpg"
+                    ],
+                    "description":"La Santa Iglesia Catedral Basílica Metropolitana de Santa María es un templo catedralicio de culto católico dedicado a la Virgen María, en la ciudad española de Burgos.<br /><br />Su construcción comenzó en 1221, siguiendo patrones góticos franceses. Tuvo importantísimas modificaciones en los siglos XV y XVI: las agujas de la fachada principal, la capilla del Condestable y el cimborrio del crucero, elementos del gótico flamígero que dotan al templo de su perfil inconfundible. Las últimas obras de importancia (la sacristía o la capilla de santa Tecla) pertenecen ya al siglo XVIII, siglo en el que también se modificaron las portadas góticas de la fachada principal. La construcción y remodelaciones posteriores se hicieron con piedra caliza extraída de las canteras de la cercana localidad de Hontoria de la Cantera.<br /><br />Los elementos decorativos y el mobiliario litúrgico del interior pertenecen a variados estilos artísticos, desde el propio Gótico, el Renacimiento o el Barroco.<br /><br />",
+                    "latitude": 42.3409633790679, 
+                    "longitude": -3.7043962308584875,
+                    "address": "Plaza de Santa María, s/n, 09003 Burgos",
+                    "yearBuilt": 1260,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Castillo de Coca",
+                    "identifier": "leo4",
+                    "image": [
+                        "img/Comunidades/CastillaYLeon/castilloCoca/castilloCoca1.jpg",
+                        "img/Comunidades/CastillaYLeon/castilloCoca/castilloCoca2.jpg",
+                        "img/Comunidades/CastillaYLeon/castilloCoca/castilloCoca3.jpg"
+                    ],
+                    "description":"El castillo de Coca es una fortificación de la localidad de Coca (Segovia, Castilla y León); fue construido en el siglo XV y está considerado una de las mejores muestras del gótico-mudéjar español. Propiedad de la Casa de Rozas, cedido al ministerio de Agricultura de España desde el año 1954. Una maqueta a escala de este castillo se encuentra en el Parque temático Mudéjar de Olmedo y otra réplica en Minimundus, Klagenfurt (Austria).<br /><br />El castillo está situado a las afueras de la villa de Coca (Segovia), de la que recibe su nombre. Se levanta sobre el meandro del río Voltoya, afluente del Eresma. Construido en el siglo XV sobre una explanada de una zona escarpada, es uno de los mejores exponentes de la arquitectura gótico-mudéjar española, y está declarado Monumento Nacional.<br /><br />Es una de las pocas fortalezas de España que no se asienta sobre un cerro,  sino sobre unos escarpes del terreno. Rodea el edificio un ancho y profundo foso.<br /><br />",
+                    "latitude": 41.21555698139891, 
+                    "longitude": -4.525495730893736,
+                    "address": "Av. Banda de Música de, 40480 Coca, Segovia",
+                    "yearBuilt": 1473,
                     "video": [
 
                     ]
@@ -308,33 +648,69 @@
         {
             "Cataluña": [
                 {
-                    "name": "Monumento a los caídos",
+                    "name": "La Sagrada Familia",
                     "identifier": "cat1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Cataluña/sagradaFamilia/sagradaFamilia1.jpg",
+                        "img/Comunidades/Cataluña/sagradaFamilia/sagradaFamilia2.jpg",
+                        "img/Comunidades/Cataluña/sagradaFamilia/sagradaFamilia3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920,
+                    "description":"El Templo Expiatorio de la Sagrada Familia (en catalán, Temple Expiatori de la Sagrada Família), conocido simplemente como la Sagrada Familia, es una basílica católica de Barcelona (España), diseñada por el arquitecto Antoni Gaudí. Iniciada en 1882, todavía está en construcción. Es la obra maestra de Gaudí, y el máximo exponente de la arquitectura modernista catalana. Es uno de los monumentos más visitados de España, junto al Museo del Prado y la Alhambra de Granada, y es la iglesia más visitada de Europa tras la basílica de San Pedro del Vaticano. Cuando esté finalizada será la iglesia cristiana más alta del mundo.<br /><br />La Sagrada Familia es un reflejo de la plenitud artística de Gaudí: trabajó en ella durante la mayor parte de su carrera profesional, pero especialmente en los últimos años de su carrera, donde llegó a la culminación de su estilo naturalista, haciendo una síntesis de todas las soluciones y estilos probados hasta aquel entonces.<br /><br />Gaudí logró una perfecta armonía en la interrelación entre los elementos estructurales y los ornamentales, entre plástica y estética, entre función y forma, entre contenido y continente, logrando la integración de todas las artes en un todo estructurado y lógico.<br /><br />",
+                    "latitude": 41.40379485011821, 
+                    "longitude": 2.174345069112097,
+                    "address": "C/ de Mallorca, 401, 08013 Barcelona",
+                    "yearBuilt": 1882,
                     "video": [
 
                     ]
                 },
                 {
-                    "name": "Catedral de Cádiz",
+                    "name": "Parque Güell",
                     "identifier": "cat2",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Cataluña/parqueGüell/parqueGüell1.jpeg",
+                        "img/Comunidades/Cataluña/parqueGüell/parqueGüell2.jpeg",
+                        "img/Comunidades/Cataluña/parqueGüell/parqueGüell3.jpeg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624,
+                    "description":"El parque Güell (parc Güell en catalán y Park Güell en su denominación original) es un parque público con jardines y elementos arquitectónicos situado en la parte superior de la ciudad de Barcelona (España), en las estribaciones de la sierra de Collserola. El parque se halla en la ladera sur del monte Carmelo (barrio de La Salud, en el distrito de Gracia) y colindante a la ladera norte donde se encuentra el parque del Carmelo (barrio de El Carmelo, del distrito de Horta-Guinardó).<br /><br />Ideado como urbanización, el parque fue diseñado por el arquitecto Antoni Gaudí, máximo exponente del modernismo catalán, por encargo del empresario Eusebi Güell. Construido entre 1900 y 1914, fue inaugurado como parque público en 1926.<br /><br />El parque Güell es un reflejo de la plenitud artística de Gaudí: pertenece a su etapa naturalista (primera década del siglo XX), período en que el arquitecto perfeccionó su estilo personal, a través de la inspiración en las formas orgánicas de la naturaleza, para lo que puso en práctica toda una serie de nuevas soluciones estructurales originadas en sus profundos análisis de la geometría reglada. A ello añade el artista catalán una gran libertad creativa y una imaginativa creación ornamental: partiendo de cierto barroquismo sus obras adquieren gran riqueza estructural, de formas y volúmenes desprovistos de rigidez racionalista o de cualquier premisa clásica.<br /><br />",
+                    "latitude": 41.41487696424638, 
+                    "longitude": 2.1526730402765617,
+                    "address": "08024 Barcelona",
+                    "yearBuilt": 1907,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Casa Milà",
+                    "identifier": "cat3",
+                    "image": [
+                        "img/Comunidades/Cataluña/casaMila/casaMila1.jpg",
+                        "img/Comunidades/Cataluña/casaMila/casaMila2.jpg",
+                        "img/Comunidades/Cataluña/casaMila/casaMila3.jpg"
+                    ],
+                    "description":"La Casa Milà, llamada popularmente «La Pedrera» («cantera» en catalán), es un edificio modernista obra del arquitecto Antoni Gaudí, construido entre los años 1906 y 1910 en el distrito del Ensanche de Barcelona, en el número 92 del paseo de Gracia. La casa fue edificada por encargo del matrimonio Pedro Milá y Camps y Roser Segimon, y Gaudí contó con la colaboración de sus ayudantes Josep Maria Jujol, Domingo Sugrañes, Francesc Quintana, Jaume Bayó, Juan Rubió, Enrique Nieto y José Canaleta, así como del constructor Josep Bayó i Font, que había trabajado con Gaudí en la Casa Batlló.<br /><br />Desde su apertura al público en 1987 ha recibido más de 20 millones de visitas (un millón cada año aproximadamente), convirtiéndola en uno de los diez lugares más visitados de Barcelona. En 2016 recibió 1,2 millón de visitantes, siendo el octavo monumento más visitado de España.<br /><br />La Casa Milà es un reflejo de la plenitud artística de Gaudí: pertenece a su etapa naturalista (primera década del siglo XX), periodo en que el arquitecto perfecciona su estilo personal, inspirándose en las formas orgánicas de la naturaleza, para lo que puso en práctica toda una serie de nuevas soluciones estructurales originadas en los profundos análisis efectuados por Gaudí de la geometría reglada.<br /><br />",
+                    "latitude": 41.39590361476054, 
+                    "longitude": 2.1618702114400596,
+                    "address": "Pg. de Gràcia, 92, 08008 Barcelona",
+                    "yearBuilt": 1909,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Casa Batlló",
+                    "identifier": "cat4",
+                    "image": [
+                        "img/Comunidades/Cataluña/casaBatllo/casaBatllo1.jpeg",
+                        "img/Comunidades/Cataluña/casaBatllo/casaBatllo2.jpeg",
+                        "img/Comunidades/Cataluña/casaBatllo/casaBatllo3.jpeg"
+                    ],
+                    "description":"La Casa Batlló es un edificio obra del arquitecto Antoni Gaudí, máximo representante del modernismo catalán. Se trata de una remodelación integral de un edificio previamente existente en el solar, obra de Emilio Sala Cortés.<br /><br />Está situado en el número 43 del paseo de Gracia de Barcelona, la ancha avenida que atraviesa el distrito del Ensanche (Eixample), en la llamada Manzana de la discordia, porque alberga además de este edificio otras obras de arquitectos modernistas: la Casa Amatller, que colinda con la de Gaudí, obra de Josep Puig i Cadafalch; la Casa Lleó Morera, obra de Lluís Domènech i Montaner; la Casa Mulleras, de Enric Sagnier; y la Casa Josefina Bonet, de Marceliano Coquillat. La construcción se realizó entre los años 1904 y 1906.<br /><br />La Casa Batlló es un reflejo de la plenitud artística de Gaudí: pertenece a su etapa naturalista (primera década del siglo XX), periodo en que el arquitecto perfecciona su estilo personal, inspirándose en las formas orgánicas de la naturaleza, para lo que puso en práctica toda una serie de nuevas soluciones estructurales originadas en los profundos análisis efectuados por Gaudí de la geometría reglada.<br /><br />",
+                    "latitude": 41.392437780735555, 
+                    "longitude": 2.164935416993683,
+                    "address": "Pg. de Gràcia, 43, 08007 Barcelona",
+                    "yearBuilt": 1877,
                     "video": [
 
                     ]
@@ -351,7 +727,7 @@
                         "img/Comunidades/Extremadura/TeatroRomanoMerida/TeatroRomanoMerida2.jpg",
                         "img/Comunidades/Extremadura/TeatroRomanoMerida/TeatroRomanoMerida3.jpg"
                     ],
-                    "description":"El teatro romano de Mérida es un teatro histórico levantado por la Antigua Roma en la colonia Augusta Emerita, actual Mérida (España). Su creación fue promovida por el cónsul Marco Vipsanio Agripa y, según una fecha inscrita en el propio teatro, su inauguración se produjo hacia los años 16-15 a. C. «Príncipe entre los monumentos emeritenses», como lo denominó el arquitecto José Menéndez-Pidal,el teatro es Patrimonio de la Humanidad desde 1993 como parte del conjunto arqueológico de Mérida.",
+                    "description":"El teatro romano de Mérida es un teatro histórico levantado por la Antigua Roma en la colonia Augusta Emerita, actual Mérida (España). Su creación fue promovida por el cónsul Marco Vipsanio Agripa y, según una fecha inscrita en el propio teatro, su inauguración se produjo hacia los años 16-15 a. C. «Príncipe entre los monumentos emeritenses», como lo denominó el arquitecto José Menéndez-Pidal, el teatro es Patrimonio de la Humanidad desde 1993 como parte del conjunto arqueológico de Mérida.<br/><br/>El teatro ha sufrido varias remodelaciones, la más importante durante el siglo I d. C., cuando se levantó el frente escénico actual, y otra en época de Constantino I, entre los años 333 y 337. El teatro fue abandonado en el siglo IV d. C. tras la oficialización en el Imperio romano de la religión cristiana, que consideraba inmorales las representaciones teatrales. Demolido parcialmente y cubierto de tierra, durante siglos la única parte visible del edificio fueron las gradas superiores, bautizadas por los emeritenses como «Las Siete Sillas». Las excavaciones arqueológicas en el teatro comenzaron en 1910 y su reconstrucción parcial en 1962. Desde 1933 alberga la celebración del Festival Internacional de Teatro Clásico de Mérida.",
                     "latitude": 38.91539050605779, 
                     "longitude": -6.338530424236704,
                     "address": "Plaza Margarita Xirgu, s/n, 06800 Mérida, Badajoz",
@@ -575,9 +951,9 @@
                     "name": "Templo de Debod",
                     "identifier": "mad3",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Madrid/TemploDebod/TemploDebod1.jpg",
+                        "img/Comunidades/Madrid/TemploDebod/TemploDebod2.jpg",
+                        "img/Comunidades/Madrid/TemploDebod/TemploDebod3.jpg"
                     ],
                     "description":"",
                     "latitude": 40.42417676164962, 
@@ -592,9 +968,9 @@
                     "name": "Palacio de la Moncloa",
                     "identifier": "mad4",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Madrid/PalacioMoncloa/PalacioMoncloa1.jpeg",
+                        "img/Comunidades/Madrid/PalacioMoncloa/PalacioMoncloa2.jpeg",
+                        "img/Comunidades/Madrid/PalacioMoncloa/PalacioMoncloa3.jpeg"
                     ],
                     "description":"",
                     "latitude": 40.44533879181862, 
@@ -610,69 +986,172 @@
         {
             "Murcia": [
                 {
-                    "name": "Monumento a los caídos",
+                    "name": "Catedral de Murcia",
                     "identifier": "mur1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Murcia/CatedralMurcia/CatedralMurcia1.jpg",
+                        "img/Comunidades/Murcia/CatedralMurcia/CatedralMurcia2.jpg",
+                        "img/Comunidades/Murcia/CatedralMurcia/CatedralMurcia3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920,
+                    "latitude": 37.984233317579324,
+                    "longitude": -1.1285537443542213,
+                    "address": "Pl. del Cardenal Belluga, s/n, 30001 Murcia",
+                    "yearBuilt": 1465,
                     "video": [
 
                     ]
                 },
                 {
-                    "name": "Catedral de Cádiz",
+                    "name": "Puente de los Peligros",
                     "identifier": "mur2",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Murcia/PuentePeligros/PuentePeligros1.jpg",
+                        "img/Comunidades/Murcia/PuentePeligros/PuentePeligros2.jpg",
+                        "img/Comunidades/Murcia/PuentePeligros/PuentePeligros3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624,
+                    "latitude": 37.98293963371318, 
+                    "longitude": -1.1315793442658235,
+                    "address": "C. Matadero Viejo, 4, 30002 Murcia",
+                    "yearBuilt": 1742,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Castillo de la Asomada",
+                    "identifier": "mur3",
+                    "image": [
+                        "img/Comunidades/Murcia/CastilloAsomada/CastilloAsomada1.jpg",
+                        "img/Comunidades/Murcia/CastilloAsomada/CastilloAsomada2.jpg",
+                        "img/Comunidades/Murcia/CastilloAsomada/CastilloAsomada3.jpg"
+                    ],
+                    "latitude": 37.9015223576365, 
+                    "longitude": -1.1513461120319848,
+                    "address": "30155 Murcia",
+                    "yearBuilt": 1150,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Santuario de Nuestra Señora de la Fuensanta",
+                    "identifier": "mur4",
+                    "image": [
+                        "img/Comunidades/Murcia/SantuarioNuestraSeñoraFuensanta/SantuarioNuestraSeñoraFuensanta1.jpg",
+                        "img/Comunidades/Murcia/SantuarioNuestraSeñoraFuensanta/SantuarioNuestraSeñoraFuensanta2.jpg",
+                        "img/Comunidades/Murcia/SantuarioNuestraSeñoraFuensanta/SantuarioNuestraSeñoraFuensanta3.jpg"
+                    ],
+                    "latitude": 37.93772274240625,  
+                    "longitude": -1.1183735037899334,
+                    "address": "30157 Algezares, Murcia",
+                    "yearBuilt": 1694,
                     "video": [
 
                     ]
                 }
+                
             ]
         },
         {
             "Navarra": [
                 {
-                    "name": "Monumento a los caídos",
+                    "name": "Palacio Real de Olite",
                     "identifier": "nav1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Navarra/PalacioOlite/PalacioOlite1.jpg",
+                        "img/Comunidades/Navarra/PalacioOlite/PalacioOlite2.jpg",
+                        "img/Comunidades/Navarra/PalacioOlite/PalacioOlite3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920,
+                    "description":"El Palacio de los Reyes de Navarra de Olite, Palacio Real de Olite o Castillo de Olite es una construcción de carácter cortesano y militar erigida durante los siglos XIII y XIV en la localidad de Olite (Navarra, España). Fue una de las sedes de la Corte del Reino de Navarra a partir del reinado de Carlos III \"el Noble\". Cada verano es sede principal del Festival de Teatro Clásico de Olite.<br/><br/>Fue declarado Monumento Nacional (conjuntamente con la iglesia de Santa María) el 17 de enero de 1925. También está declarado como Bien de Interés Cultural y pertenece al Gobierno Foral de Navarra. En su interior existe una morera blanca declarada monumento natural.<br/><br/>Fue Carlos III \"el Noble\" quién, en el siglo XV, comenzó la ampliación del anterior castillo, dando lugar al Palacio de los Reyes de Navarra. Aunque casi todos lo llaman \"castillo\", lo correcto es referirse a él como \"palacio\", ya que se trata de una construcción con carácter cortesano, donde los aspectos residenciales prevalecieron sobre los militares (defensa).<br/><br/>Uno de sus principales encantos es el aparente desorden de su diseño. Esto se debe a que su construcción nunca se afrontó como un proyecto \"de conjunto\", debiéndose el resultado final a las continuas obras de ampliación y reforma que se sucedieron durante siglos, aunque la mayor parte de las obras se realizaron entre finales del siglo XIV y principios del XV. El entonces rey de Navarra, Carlos III, decidió convertir el palacio existente en sede real permanente y dotarla de todo el ornamento propio de estas.<br/><br/>El conjunto formado por sus estancias, jardines y fosos, rodeados por las altas murallas y rematados por las numerosas torres, le confieren una espectacular y mágica silueta. En su época, llegó a ser considerado como uno de los más bellos de Europa. En él podremos diferenciar claramente dos conjuntos: el Palacio Viejo, convertido en Parador Nacional de Turismo, y el Palacio Nuevo. Ambos están separados por \"tierra de nadie\", un solar donde se levantaba anteriormente el Palacio de la Reina.",
+                    "latitude": 42.48190586501829, 
+                    "longitude": -1.6493899018352458,
+                    "address": "Pl. Carlos III El Noble, 4, 31390 Olite, Navarra",
+                    "yearBuilt": 1260,
                     "video": [
 
                     ]
                 },
                 {
-                    "name": "Catedral de Cádiz",
+                    "name": "Catedral de Pamplona",
                     "identifier": "nav2",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Navarra/CatedralPamplona/CatedralPamplona1.jpg",
+                        "img/Comunidades/Navarra/CatedralPamplona/CatedralPamplona2.jpg",
+                        "img/Comunidades/Navarra/CatedralPamplona/CatedralPamplona3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624,
+                    "description":"La Catedral Metropolitana de Santa María de la Asunción, situada en la ciudad de Pamplona (Comunidad Foral de Navarra, España), sede de la Archidiócesis de Pamplona y Tudela, es un conjunto arquitectónico eclesiástico único, por tratarse del complejo catedralicio más completo que se conserva en España. Presenta las edificaciones habituales en otras catedrales como iglesia, claustro y sacristías, pero además conserva la cillería, refectorio, sala capitular y dormitorio, que son más propias de la vida común a la que estaba sujeto su cabildo y que a lo largo de los siglos se han ido derribando en otras catedrales españolas. Las estancias que lo configuran fueron construidas en distintas épocas y estilos, conservándose hoy en día algunas de las dependencias románicas, pero predominando sobre todo las edificadas en estilo gótico (entre ellas la iglesia y el claustro) de los siglos XIV al XVI. La fachada oeste, de estilo neoclásico, se levantó a finales del siglo XVIII.<br/><br/>Destacan en este conjunto de edificios; el claustro, que está considerado una maravilla del arte gótico europeo y desde luego el mejor claustro del siglo XIV; la cocina, que es uno de los tres únicos ejemplos supervivientes de cocina gótica de toda Europa; y por último la fachada principal, una de las obras más puras y representativas del neoclasicismo en la península.",
+                    "latitude": 42.81977310952891, 
+                    "longitude": -1.6414892729912125,
+                    "address": "C. Dormitalería, 1, 31001 Pamplona, Navarra",
+                    "yearBuilt": 1450,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Castillo Museo de Javier",
+                    "identifier": "nav3",
+                    "image": [
+                        "img/Comunidades/Navarra/CastilloJavier/CastilloJavier1.jpg",
+                        "img/Comunidades/Navarra/CastilloJavier/CastilloJavier2.jpg",
+                        "img/Comunidades/Navarra/CastilloJavier/CastilloJavier3.jpg"
+                    ],
+                    "description":"El castillo de Javier está situado en una loma de la localidad de Javier, en Navarra, a 52 km al este de Pamplona capital y 6 km al este de Sangüesa. Data del siglo X. En este castillo nació y vivió San Francisco Javier, hijo de los Señores de Javier, y de aquí tomó el nombre con el que se le conocería como misionero. Es lugar de peregrinación, especialmente a principios de marzo, en las llamadas Javieradas. Es Bien de Interés Cultural desde 1994.<br/><br/>Consta de tres cuerpos, sucesivamente escalonados en orden de antigüedad. Destacan la Torre del Santo Cristo, bastión y capilla donde se encuentra un interesante crucifijo tardogótico y una serie de pinturas murales representando la danza de la muerte, única en España; la Torre del Homenaje, llamada de San Miguel (lo más antiguo del castillo) y el museo dedicado a la vida del santo. En sus basamentos hay huellas y zócalos musulmanes que podrían ser del siglo X. En el siglo XI se formó el primer recinto envolvente que cobijó las primeras habitaciones. En el siglo XIII se agregaron, por las cuatro orientaciones, dos cuerpos poligonales y dos torres flanqueantes.",
+                    "latitude": 42.59249414301025, 
+                    "longitude": -1.2164482306685183 ,
+                    "address": "HQRM+WC, 31411 Javier, Navarra",
+                    "yearBuilt": 950,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Plaza del Castillo",
+                    "identifier": "nav4",
+                    "image": [
+                        "img/Comunidades/Navarra/PlazaCastillo/PlazaCastillo1.jpg",
+                        "img/Comunidades/Navarra/PlazaCastillo/PlazaCastillo2.jpg",
+                        "img/Comunidades/Navarra/PlazaCastillo/PlazaCastillo3.jpg"
+                    ],
+                    "description":"La Plaza del Castillo (Gazteluko Plaza o Gazteluko Enparantza en euskera) es una plaza pública situada en el centro de la ciudad de Pamplona (Navarra), España y que ocupa una superficie de casi 14.000 m. Es la segunda más grande de la ciudad siendo superada por la Plaza de los Fueros, con unos 18.000 m.<br/><br/>Desde su construcción la plaza se convirtió en el centro neurálgico de la vida social pamplonesa y en uno de los iconos más reconocibles de la ciudad, siendo hoy en día todavía escenario de importantes acontecimientos de la misma, por lo que suele ser habitual referirse a ella como \"el cuarto de estar\" de todos los pamploneses.",
+                    "latitude": 42.81698862711272,  
+                    "longitude": -1.643019001827176,
+                    "address": "Pl. del Castillo, 31001 Pamplona, Navarra",
+                    "yearBuilt": 1653,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Ciudadela de Pamplona",
+                    "identifier": "nav5",
+                    "image": [
+                        "img/Comunidades/Navarra/CiudadelaPamplona/CiudadelaPamplona1.jpg",
+                        "img/Comunidades/Navarra/CiudadelaPamplona/CiudadelaPamplona2.jpg",
+                        "img/Comunidades/Navarra/CiudadelaPamplona/CiudadelaPamplona3.jpg"
+                    ],
+                    "description":"Fortificación renacentista en forma de pentágono con baluartes y revellines, iniciada por Felipe II según el proyecto del ingeniero militar Giovan Giacomo Paleari Fratino, conocido como «El Fratín». En 1964 se cede al Ayuntamiento para crear un espacio público cultural y de ocio. Un espacio de 280.000 metros cuadrados cuyos pabellones, fosos, baluartes, revellines, fortificaciones, edificios menores y glacis son hoy lugares públicos de ocio, deporte y cultura. La Ciudadela, referencia urbanística de Pamplona, está considerada además como el mejor ejemplo de arquitectura militar del Renacimiento español y uno de los más destacados conjuntos defensivos de Europa. La Ciudadela nació para proteger Pamplona del enemigo, a instancias del rey Felipe II, quien la mandó construir en 1571 con el fin de hacer frente a las constantes incursiones del ejército francés. Su estructura original tenía forma de pentágono regular con cinco baluartes en los ángulos, pero la construcción del Primer Ensanche de la ciudad obligó al derribo de dos de ellos. Cedida al Ayuntamiento en 1964. En la actualidad, el conjunto de Ciudadela y su circundante Vuelta del Castillo constituyen el gran pulmón verde de Pamplona, y albergan 19 esculturas de autores como Oteiza, Aizkorbe, Sada, J.A. Eslava, Orella, Larrea, Aguirre, Basterretxea, Anda o Gabino, entre otros.<br/><br/>En la Ciudadela se ubican varias SALAS DE EXPOSICIONES: Pabellón de Mixtos, Horno, Sala de Armas y Polvorín. Además, de exposiciones artísticas, se realizan otras actividades culturales y espectáculos tanto en sus edificios como en sus jardines. Durante las fiestas de San Fermín se disparan desde su interior las colecciones de fuegos artificiales. (OTROS EDIFICIOS: Cuerpo de Guardia y Sala Lidia Biurrun de la Ciudadela (Antigua Sala Felipe II), donde se celebran bodas civiles). Dispone de servicios públicos.",
+                    "latitude": 42.81267081133096, 
+                    "longitude": -1.6494834729913765,
+                    "address": "Av. del Ejército, s/n, 31001 Pamplona, Navarra",
+                    "yearBuilt": 1571,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Catedral de Tudela",
+                    "identifier": "nav6",
+                    "image": [
+                        "img/Comunidades/Navarra/CatedralTudela/CatedralTudela1.jpg",
+                        "img/Comunidades/Navarra/CatedralTudela/CatedralTudela2.jpg",
+                        "img/Comunidades/Navarra/CatedralTudela/CatedralTudela3.jpg"
+                    ],
+                    "description":"La catedral de Santa María (Santa María la Mayor) de Tudela (Navarra) es un templo tardorrománico, inspirada en la arquitectura cisterciense, de grandes dimensiones, que se comenzó a construir a finales del siglo XII durante el reinado de Sancho VI el Sabio, pasando el testigo a su hijo Sancho VII el Fuerte, que a su vez lo pasó a su sobrino Teobaldo I. Utilizó algunos de los cimientos de la Mezquita Mayor de Tudela (siglos IX a XI). Como las orientaciones de los dos templos no coincidían, la mezquita fue demolida para edificar el nuevo templo y solo se aprovecharon algunos de sus cimientos.<br/><br/>El templo actual se sitúa entre las actuales plaza Vieja y las calles Roso, Portal y Horno Higuera del casco antiguo de Tudela.<br/><br/>Inicialmente sirvió como colegiata, pasando a ser catedral cuando en el siglo XVIII Tudela se segregó de la diócesis de la vecina Tarazona. Fue elevada a la dignidad de catedral por Pío VI, a instancias de Carlos III, en el siglo XVIII.",
+                    "latitude": 42.063535646807054, 
+                    "longitude": -1.6054539865016353 ,
+                    "address": "C. Roso, 2, 31500 Tudela, Navarra",
+                    "yearBuilt": 1214,
                     "video": [
 
                     ]
@@ -682,69 +1161,193 @@
         {
             "País Vasco": [
                 {
-                    "name": "Monumento a los caídos",
+                    "name": "Puente de Vizcaya",
                     "identifier": "pai1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/PaisVasco/PuenteVizcaya/PuenteVizcaya1.jpg",
+                        "img/Comunidades/PaisVasco/PuenteVizcaya/PuenteVizcaya2.jpg",
+                        "img/Comunidades/PaisVasco/PuenteVizcaya/PuenteVizcaya3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920,
+                    "description":"El Puente de Vizcaya (Bizkaiko Zubia en euskera), también conocido como Puente Bizkaia, Puente colgante, Puente de Portugalete, o Puente colgante de Portugalete, es un puente transbordador de peaje, concebido, diseñado y construido por iniciativa privada entre 1887 y 1893, que une las dos márgenes de la ría de Bilbao en Vizcaya (España). Fue inaugurado el 28 de julio de 1893, siendo el primero de su tipología en el mundo y uno de los ocho que aún se conservan.<br/><br/>El puente recibe varios nombres. El nombre que consta en su página web oficial es \"Puente Bizkaia\", aunque su denominación más popular y extendida sea la de \"Puente colgante\" al que a veces se suelen añadir las extensiones \"de Portugalete\", \"de Las Arenas\" o incluso \"de Bilbao\". También suele recibir los nombres de \"puente de Portugalete\", ya que originalmente unía Portugalete con Las arenas de Portugalete (ambas márgenes se consideraban del mismo municipio), y \"puente Palacio\", en honor de su arquitecto, Alberto de Palacio y Elissague.<br/><br/>El puente enlaza la villa de Portugalete con el barrio de Las Arenas, que pertenece al municipio de Guecho, así como las dos márgenes de la ría de Bilbao. Su construcción se debió a la necesidad de unir los balnearios existentes en ambas márgenes de la ría, destinados a la burguesía industrial y a los turistas de finales del siglo XIX.",
+                    "latitude": 43.32337349790159, 
+                    "longitude": -3.0171190441430578,
+                    "address": "Puente de Vizcaya Zubia, Getxo, Bizkaia",
+                    "yearBuilt": 1893,
                     "video": [
 
                     ]
                 },
                 {
-                    "name": "Catedral de Cádiz",
+                    "name": "Ermita de Gaztelugache",
                     "identifier": "pai2",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/PaisVasco/Gaztelugache/Gaztelugache1.jpg",
+                        "img/Comunidades/PaisVasco/Gaztelugache/Gaztelugache2.jpg",
+                        "img/Comunidades/PaisVasco/Gaztelugache/Gaztelugache3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624,
+                    "description":"Gaztelugache (oficialmente y en euskera, Gaztelugatxe) es un islote de la localidad vizcaína de Bermeo, País Vasco, España. Está unido al continente por un puente de dos arcos. Sobre la isla hay una ermita dedicada a San Juan que data del siglo X, aunque algunos descubrimientos datan del siglo IX. Dicha ermita se edificó sobre los restos de un castillo adscrito al Reino de Navarra y que fue asediado, sin ser tomado, por las tropas castellanas. Junto con otra pequeña isla vecina, la de Aqueche, forma un biotopo protegido, que se extiende desde la localidad de Baquio hasta el cabo Machichaco en Bermeo, en el golfo de Vizcaya.<br/><br/>La palabra gaztelugatxe proviene del euskera gaztelu, \"castillo\" y atx, \"peña\", es decir, \"peña del castillo\". La palabra atx y sus variantes fonológicas son habitualmente usadas como sufijo o prefijo en euskera vizcaíno para denominar a montes y peñas: Aketx, Murgoatx, Karatxa, Atxulo, Axpe...<br/><br/>Documentalmente en el siglo XI (1053) la ermita se llamaba Sancti Johannis de Castiello (San Juan del Castillo), en la carta de donación que de ella hicieron Íñigo López, señor de Vizcaya, y su mujer Toda Ortiz a los monjes del Monasterio de San Juan de la Peña (Jaca, Huesca, Aragón), quedando bajo su protección y dominio, cuna de la Corona de Aragón.<br/><br/>La palabra gaztelugatxe proviene del euskera gaztelu, \"castillo\" y atx, \"peña\", es decir, \"peña del castillo\". La palabra atx y sus variantes fonológicas son habitualmente usadas como sufijo o prefijo en euskera vizcaíno para denominar a montes y peñas: Aketx, Murgoatx, Karatxa, Atxulo, Axpe...<br/><br/>Documentalmente en el siglo XI (1053) la ermita se llamaba Sancti Johannis de Castiello (San Juan del Castillo), en la carta de donación que de ella hicieron Íñigo López, señor de Vizcaya, y su mujer Toda Ortiz a los monjes del Monasterio de San Juan de la Peña (Jaca, Huesca, Aragón), quedando bajo su protección y dominio, cuna de la Corona de Aragón.",
+                    "latitude": 43.44774687957155, 
+                    "longitude": -2.7850858592910854,
+                    "address": "48130 San Juan de Gaztelugatxe, Vizcaya",
+                    "yearBuilt": 946,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Catedral de Santiago de Bilbao",
+                    "identifier": "pai3",
+                    "image": [
+                        "img/Comunidades/PaisVasco/CatedralBilbao/CatedralBilbao1.jpg",
+                        "img/Comunidades/PaisVasco/CatedralBilbao/CatedralBilbao2.jpg",
+                        "img/Comunidades/PaisVasco/CatedralBilbao/CatedralBilbao3.jpg"
+                    ],
+                    "description":"La Catedral Basílica de Santiago en Bilbao (Vizcaya, País Vasco, España) es el templo católico que desde 1949 alberga la sede de la diócesis de Bilbao. Fue construida entre el último cuarto del siglo XIV y principios del XVI en estilo gótico, si bien su fachada y torre son el resultado de una profunda reconstrucción acometida en el siglo XIX en estilo neogótico. La Catedral toma su nombre del patrón de Bilbao, el apóstol Santiago el Mayor, en relación con el paso por la ciudad de un ramal costero del Camino de Santiago. Se trata de la iglesia gótica más monumental de Vizcaya y cumple asimismo la función de parroquia. En 1819 obtuvo el rango de basílica menor, siendo la primera iglesia que obtenía este título en el País Vasco.",
+                    "latitude": 43.257489278838065, 
+                    "longitude": -2.9238519306523605 ,
+                    "address": "Done Jakue Plazatxoa, 1, 48005 Bilbo, Bizkaia",
+                    "yearBuilt": 1443,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Castillo de Butrón",
+                    "identifier": "pai4",
+                    "image": [
+                        "img/Comunidades/PaisVasco/CastilloButron/CastilloButron1.jpg",
+                        "img/Comunidades/PaisVasco/CastilloButron/CastilloButron2.jpg",
+                        "img/Comunidades/PaisVasco/CastilloButron/CastilloButron3.jpg"
+                    ],
+                    "description":"El castillo de Butrón (en euskera Butroe o Butroeko gaztelua) es una fortaleza neogótica de origen medieval, declarada Patrimonio Histórico, en el término municipal de Gatica, en la provincia de Vizcaya (España). Se enclava en el centro de una finca arbolada, en un paraje aislado aunque no muy lejos de Bilbao y próximo a poblaciones como Sopelana, Urdúliz, Plencia, Munguía, Maruri-Jatabe y Lauquíniz.<br/><br/>Los orígenes del edificio se remontan a la Edad Media, cuando existía en el lugar la casa-torre del linaje de los Butrón, la cual se fue modificando a lo largo de los siglos y terminó enmascarada bajo la apariencia de una vulgar casa de labriegos. Su aspecto actual responde a una profunda remodelación efectuada en el siglo XIX por el marqués de Cubas.<br/><br/>Tomando como base los cimientos y parte de las torres cilíndricas existentes, tras eliminarse los añadidos, el actual castillo fue construido combinando, con gran dosis de fantasía, distintas referencias a edificios antiguos, a la manera de los castillos bávaros del siglo XIX, lejos de los prototipos de casas torre y castillos propios de la región. La torre del homenaje es similar a la del alcázar de Segovia. La construcción se concibió más como pasatiempo y atracción visual que con el propósito de albergar un uso concreto; de hecho, es muy incómodo como vivienda, ya que las torres no tienen demasiado espacio útil, y algunas estancias se conectan entre sí mediante pasarelas y escaleras al aire libre.",
+                    "latitude": 43.37183895778823, 
+                    "longitude": -2.9144148153059444,
+                    "address": "Bo. Butron, 12, 48110 Gatica, Vizcaya",
+                    "yearBuilt": 856,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Catedral del Buen Pastor",
+                    "identifier": "pai5",
+                    "image": [
+                        "img/Comunidades/PaisVasco/CatedralBuenPastor/CatedralBuenPastor1.jpg",
+                        "img/Comunidades/PaisVasco/CatedralBuenPastor/CatedralBuenPastor2.jpg",
+                        "img/Comunidades/PaisVasco/CatedralBuenPastor/CatedralBuenPastor3.jpg"
+                    ],
+                    "description":"La catedral del Buen Pastor de San Sebastián (Guipúzcoa, País Vasco, España) es la sede de la diócesis de San Sebastián, perteneciente a la archidiócesis de Pamplona. El edificio religioso más notorio de la capital guipuzcoana, dotado de una acusada verticalidad, y el más grande de Guipúzcoa, su construcción tuvo lugar en los últimos años del siglo XIX en un estilo historicista neogótico. Desde 1953 ostenta el rango de catedral.<br/><br/>En el proyecto de obra del arquitecto Echave, quien al parecer se inspiró en la catedral de Colonia, constan las medidas del templo: una superficie de 1.915 metros cuadrados, una altura de las naves de 25 metros, una torre de 75 metros, una nave central de 64 metros de longitud por 36 de anchura máxima en su crucero, y un aforo de 4.000 personas.<br/><br/>Se trata de una iglesia con planta de cruz latina, tres naves longitudinales, nave transversal o crucero y cabecera pentagonal. Carece de girola. Los dos hastiales del transepto alojan dos grandes ventanales-rosetones que acentúan la luminosidad interior del templo. Las naves hasta el crucero, de las que es más ancha y elevada la central, se segmentan en cinco tramos cubiertos con bóvedas barlongas de crucería simple. Los dos brazos del transepto constan de dos tramos abovedados de igual manera. El crucero es el único tramo que presenta crucería compleja, al incorporar terceletes entre los nervios principales. Desde el crucero hasta la cabecera, las naves se prolongan con otros tres tramos. En este espacio posterior las naves laterales se convierten en cuatro, dos a cada lado, hasta igualar la anchura del transepto, dando como resultado sendos espacios de igual altura divididos en seis tramos y separados por cuatro pilares. La esbelta torre-campanario, situada sobre el pórtico de entrada, se inspira claramente en las agujas de la Catedral de Colonia. El conjunto de pilastas y contrafuertes rematadas en pináculos y de gabletes rematados en cogollos realzan la verticalidad de todo el edificio.",
+                    "latitude": 43.31683758715234, 
+                    "longitude": -1.9815499306509214 ,
+                    "address": "Urdaneta Kalea, 12, 20006 Donostia, Gipuzkoa",
+                    "yearBuilt": 1897,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Basílica de Nuestra Señora de Begoña",
+                    "identifier": "pai6",
+                    "image": [
+                        "img/Comunidades/PaisVasco/BasilicaBegoña/BasilicaBegoña1.jpg",
+                        "img/Comunidades/PaisVasco/BasilicaBegoña/BasilicaBegoña2.jpg",
+                        "img/Comunidades/PaisVasco/BasilicaBegoña/BasilicaBegoña3.jpg"
+                    ],
+                    "description":"La basílica de Nuestra Señora de Begoña es el santuario de la Madre de Dios de Begoña, patrona del señorío de Vizcaya, situada en la capital del mismo, Bilbao, País Vasco, España.<br/><br/>Edificio primitivo<br/><br/>Gracias a un inventario realizado en 1503 se conoce que el templo primitivo consistía de una única nave techada en madera, con una capilla de piedra que contenía la virgen y un coro, así como una calostra o pórtico de madera. Nada sabemos sobre las dimensiones del edificio, pero probablemente sus trazas coincidan con las de la nave central de la presente basílica. Lo presidía un retablo de estilo flamenco, de gran tamaño, ya que contenía 14 tablas con imágenes de la vida de María. Posiblemente tuviera una configuración similar al retablo de la colegiata de Cenarruza, pero a mayor escala.<br/><br/>Edificio actual<br/><br/>Las obras de construcción del presente santuario comenzaron en la primera década del siglo XVI, bajo traza de Sancho Martínez de Asego, la torre será diseñada por Martín de Garita. Consta de una amplia nave central con ábside poligonal y dos naves laterales levemente más bajas cubiertas con bóveda de crucería dentro del siglo XVII, sobre diez robustos pilares cilíndricos. A lo largo del siglo que duraron las obras, varió algo el rumbo unitario del estilo gótico, ya que, a mediados del siglo XVI, la portada principal se formula como un magnífico arco de triunfo manierista, que recuerda mucho a las obras castellanas de Rodrigo Gil de Hontañón. Lo demás guarda el estilo unitario gótico referido, aunque el Coro deja ver el talante clasicista de su tracista. Las obras se costearon gracias a las limosnas de los fieles, en su mayor parte vecinos de la Villa de Bilbao (en aquel tiempo independiente de la anteiglesia de Begoña). Testimonio de esto son los escudetes que coronan los pilares de la nave central, que no contienen las armas de familias nobiliarias, sino los emblemas de mercaderes y gremios de la Villa. La imagen de la Virgen no se pudo trasladar a su nueva iglesia hasta diciembre de 1603, cuando fue instalada en un modesto altar. El historiador y artista Francisco de Mendieta y Retes pinta, en 1607, una escena de boda en el interior de la recién consagrada iglesia. En 1640 se contrata al arquitecto y escultor Pedro de la Torre la realización de un retablo que sustituyera a aquel, tan humilde, que pinta Mendieta. La ejecución de este retablo se deberá finalmente a Antonio de Alloytiz, escultor forutarra.",
+                    "latitude": 43.25896370156658,  
+                    "longitude": -2.9141616883241315,
+                    "address": "Begoñako Andra Maria Kalea, 38, 48006 Bilbo, Bizkaia",
+                    "yearBuilt": 1621,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Plaza de España",
+                    "identifier": "pai7",
+                    "image": [
+                        "img/Comunidades/PaisVasco/PlazaEspaña/PlazaEspaña1.jpg",
+                        "img/Comunidades/PaisVasco/PlazaEspaña/PlazaEspaña2.jpg",
+                        "img/Comunidades/PaisVasco/PlazaEspaña/PlazaEspaña3.jpg"
+                    ],
+                    "description":"La Plaza de España, también conocida como Plaza Nueva, es un espacio urbano construido como plaza mayor que se encuentra en el centro de la ciudad de Vitoria.<br/><br/>La plaza es una construcción de estilo neoclásico que forma un cuadrado perfecto de 61 metros de lado. En el ala norte se encuentra la casa consistorial, mientras que el acceso está abierto a través de los lados sur, este y oeste. La base de todo el perímetro está formado por soportales con arcos de medio punto con pilastras adosadas que se sustituyen por columnas en las entradas.<br/><br/>La fachada de la casa consistorial se remata por medio de una balaustrada con jarrones, un gran frontón y el escudo de la ciudad en piedra labrada. Los otros frentes solo presentan una cornisa.<br/><br/>En la construcción se mezclan la piedra de sillería, la mampostería y el ladrillo.",
+                    "latitude": 42.846399002121096,  
+                    "longitude": -2.6724248050355777 ,
+                    "address": "01001 Vitoria-Gasteiz, Álava",
+                    "yearBuilt": 1791,
                     "video": [
 
                     ]
                 }
+
             ]
         },
         {
             "La Rioja": [
                 {
-                    "name": "Monumento a los caídos",
+                    "name": "Monasterio de San Millán de Yuso",
                     "identifier": "lar1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/LaRioja/MonasterioYuso/MonasterioYuso1.jpg",
+                        "img/Comunidades/LaRioja/MonasterioYuso/MonasterioYuso2.jpg",
+                        "img/Comunidades/LaRioja/MonasterioYuso/MonasterioYuso3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920,
+                    "description":"El Real Monasterio de San Millán de Yuso (yuso significaba \"abajo\" en castellano antiguo) está situado en la villa de San Millán de la Cogolla, Comunidad Autónoma de La Rioja (España), en la margen izquierda del río Cárdenas, en pleno valle de San Millán. Forma parte del conjunto monumental de dos monasterios, junto con el más antiguo Monasterio de San Millán de Suso («de arriba»).<br/><br/>Este monasterio fue mandado construir en el año 1053 por el rey García Sánchez III de Navarra «el de Nájera». La historia de su fundación va unida a una leyenda basada en un milagro de san Millán (o Emiliano), un joven pastor que se hace ermitaño. Cuando en 574 muere Millán, a la edad de 101 años, sus discípulos lo entierran en su cueva, y alrededor de ella se va formando el primer monasterio, el de San Millán de Suso. San Braulio, cincuenta años después de muerto san Millán, escribe la vida de este.",
+                    "latitude": 42.32601982140578, 
+                    "longitude": -2.8658508018389783,
+                    "address": "Calle Prestiño, s/n, 26326 San Millán de la Cogolla, La Rioja",
+                    "yearBuilt": 1053,
                     "video": [
 
                     ]
                 },
                 {
-                    "name": "Catedral de Cádiz",
+                    "name": "Concatedral de Santa María de la Redonda de Logroño",
                     "identifier": "lar2",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/LaRioja/ConcatedralLogroño/ConcatedralLogroño1.jpg",
+                        "img/Comunidades/LaRioja/ConcatedralLogroño/ConcatedralLogroño2.jpg",
+                        "img/Comunidades/LaRioja/ConcatedralLogroño/ConcatedralLogroño3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624,
+                    "description":"La concatedral de Santa María de la Redonda es una iglesia situada en Logroño (La Rioja, España). Junto con la Catedral de Calahorra y la de Santo Domingo de La Calzada es la sede de la diócesis eclesiástica de Calahorra y La Calzada-Logroño.<br/><br/>En el siglo X el Camino de Santiago cruza el río Ebro por un puente que da origen a una población que con el tiempo sería la ciudad de Logroño.<br/><br/>En el año 1095, el rey Alfonso VI de León otorga a este lugar un fuero franco para el asentamiento de pobladores y peregrinos. Con el transcurso del tiempo la población alcanza un notable crecimiento y se construyen las iglesias de Santa María de Palacio, Santiago el Real, San Bartolomé y Santa María de la Redonda, esta última en el arrabal y separada del itinerario del Camino de Santiago. Se le llamó La Redonda por ser una iglesia románica seguramente octogonal, similar a las existentes en el Camino jacobeo de Navarra en Eunate y Torres del Río.<br/><br/>Por su desarrollo e importancia, en el año 1431 es declarada ciudad y en 1435 se le dota de una iglesia colegiata, en ese momento asociada al cercano e importante Monasterio de Albelda, en cuyo scriptorium se crearon importantes códices en la Edad Media. Entre todos los templos existentes se eligió La Redonda y se vio la conveniencia de levantar un grandioso templo en el mismo lugar de emplazamiento del austero románico. La construcción se iniciaría años más tarde en 1516 y en sucesivas reformas y ampliaciones se alargaría durante tres siglos.<br/><br/>En 1959 la colegiata de Santa María de La Redonda fue declarada concatedral compartiendo rango con las históricas catedrales de Calahorra (siglo XV), y de Santo Domingo de La Calzada (siglo XI).",
+                    "latitude": 42.46664909502171, 
+                    "longitude": -2.4453944595074293,
+                    "address": "C. Portales, 14, 26001 Logroño, La Rioja",
+                    "yearBuilt": 1432,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Monasterio de Valvanera",
+                    "identifier": "lar3",
+                    "image": [
+                        "img/Comunidades/LaRioja/MonasterioValvanera/MonasterioValvanera1.jpg",
+                        "img/Comunidades/LaRioja/MonasterioValvanera/MonasterioValvanera2.jpg",
+                        "img/Comunidades/LaRioja/MonasterioValvanera/MonasterioValvanera3.jpg"
+                    ],
+                    "description":"El monasterio de Nuestra Señora de Valvanera es una abadía benedictina situada a las faldas de los Montes Mori y Redonda, en la sierra de la Demanda, perteneciente al municipio de Anguiano, en La Rioja (España). La abadía se halla en el valle del mismo nombre, a algo más de 1000 m sobre el nivel del mar, rodeado de espesos bosques de frondosas, y entre las cimas de los montes Pancrudos, La Rioja, Gomare y de San Lorenzo.<br/><br/>El monasterio acoge la advocación mariana de la Virgen de Valvanera, patrona de la Comunidad Autónoma de La Rioja, siendo por tanto un punto importante de peregrinaje para creyentes y de obligada visita para turistas en la región.<br/><br/>Actualmente está regido por cuatro monjes del Instituto del Verbo Encarnado.<br/><br/>El nombre de Valvanera parece derivar de la expresión latina \"Vallis Venaria\" que significaría \"Valle de las Venas de agua\" aunque también se cree que podría tener otros significados, como el de \"valle de la caza\" o \"valle de Venus\" (haciendo referencia a un antiguo culto en los montes cercanos) en latín serían los topónimos de \"Vallisvenarie\", \"Valvenerense\", \"Vallevenerense\" y \"Valvenere\".",
+                    "latitude": 42.23095458141692, 
+                    "longitude": -2.8702097306771663,
+                    "address": "Carretera LR-435, 26322 Anguiano, La Rioja",
+                    "yearBuilt": 1145,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Monasterio de Santa María la Real de Nájera",
+                    "identifier": "lar4",
+                    "image": [
+                        "img/Comunidades/LaRioja/MonasterioSantaMariaNajera/MonasterioSantaMariaNajera1.jpg",
+                        "img/Comunidades/LaRioja/MonasterioSantaMariaNajera/MonasterioSantaMariaNajera2.jpg",
+                        "img/Comunidades/LaRioja/MonasterioSantaMariaNajera/MonasterioSantaMariaNajera3.jpg"
+                    ],
+                    "description":"El monasterio de Santa María la Real de Nájera es un conjunto religioso situado en la ciudad de Nájera, en la Comunidad Autónoma de La Rioja (España). En él se encuentra el panteón de los reyes del reino de Nájera-Pamplona, antecesor del reino de Navarra. Al encontrarse Nájera en pleno Camino de Santiago y haber sido sede de monarcas navarros, la relevancia del monasterio de Santa María la Real fue elevada.",
+                    "latitude": 42.416234218140204,  
+                    "longitude": -2.735439196282793,
+                    "address": "Pl. Sta. María, 0, 26300 Nájera, La Rioja",
+                    "yearBuilt": 1052,
                     "video": [
 
                     ]
@@ -754,33 +1357,86 @@
         {
             "Valencia": [
                 {
-                    "name": "Monumento a los caídos",
+                    "name": "Catedral de Santa María de Valencia",
                     "identifier": "val1",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Valencia/CatedralValencia/CatedralValencia1.jpg",
+                        "img/Comunidades/Valencia/CatedralValencia/CatedralValencia2.jpg",
+                        "img/Comunidades/Valencia/CatedralValencia/CatedralValencia3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1920,
+                    "description":"La Iglesia Catedral-Basílica Metropolitana de la Asunción de Nuestra Señora de Valencia, llamada popularmente la Seu en valenciano, es sede del arzobispado de Valencia y está dedicada por deseo de Jaime I —siguiendo la tradición del siglo XIII— a la Asunción de María. Fue consagrada el año 1238 por el primer obispo de Valencia posterior a la Reconquista, Fray Andrés de Albalat.<br/><br/>El gótico valenciano es el estilo constructivo predominante de esta catedral, aunque también contiene elementos del románico, del gótico francés, del renacimiento, del barroco y neoclásico.<br/><br/>En su interior se venera el Santo Cáliz, fechado del siglo I, y dado a la catedral por el rey Alfonso el Magnánimo en 1437.<br/><br/>Contiene algunas de las primeras y mejores pinturas del Quattrocento de toda la península ibérica, que llegaron de Roma a través de artistas contratados por Alejandro VI. Este último Papa valenciano, cuando aún era el cardenal Rodrigo de Borja, hizo la petición para elevar la sede valentina al rango de Metropolitana, categoría que le fue otorgada por el papa Inocencio VIII en 1492.",
+                    "latitude": 39.4757613100783, 
+                    "longitude": -0.3752338597260265,
+                    "address": "Plaça de l'Almoina, s/n, 46003 València, Valencia",
+                    "yearBuilt": 1329,
                     "video": [
 
                     ]
                 },
                 {
-                    "name": "Catedral de Cádiz",
+                    "name": "El Miguelete",
                     "identifier": "val2",
                     "image": [
-                        "img/Comunidades/Andalucia/catedralCadiz.jpg",
-                        "img/Comunidades/Andalucia/alhambraGranada.jpg",
-                        "img/Comunidades/Andalucia/puenteRonda.jpg"
+                        "img/Comunidades/Valencia/Miguelete/Miguelete1.jpg",
+                        "img/Comunidades/Valencia/Miguelete/Miguelete2.jpg",
+                        "img/Comunidades/Valencia/Miguelete/Miguelete3.jpg"
                     ],
-                    "latitude": 36.74093,
-                    "longitude": -5.16589,
-                    "address": "Puente Nuevo, 9-3, 29400 Ronda, Málaga",
-                    "yearBuilt": 1624,
+                    "description":"La torre del Miguelete es la torre campanario de la catedral de Valencia, España. Se conoce como El Miguelete o Torre del Micalet en valenciano. La construcción de la torre se inicia en 1381 y finaliza en 1429. Por su complejidad y largos años de construcción, fue dirigida sucesivamente por varios maestros de obra; siendo el primero Andrés Juliá, desde 1381. Otros fueron José Franch (1396), Pedro Balaguer (1414, constructor de las Torres de Serranos); hasta Martín Llobet (1425), el último de los arquitectos que intervino en la construcción. Posteriormente se añadió la espadaña (1660-1736).",
+                    "latitude": 39.4754806291742, 
+                    "longitude": -0.37562057322064263,
+                    "address": "Pça. de la Reina, s/n, 46001 València, Valencia",
+                    "yearBuilt": 1429,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "La Lonja de la Seda",
+                    "identifier": "val3",
+                    "image": [
+                        "img/Comunidades/Valencia/LonjaSeda/LonjaSeda1.jpg",
+                        "img/Comunidades/Valencia/LonjaSeda/LonjaSeda2.jpg",
+                        "img/Comunidades/Valencia/LonjaSeda/LonjaSeda3.jpg"
+                    ],
+                    "description":"La Lonja de la Seda de Valencia o Lonja de los Mercaderes (en valenciano Llotja de la Seda o Llotja de Mercaders) es una obra maestra del gótico civil valenciano situada en el centro histórico de la ciudad de Valencia (España). Declarada, en 1996, Patrimonio de la Humanidad por la Unesco, se encuentra situada en la plaza del Mercado, número 31, frente a la Iglesia de los Santos Juanes y del Mercado Central de Valencia.<br/><br/>Francesc Baldomar fue el autor del proyecto original de la Lonja de Valencia, lo comenzó a elaborar entre los años 1470-1471. Sus discípulos Joan Ivarra y Pere Compte recibieron en 1481, cinco años después de su muerte (1476), el encargo de terminar de construirla según los magníficos planos originales que había dibujado en sus últimos años de vida. Los documentos apuntaban a un plano de igualdad entre ambos: \"que un mestre no sia subordinat al altre nil altre al altre\", es decir, que ninguno fuera más importante que el otro, así como también que la Lonja se debía hacer: \"qual es feta en mostra molt ben divuissada o en altra manera segons millor\", es decir, como en un plano muy bien dibujado que existía o de otra forma mejor. Su planteamiento siguió el modelo de la Lonja de Palma de Mallorca, constituyéndose en un edificio emblemático de la riqueza del Siglo de Oro valenciano (siglo XV) y muestra de la revolución comercial durante la Baja Edad Media, del desarrollo social y del prestigio conseguido por la burguesía valenciana.",
+                    "latitude": 39.47455347632259, 
+                    "longitude": -0.37833553089089705,
+                    "address": "Carrer de la Llotja, 2, 46001 València, Valencia",
+                    "yearBuilt": 1481,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Torres de Serranos",
+                    "identifier": "val4",
+                    "image": [
+                        "img/Comunidades/Valencia/TorresSerranos/TorresSerranos1.jpg",
+                        "img/Comunidades/Valencia/TorresSerranos/TorresSerranos2.jpg",
+                        "img/Comunidades/Valencia/TorresSerranos/TorresSerranos3.jpg"
+                    ],
+                    "description":"Las Torres de Serranos o Puerta de Serranos son una de las dos puertas fortificadas de la muralla medieval de Valencia (España) que aún permanecen en pie. El conjunto está formado por dos torres poligonales unidas por un cuerpo central, donde se abre la puerta propiamente dicha, con forma de arco de medio punto. Es Bien de Interés Cultural desde 1931.<br/><br/>El nombre de la puerta parece provenir de su situación, al noreste del casco antiguo, como entrada natural que comunicaba con los caminos que iban a la comarca de Los Serranos (el camino real de Zaragoza, que confluía en este punto también con el camino real de Barcelona). Otra teoría supone que pudo tomar el nombre de la principal familia que habitaba la calle homónima.",
+                    "latitude": 39.479357801514425, 
+                    "longitude": -0.3759983020556572 ,
+                    "address": "Plaça dels Furs, s/n, 46003 València",
+                    "yearBuilt": 1398,
+                    "video": [
+
+                    ]
+                },
+                {
+                    "name": "Castillo de Santa Bárbara",
+                    "identifier": "val5",
+                    "image": [
+                        "img/Comunidades/Valencia/CastilloSantaBarbara/CastilloSantaBarbara1.jpg",
+                        "img/Comunidades/Valencia/CastilloSantaBarbara/CastilloSantaBarbara2.jpg",
+                        "img/Comunidades/Valencia/CastilloSantaBarbara/CastilloSantaBarbara3.jpg"
+                    ],
+                    "description":"El castillo de Santa Bárbara (en valenciano, Castell de Santa Bàrbara) es un castillo ubicado en el centro de la ciudad española de Alicante, sobre el monte Benacantil, mole rocosa de 167 m de altitud lindante con el mar, lo que le confería un enorme valor estratégico ya que desde la misma se divisa toda la bahía de Alicante y sus alrededores terrestres. La imagen de la montaña desde la playa asemeja una cara, por lo que recibe el nombre de «la cara del moro» y es un icono de la ciudad de Alicante.<br/><br/>Hay historiadores que datan el origen del topónimo en las palabras bena, transcripción al árabe de pinna, \"peña\" en latín, y de laqanti, adjetivo que proviene de Laqant, Alicante para los árabes.",
+                    "latitude": 38.349123332406386, 
+                    "longitude": -0.4780503597559039,
+                    "address": "03002 Alicante",
+                    "yearBuilt": 1580,
                     "video": [
 
                     ]
