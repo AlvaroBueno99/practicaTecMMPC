@@ -301,6 +301,8 @@
 
 .rutas #map {
   margin-top: 6rem;
+  height: 50rem;
+  width: 90rem;
 }
 
 /* .leaflet-control-container .leaflet-routing-container-hide {
@@ -660,6 +662,45 @@ footer {
   position:absolute;
   left: 9.4rem;
   bottom: 1rem;
+}
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  width: 18.75rem;
+  max-height: 31rem;
+  overflow-y: auto;
+  /*position the autocomplete items to be the same width as the container:*/
+  /* top: 100%;
+  left: 0;
+  right: 0; */
+  
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #3498db;
+  color: white;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: #3498db !important;
+  color: #ffffff;
 }
 
 
