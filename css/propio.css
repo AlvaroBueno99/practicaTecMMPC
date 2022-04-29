@@ -649,7 +649,7 @@ footer {
 
 .card{
   width: fit-content;
-  height:30rem;
+  height:31rem;
 }
 
 .card #cardBtn{
@@ -660,7 +660,7 @@ footer {
 
 .favorite-btn{
   position:absolute;
-  left: 9.4rem;
+  left: 9.6rem;
   bottom: 1rem;
 }
 

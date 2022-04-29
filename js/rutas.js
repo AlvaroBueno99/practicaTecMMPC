@@ -14,17 +14,35 @@ function getQueryParams() {
   return search.get("comunidad");
 }
 
-// Search bar especifica de la pagina rutas
-function submitSearch(e) {
-  e.preventDefault();
-  const term = document
-    .getElementById("searchBarMonum")
-    .value.trim()
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
-  window.location.href = `/?term=${term}#filaTituloCatalogo`;
-}
+// const marker = {
+//   visited: Boolean,
+//   coords: L.latLng(),
+//   id : ""
+// };
+
+// function Marker (visited,coords,id){
+//   this.visited= visited,
+//   this.coords=  coords,
+//   this.id = id
+// };
+
+// function orderMarkersArrayPerDistance(arr){
+//   var tempArr = [];
+//   var aux=0;
+//   for (var i = 0; i<arr.length;i++){
+//     for ( var j = 0; i<arr.length-1;i++){
+//       if(L.GeometryUtil.distance(map,arr[i].coords,arr[j+1].coords)>aux){
+
+
+
+
+
+//       }
+//     }
+    
+//   }
+
+// }
 
 
 // Generación dinámica del mapa de routas.
@@ -70,6 +88,7 @@ function getRouteMap() {
   // Bucle para generar un marcador para cada monumento de la comunidad.
 
   var markers = [];
+  // var objects = [];
   var name = [];
   var identifier = [];
   let iteration = 0;
@@ -86,6 +105,8 @@ function getRouteMap() {
             );
           }
           iteration++;
+          // var id = new Marker(false ,L.latLng(`${monumento.latitude}`, `${monumento.longitude}`),iteration );
+          // console.log(id.visited),
           markers.push(
             L.latLng(`${monumento.latitude}`, `${monumento.longitude}`)
           ),
@@ -94,7 +115,11 @@ function getRouteMap() {
           ),
           identifier.push(
             `${monumento.identifier}`
-          );
+          )
+          // objects.push(
+          //   id
+          // ),
+          // console.log(objects);
           /*
           markers[markerIndex] = L.marker([`${monumento.latitude}`, `${monumento.longitude}`], {
             icon: blueIcon,
@@ -105,6 +130,9 @@ function getRouteMap() {
       }
     });
   });
+
+  // d = L.GeometryUtil.distance(map, objects[0].coords, objects[1].coords);
+          // console.log(d);
 
   /*
   var marker = L.marker([39.56771199239134, 2.648343010456217], {
@@ -226,6 +254,7 @@ function autocomplete(inp) {
               b.addEventListener("click", function(e) {
               /*insert the value for the autocomplete text field:*/
               inp.value = this.getElementsByTagName("input")[0].value;
+              document.getElementById("searchBarRutas").focus();
               /*close the list of autocompleted values,
               (or any other open lists of autocompleted values:*/
               closeAllLists();

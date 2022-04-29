@@ -733,7 +733,8 @@
                     "address": "Plaza Margarita Xirgu, s/n, 06800 Mérida, Badajoz",
                     "yearBuilt": -15,
                     "video": [
-
+                        "/videos/Extremadura/TeatroRomanoMerida/TeatroRomanoMerida.mp4",
+                        "/videos/Extremadura/TeatroRomanoMerida/TeatroRomanoMerida.webm"
                     ]
                 },
                 {
@@ -750,7 +751,8 @@
                     "address": "Plaza Sta. María de Guadalupe, 10140 Guadalupe, Cáceres",
                     "yearBuilt": 1389,
                     "video": [
-
+                        "/videos/Extremadura/RealMonasteriodeNuestraSeñoradeGuadalupe/RealMonasteriodeNuestraSeñoradeGuadalupe.mp4",
+                        "/videos/Extremadura/RealMonasteriodeNuestraSeñoradeGuadalupe/RealMonasteriodeNuestraSeñoradeGuadalupe.webm"
                     ]
                 },
                 {
@@ -767,7 +769,8 @@
                     "address": "Av. Vía de la Plata, S/N, 06800 Mérida, Badajoz",
                     "yearBuilt": 30,
                     "video": [
-
+                        "/videos/Extremadura/AcueductoMilagros/AcueductoMilagros.mp4",
+                        "/videos/Extremadura/AcueductoMilagros/AcueductoMilagros.webm"
                     ]
                 },
                 {
@@ -784,7 +787,8 @@
                     "address": "Oficinas del Consorcio, C. Sta. Julia, 5, 06800 Mérida, Badajoz",
                     "yearBuilt": 50,
                     "video": [
-
+                        "/videos/Extremadura/TemploDeDiana/TemploDeDiana.mp4",
+                        "/videos/Extremadura/TemploDeDiana/TemploDeDiana.webm"
                     ]
                 },
                 {
@@ -801,7 +805,8 @@
                     "address": "Pl. Catedral, 1, 10600 Plasencia, Cáceres",
                     "yearBuilt": 1578,
                     "video": [
-
+                        "/videos/Extremadura/CatedralPlasencia/CatedralPlasencia.mp4",
+                        "/videos/Extremadura/CatedralPlasencia/CatedralPlasencia.webm"
                     ]
                 },
                 {
@@ -818,7 +823,8 @@
                     "address": "Pl. Reyes Católicos, 6A, 06001 Badajoz",
                     "yearBuilt": 1551,
                     "video": [
-
+                        "/videos/Extremadura/PuertaPalmas/PuertaPalmas.mp4",
+                        "/videos/Extremadura/PuertaPalmas/PuertaPalmas.webm"
                     ]
                 }
             ]
@@ -839,7 +845,8 @@
                     "address": "Praza do Obradoiro, s/n, 15704 Santiago de Compostela, A Coruña",
                     "yearBuilt": 1211,
                     "video": [
-
+                        "/videos/Galicia/CatedralSantiagoCompostela/CatedralSantiagoCompostela.mp4",
+                        "/videos/Galicia/CatedralSantiagoCompostela/CatedralSantiagoCompostela.webm"
                     ]
                 },
                 {
@@ -856,7 +863,8 @@
                     "address": "Av. Navarra, s/n, 15002 A Coruña",
                     "yearBuilt": 55,
                     "video": [
-
+                        "/videos/Galicia/TorreHercules/TorreHercules.mp4",
+                        "/videos/Galicia/TorreHercules/TorreHercules.webm"
                     ]
                 },
                 {
@@ -873,7 +881,8 @@
                     "address": "27001 Lugo",
                     "yearBuilt": 240,
                     "video": [
-
+                        "/videos/Galicia/MurallaRomanaLugo/MurallaRomanaLugo.mp4",
+                        "/videos/Galicia/MurallaRomanaLugo/MurallaRomanaLugo.webm"
                     ]
                 },
                 {
@@ -890,7 +899,8 @@
                     "address": "Rúa do Rial, s/n, 36691 O Rial, Pontevedra",
                     "yearBuilt": 1150,
                     "video": [
-
+                        "/videos/Galicia/CastilloSotomayor/CastilloSotomayor.mp4",
+                        "/videos/Galicia/CastilloSotomayor/CastilloSotomayor.webm"
                     ]
                 },
                 {
@@ -907,7 +917,8 @@
                     "address": "27203 Palas de Rei, Lugo",
                     "yearBuilt": 1400,
                     "video": [
-
+                        "/videos/Galicia/CastilloPambre/CastilloPambre.mp4",
+                        "/videos/Galicia/CastilloPambre/CastilloPambre.webm"
                     ]
                 }
             ]
@@ -928,7 +939,8 @@
                     "address": "C. de Bailén, s/n, 28071 Madrid",
                     "yearBuilt": 1764,
                     "video": [
-
+                        "/videos/Madrid/PalacioRealMadrid/PalacioRealMadrid.mp4",
+                        "/videos/Madrid/PalacioRealMadrid/PalacioRealMadrid.webm"
                     ]
                 },
                 {
@@ -945,7 +957,8 @@
                     "address": "Pl. Mayor, 28012 Madrid",
                     "yearBuilt": 1619,
                     "video": [
-
+                        "/videos/Madrid/PlazaMayor/PlazaMayor.mp4",
+                        "/videos/Madrid/PlazaMayor/PlazaMayor.webm"
                     ]
                 },
                 {
@@ -962,7 +975,8 @@
                     "address": "C. de Ferraz, 1, 28008 Madrid",
                     "yearBuilt": -178,
                     "video": [
-
+                        "/videos/Madrid/TemploDebod/TemploDebod.mp4",
+                        "/videos/Madrid/TemploDebod/TemploDebod.webm"
                     ]
                 },
                 {
@@ -979,7 +993,8 @@
                     "address": "Av. Puerta de Hierro, s/n, 28071 Madrid",
                     "yearBuilt": 1955,
                     "video": [
-
+                        "/videos/Madrid/PalacioMoncloa/PalacioMoncloa.mp4",
+                        "/videos/Madrid/PalacioMoncloa/PalacioMoncloa.webm"
                     ]
                 }
             ]
@@ -1000,7 +1015,8 @@
                     "address": "Pl. del Cardenal Belluga, s/n, 30001 Murcia",
                     "yearBuilt": 1465,
                     "video": [
-
+                        "/videos/Murcia/CatedralMurcia/CatedralMurcia.mp4",
+                        "/videos/Murcia/CatedralMurcia/CatedralMurcia.webm"
                     ]
                 },
                 {
@@ -1017,7 +1033,8 @@
                     "address": "C. Matadero Viejo, 4, 30002 Murcia",
                     "yearBuilt": 1742,
                     "video": [
-
+                        "/videos/Murcia/PuentePeligros/PuentePeligros.mp4",
+                        "/videos/Murcia/PuentePeligros/PuentePeligros.webm"
                     ]
                 },
                 {
@@ -1034,7 +1051,8 @@
                     "address": "30155 Murcia",
                     "yearBuilt": 1150,
                     "video": [
-
+                        "/videos/Murcia/CastilloAsomada/CastilloAsomada.mp4",
+                        "/videos/Murcia/CastilloAsomada/CastilloAsomada.webm"
                     ]
                 },
                 {
@@ -1051,7 +1069,8 @@
                     "address": "30157 Algezares, Murcia",
                     "yearBuilt": 1694,
                     "video": [
-
+                        "/videos/Murcia/SantuarioNuestraSeñoraFuensanta/SantuarioNuestraSeñoraFuensanta.mp4",
+                        "/videos/Murcia/SantuarioNuestraSeñoraFuensanta/SantuarioNuestraSeñoraFuensanta.webm"
                     ]
                 }
                 
@@ -1073,7 +1092,8 @@
                     "address": "Pl. Carlos III El Noble, 4, 31390 Olite, Navarra",
                     "yearBuilt": 1260,
                     "video": [
-
+                        "/videos/Navarra/PalacioOlite/PalacioOlite.mp4",
+                        "/videos/Navarra/PalacioOlite/PalacioOlite.webm"
                     ]
                 },
                 {
@@ -1090,7 +1110,8 @@
                     "address": "C. Dormitalería, 1, 31001 Pamplona, Navarra",
                     "yearBuilt": 1450,
                     "video": [
-
+                        "/videos/Navarra/CatedralPamplona/CatedralPaplona.mp4",
+                        "/videos/Navarra/CatedralPamplona/CatedralPaplona.webm"
                     ]
                 },
                 {
@@ -1107,7 +1128,8 @@
                     "address": "HQRM+WC, 31411 Javier, Navarra",
                     "yearBuilt": 950,
                     "video": [
-
+                        "/videos/Navarra/CastilloJavier/CastilloJavier.mp4",
+                        "/videos/Navarra/CastilloJavier/CastilloJavier.webm"
                     ]
                 },
                 {
@@ -1124,7 +1146,8 @@
                     "address": "Pl. del Castillo, 31001 Pamplona, Navarra",
                     "yearBuilt": 1653,
                     "video": [
-
+                        "/videos/Navarra/PlazaCastillo/PlazaCastillo.mp4",
+                        "/videos/Navarra/PlazaCastillo/PlazaCastillo.webm"
                     ]
                 },
                 {
@@ -1141,7 +1164,8 @@
                     "address": "Av. del Ejército, s/n, 31001 Pamplona, Navarra",
                     "yearBuilt": 1571,
                     "video": [
-
+                        "/videos/Navarra/CiudadelaPamplona/CiudadelaPamplona.mp4",
+                        "/videos/Navarra/CiudadelaPamplona/CiudadelaPamplona.webm"
                     ]
                 },
                 {
@@ -1158,7 +1182,8 @@
                     "address": "C. Roso, 2, 31500 Tudela, Navarra",
                     "yearBuilt": 1214,
                     "video": [
-
+                        "/videos/Navarra/CatedralTudela/CatedralTudela.mp4",
+                        "/videos/Navarra/CatedralTudela/CatedralTudela.webm"
                     ]
                 }
             ]
@@ -1179,7 +1204,8 @@
                     "address": "Puente de Vizcaya Zubia, Getxo, Bizkaia",
                     "yearBuilt": 1893,
                     "video": [
-
+                        "/videos/PaisVasco/PuenteVizcaya/PuenteVizcaya.mp4",
+                        "/videos/PaisVasco/PuenteVizcaya/PuenteVizcaya.webm"
                     ]
                 },
                 {
@@ -1196,7 +1222,8 @@
                     "address": "48130 San Juan de Gaztelugatxe, Vizcaya",
                     "yearBuilt": 946,
                     "video": [
-
+                        "/videos/PaisVasco/Gaztelugache/Gaztelugache.mp4",
+                        "/videos/PaisVasco/Gaztelugache/Gaztelugache.webm"
                     ]
                 },
                 {
@@ -1213,7 +1240,8 @@
                     "address": "Done Jakue Plazatxoa, 1, 48005 Bilbo, Bizkaia",
                     "yearBuilt": 1443,
                     "video": [
-
+                        "/videos/PaisVasco/CatedralBilbao/CatedralBilbao.mp4",
+                        "/videos/PaisVasco/CatedralBilbao/CatedralBilbao.webm"
                     ]
                 },
                 {
@@ -1230,7 +1258,8 @@
                     "address": "Bo. Butron, 12, 48110 Gatica, Vizcaya",
                     "yearBuilt": 856,
                     "video": [
-
+                        "/videos/PaisVasco/CastilloButron/CastilloButron.mp4",
+                        "/videos/PaisVasco/CastilloButron/CastilloButron.webm"
                     ]
                 },
                 {
@@ -1247,7 +1276,8 @@
                     "address": "Urdaneta Kalea, 12, 20006 Donostia, Gipuzkoa",
                     "yearBuilt": 1897,
                     "video": [
-
+                        "/videos/PaisVasco/CatedralBuenPastor/CatedralBuenPastor.mp4",
+                        "/videos/PaisVasco/CatedralBuenPastor/CatedralBuenPastor.webm"
                     ]
                 },
                 {
@@ -1264,7 +1294,8 @@
                     "address": "Begoñako Andra Maria Kalea, 38, 48006 Bilbo, Bizkaia",
                     "yearBuilt": 1621,
                     "video": [
-
+                        "/videos/PaisVasco/BasilicaBegoña/BasilicaBegoña.mp4",
+                        "/videos/PaisVasco/BasilicaBegoña/BasilicaBegoña.webm"
                     ]
                 },
                 {
@@ -1281,7 +1312,8 @@
                     "address": "01001 Vitoria-Gasteiz, Álava",
                     "yearBuilt": 1791,
                     "video": [
-
+                        "/videos/PaisVasco/PlazaEspaña/PlazaEspaña.mp4",
+                        "/videos/PaisVasco/PlazaEspaña/PlazaEspaña.webm"
                     ]
                 }
 
@@ -1303,7 +1335,8 @@
                     "address": "Calle Prestiño, s/n, 26326 San Millán de la Cogolla, La Rioja",
                     "yearBuilt": 1053,
                     "video": [
-
+                        "/videos/LaRioja/MonasterioYuso/MonasterioYuso.mp4",
+                        "/videos/LaRioja/MonasterioYuso/MonasterioYuso.webm"
                     ]
                 },
                 {
@@ -1320,7 +1353,8 @@
                     "address": "C. Portales, 14, 26001 Logroño, La Rioja",
                     "yearBuilt": 1432,
                     "video": [
-
+                        "/videos/LaRioja/ConcatedralLogroño/ConcatedralLogroño.mp4",
+                        "/videos/LaRioja/ConcatedralLogroño/ConcatedralLogroño.webm"
                     ]
                 },
                 {
@@ -1337,7 +1371,8 @@
                     "address": "Carretera LR-435, 26322 Anguiano, La Rioja",
                     "yearBuilt": 1145,
                     "video": [
-
+                        "/videos/LaRioja/MonasterioValvanera/MonasterioValvanera.mp4",
+                        "/videos/LaRioja/MonasterioValvanera/MonasterioValvanera.webm"
                     ]
                 },
                 {
@@ -1354,7 +1389,8 @@
                     "address": "Pl. Sta. María, 0, 26300 Nájera, La Rioja",
                     "yearBuilt": 1052,
                     "video": [
-
+                        "/videos/LaRioja/MonasterioSantaMariaNajera/MonasterioSantaMariaNajera.mp4",
+                        "/videos/LaRioja/MonasterioSantaMariaNajera/MonasterioSantaMariaNajera.webm"
                     ]
                 }
             ]
@@ -1375,7 +1411,8 @@
                     "address": "Plaça de l'Almoina, s/n, 46003 València, Valencia",
                     "yearBuilt": 1329,
                     "video": [
-
+                        "/videos/Valencia/CatedralValencia/CatedralValencia.mp4",
+                        "/videos/Valencia/CatedralValencia/CatedralValencia.webm"
                     ]
                 },
                 {
@@ -1392,7 +1429,8 @@
                     "address": "Pça. de la Reina, s/n, 46001 València, Valencia",
                     "yearBuilt": 1429,
                     "video": [
-
+                        "/videos/Valencia/Miguelete/Miguelete.mp4",
+                        "/videos/Valencia/Miguelete/Miguelete.webm"
                     ]
                 },
                 {
@@ -1409,7 +1447,8 @@
                     "address": "Carrer de la Llotja, 2, 46001 València, Valencia",
                     "yearBuilt": 1481,
                     "video": [
-
+                        "/videos/Valencia/LonjaSeda/LonjaSeda.mp4",
+                        "/videos/Valencia/LonjaSeda/LonjaSeda.webm"
                     ]
                 },
                 {
@@ -1426,7 +1465,8 @@
                     "address": "Plaça dels Furs, s/n, 46003 València",
                     "yearBuilt": 1398,
                     "video": [
-
+                        "/videos/Valencia/TorresSerranos/TorreSerranos.mp4",
+                        "/videos/Valencia/TorresSerranos/TorreSerranos.webm"
                     ]
                 },
                 {
@@ -1443,7 +1483,8 @@
                     "address": "03002 Alicante",
                     "yearBuilt": 1580,
                     "video": [
-
+                        "/videos/Valencia/CastilloSantaBarbara/CastilloSantaBarbara.mp4",
+                        "/videos/Valencia/CastilloSantaBarbara/CastilloSantaBarbara.webm"
                     ]
                 }
             ]
