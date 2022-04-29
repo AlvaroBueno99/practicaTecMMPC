@@ -273,6 +273,7 @@
 /** Propiedades texto carta*/
 #monumentCardText {
   text-align: justify;
+  font-weight: bold;
 }
 
 /**
@@ -632,6 +633,7 @@ footer {
 /* css del corazon del boton favoritos */
 .favorite-btn {
   font-size: 18px;
+  color: red;
 }
 
 .datosCartaMon{
@@ -649,19 +651,76 @@ footer {
 
 .card{
   width: fit-content;
-  height:31rem;
+  height:37rem;
 }
 
 .card #cardBtn{
   position:absolute;
   left: 1rem;
   bottom: 1rem;
+  font-weight: bold;
+  border: 0.1rem black solid;
+}
+
+.card-title{
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: -1.5px 1.5px 10px black,
+                  1.5px 1.5px 10px black,
+                 1.5px -1.5px 10px black,
+                -1.5px -1.5px 10px black;
+  
+}
+
+
+#mainCardText{
+  font-weight: bold;
+
+}
+
+.card-body{
+  /* display: flex; */
+  border-top: 0.1rem solid black;
+  background-image: url(/img/marmol2.jpg);
+}
+
+#monumentCard{
+  background-image: url(/img/marmol3.jpg);
+}
+/* #monumentProperties{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+} */
+
+.card-body #direccion{
+  background-image: linear-gradient(to right, white,#3498db);
+  padding: 0.7rem;
+  margin-bottom: 0.7rem;
+  margin-top: 1rem;
+  border: 0.1rem solid black;
+}
+
+.card-body #año{
+  background-image: linear-gradient(to right, white,#3498db);
+  padding: 0.7rem;
+  border: 0.1rem solid black;
+
 }
 
 .favorite-btn{
   position:absolute;
-  left: 9.6rem;
+  left: 10.5rem;
   bottom: 1rem;
+  height: 2.45rem;
+  border: 0.1rem black solid;
+  background-color: white;
 }
 
 .autocomplete {

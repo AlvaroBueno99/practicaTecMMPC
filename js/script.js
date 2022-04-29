@@ -11,81 +11,36 @@ async function getJSONFile() {
   dataJSON = monumentos;
 }
 
-function generateJSONLD() {
-  let jsonld = /* HTML */
-    `
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Place",
-      "name": " ",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "monumentID",
-        "value":  " "
-    },
-      "image": " ",
-      "description": " ",
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "",
-        "longitude": ""
-    },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "",
-        "addressRegion": "",
-        "postalCode": "",
-        "streetAddress": ""
-    },
-    "yearBuilt": ""
-    }
-  </script>
-  
-  
-  `
-
-}
-
 // Generate HTML dinamically with JS
 
 function generateCard(monumento) {
   let añoAjustado = (ajustarAño(`${monumento.yearBuilt}`));
-  const card =
-    /* HTML */
+  const card =/* HTML */
 
     `
-      <div class="col-auto m-4">
-        <div
-          class="card overflow zoom hoverCard"
-          id="card-${monumento.identifier}"
-          style="width: 18rem;"
-        >
-          <img
-            class="card-img-top"
-            src="${monumento.image[0]}"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">${monumento.name}</h5>
-            <p class="card-text ">${monumento.address}</p>
-            <p class="card-text">Año de construcción: ${añoAjustado}</p>
-            <a href="/monumento.html?identifier=${monumento.identifier}" class="btn btn-primary" id="cardBtn"
-              >Ver monumento</a
-            >
-            <button
-              type="button"
-              data-id="${monumento.identifier}"
-              class="favorite-btn btn btn-outline-info ${monumento.isFavorite
-      ? "is-favorite"
-      : ""}"
-              onclick="resultsDelegation(event)"
-            >
-              ${monumento.isFavorite ? "♥" : "♡"}
-            </button>
-          </div>
+    <div itemscope itemtype="https://schema.org/LandmarksOrHistoricalBuildings" class="col-auto m-4">
+    <div class="card overflow zoom hoverCard" id="card-${monumento.identifier}" style="width: 18rem;">
+      <img class="card-img-top" itemprop="image" src="${monumento.image[0]}" alt="Card image cap" />
+      <div class="card-body align-items-center">
+      <div id="monumentProperties">
+        <h5 itemprop="name" class="card-title">${monumento.name}</h5>
+        <div id="direccion">
+        <p itemprop="address" class="card-text" id="mainCardText">${monumento.address}</p>
         </div>
+        <div id="año">
+        <div itemscope itemtype="https://schema.org/Accommodation">
+          <p itemprop="yearBuilt" class="card-text" id="mainCardText">Año de construcción: ${añoAjustado}</p>
+        </div>
+        </div>
+        </div>
+        <a href="/monumento.html?identifier=${monumento.identifier}" class="btn btn-primary" id="cardBtn">Ver monumento</a>
+        <button type="button" data-id="${monumento.identifier}" class="favorite-btn btn btn-outline-info ${monumento.isFavorite
+          ? " is-favorite" : "" }" onclick="resultsDelegation(event)">
+          ${monumento.isFavorite ? "♥" : "♡"}
+        </button>
       </div>
+    </div>
+  </div>
     `;
 
   return card;
@@ -203,6 +158,7 @@ function generatePieChart() {
           enabled: true,
           format: "<b>{point.name}</b>: {point.percentage:.1f} %",
           connectorColor: "silver",
+          color: "white"
         },
       },
     },

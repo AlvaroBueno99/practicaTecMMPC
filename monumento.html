@@ -51,19 +51,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
 
-
-
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
-        <div class="container d-flex align-items-center">
-
+        <div itemscope itemtype="https://schema.org/LocalBusiness" class="container d-flex align-items-center">
             <div class="logo me-auto">
                 <!-- <h1><a href="index.html">Monumentos España</a></h1> -->
                 <!-- Uncomment below if you prefer to use an image logo -->
-                <a href="index.html"><img src="https://logomarts.files.wordpress.com/2015/07/logo-example2.jpg" alt=""
+                <a href="index.html"><img itemprop="logo"
+                        src="https://logomarts.files.wordpress.com/2015/07/logo-example2.jpg" alt=""
                         class="img-fluid"></a>
             </div>
-
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
                     <li><a class="nav-link scrollto " href="/">Inicio</a></li>
@@ -73,8 +70,9 @@
                 <!-- search bar right align -->
                 <div class="search">
                     <form action="#">
-                        <input type="text" placeholder="Buscar un monumento" name="search" id="searchBarMonum" autocomplete="off">
-                        <button onclick="submitSearch(event)">
+                        <input type="text" placeholder="Buscar un monumento" name="search" id="searchBarMonum"
+                            autocomplete="off">
+                        <button onclick="submitSearch(event)" id="searchButton">
                             <i class="bi bi-search" style="font-size: 1.125rem;">
                             </i>
                         </button>
@@ -82,21 +80,20 @@
                 </div>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
-
             <div class="header-social-links d-flex align-items-center">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+                <a itemprop="url" href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a itemprop="url" href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a itemprop="url" href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a itemprop="url" href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
-
         </div>
-    </header><!-- End Header -->
+    </header>
+    <!-- End Header -->
 
     <!-- ------------------------------------------------------------------------------------- -->
     <div class="container-fluid" id="todoMon">
         <div class="row">
-            <div class="col-xl-4 col-lg-auto col-md-auto col-sm-auto col-auto" id="contenidoIzquierda">
+            <aside class="col-xl-4 col-lg-auto col-md-auto col-sm-auto col-auto" id="contenidoIzquierda">
                 <div class="row justify-content-center">
                     <div class="row justify-content-center">
                         <div class="contenedor" id="contenedorEnlaceRuta">
@@ -125,25 +122,21 @@
                         </div>
                     </div>
 
-                    <div class="row justify-content-center">
+                    <!-- <div class="row justify-content-center">
                         <div class="contenedor" id="contTwitter">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
+            </aside>
 
-
-            </div>
-
-            <div class="col-xl-8 col-lg-auto col-md-auto col-sm-auto col-auto" id="contenidoDerecha">
+            <article class="col-xl-8 col-lg-auto col-md-auto col-sm-auto col-auto" id="contenidoDerecha">
                 <div class="row justify-content-center">
                     <div class="row justify-content-center">
                         <div class="col-auto">
                             <div id="carouselImagenes">
-
                             </div>
 
                             <div class="card" id="cartaInformacion">
-
                             </div>
                         </div>
                     </div>
@@ -155,8 +148,6 @@
                         </div>
                     </div>
 
-
-
                     <!-- ------------------------------------------------------------------------------------------------------------------ -->
                     <div class="row justify-content-center">
                         <div class="col-auto" id="contVideo">
@@ -164,7 +155,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
     </div>
 
@@ -173,21 +164,20 @@
     <!-- ------------------------------------------------------------------------------------- -->
 
     <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
+    <footer itemscope itemtype="https://schema.org/LocalBusiness" class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <!-- Left -->
             <div class="me-5 d-none d-lg-block">
                 <span>Visita nuestras redes sociales:&nbsp;</span>
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+                <a itemprop="url" href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a itemprop="url" href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a itemprop="url" href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a itemprop="url" href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
             <!-- Left -->
         </section>
         <!-- Section: Social media -->
-
         <!-- Section: Links  -->
         <section class="">
             <div class="container text-center text-md-start mt-5">
@@ -196,16 +186,15 @@
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
+                        <h6 itemprop="name" class="text-uppercase fw-bold mb-4">
                             <i class="fas fa-gem me-3"></i>Monumentos España
                         </h6>
-                        <p align="justify">
+                        <p itemprop="description" align="justify">
                             Mostramos un catálogo de los monumentos más importantes de España distribuidos en
                             las 17 comunidades autónomas. Ofrecemos rutas guiadas en todas las comunidades.
                         </p>
                     </div>
                     <!-- Grid column -->
-
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
@@ -213,33 +202,33 @@
                             Links de interés
                         </h6>
                         <p>
-                            <a href="https://www.netlify.com/" class="text-reset">Netlify</a>
+                            <a itemprop="url" href="https://www.netlify.com/" class="text-reset">Netlify</a>
                         </p>
                         <p>
-                            <a href="https://github.com/" class="text-reset">GitHub</a>
+                            <a itemprop="url" href="https://github.com/" class="text-reset">GitHub</a>
                         </p>
                         <p>
-                            <a href="https://www.w3schools.com/" class="text-reset">W3schools</a>
+                            <a itemprop="url" href="https://www.w3schools.com/" class="text-reset">W3schools</a>
                         </p>
                         <p>
-                            <a href="https://getbootstrap.com/" class="text-reset">Bootstrap</a>
+                            <a itemprop="url" href="https://getbootstrap.com/" class="text-reset">Bootstrap</a>
                         </p>
                     </div>
                     <!-- Grid column -->
-
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">
                             Contacto
                         </h6>
-                        <p><i class="fas fa-home me-3"></i> Palma de Mallorca, PM 07001, ESP</p>
-                        <p>
+                        <p itemprop="address"><i class="fas fa-home me-3"></i> Palma de Mallorca, PM 07001, ESP
+                        </p>
+                        <p itemprop="email">
                             <i class="fas fa-envelope me-3"></i>
                             MonumentosEspaña@gmail.com
                         </p>
-                        <p><i class="fas fa-phone me-3"></i> + 34 971 567 885</p>
-                        <p><i class="fas fa-print me-3"></i> + 34 971 567 898</p>
+                        <p itemprop="telephone"><i class="fas fa-phone me-3"></i> + 34 971 567 885</p>
+                        <p itemprop="telephone"><i class="fas fa-print me-3"></i> + 34 971 567 898</p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -247,10 +236,8 @@
             </div>
         </section>
         <!-- Section: Links  -->
-
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-
             <p class="text-reset fw-bold"> © 2022 Copyright: Álvaro&Adri</p>
         </div>
         <!-- Copyright -->

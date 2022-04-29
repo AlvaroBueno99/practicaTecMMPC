@@ -12,46 +12,38 @@ function getQueryParams() {
   const search = new URLSearchParams(window.location.search);
   return search.get("identifier");
 }
+
 function generateSlider(monumento) {
-  const infoSlider =
-    // HTML
+  const infoSlider =/* HTML */
 
     `
-  <div id="carouselMonumento" class="carousel slide" data-bs-ride="carousel">
-                            
-                        
-  <div class="carousel-indicators">
-  <button type="button" data-bs-target="#carouselMonumento" data-bs-slide-to="0"
-      class="active" aria-current="true" aria-label="Slide 1"></button>
-  <button type="button" data-bs-target="#carouselMonumento" data-bs-slide-to="1"
-      aria-label="Slide 2"></button>
-  <button type="button" data-bs-target="#carouselMonumento" data-bs-slide-to="2"
-      aria-label="Slide 3"></button>
-
-</div>
-<div class="carousel-inner">
-  <div class="carousel-item active" >
-      <img  src="${monumento.image[0]}" id="slide1">
+    <div  id="carouselMonumento" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselMonumento" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselMonumento" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselMonumento" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div itemscope itemtype="https://schema.org/LandmarksOrHistoricalBuildings" class="carousel-inner">
+      <div class="carousel-item active">
+        <img itemprop="image" src="${monumento.image[0]}" id="slide1">
+      </div>
+      <div class="carousel-item">
+        <img itemprop="image" src="${monumento.image[1]}" id="slide2">
+      </div>
+      <div class="carousel-item">
+        <img itemprop="image" src="${monumento.image[2]}" id="slide3">
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMonumento" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselMonumento" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </div>
-  <div class="carousel-item" >
-      <img  src="${monumento.image[1]}" id="slide2">
-  </div>
-  <div class="carousel-item" >
-      <img  src="${monumento.image[2]}" id="slide3">
-  </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselMonumento"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselMonumento"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</div>
   `;
 
   return infoSlider;
@@ -59,19 +51,34 @@ function generateSlider(monumento) {
 
 function generateInformationCard(monumento) {
   let antiguedad = (new Date().getFullYear() - `${monumento.yearBuilt}`);
+  let latitud = +(Math.round(`${monumento.latitude}` + "e+5")  + "e-5");
+  let longitud = +(Math.round(`${monumento.longitude}` + "e+5")  + "e-5");
   const infoCard =
     /* HTML */
 
     `
-  <div class="card-header">
-      <i class="bi bi-ticket datosCartaMon"><br> ${monumento.name}</i>
+  <div 
+    itemscope
+    itemtype="https://schema.org/LandmarksOrHistoricalBuildings"class="card-header">
+      <i itemprop="name" class="bi bi-ticket datosCartaMon"><br> ${monumento.name}</i>
       <i class="bi bi-calendar datosCartaMon"> <br>${antiguedad} años de <br> antigüedad</i> 
-      <i class="bi bi-house datosCartaMon"> <br>${monumento.address}</i> 
-      <i class="bi bi-map datosCartaMon"> <br>(${monumento.latitude} / ${monumento.longitude})</i>
+      <i itemprop="address" class="bi bi-house datosCartaMon"> <br>${monumento.address}</i> 
+      <i 
+        itemprop="geo"
+        itemscope
+        itemtype="https://schema.org/GeoCoordinates"
+        class="bi bi-map datosCartaMon"> <br>
+        (${latitud} / ${longitud})
+        <meta itemprop="latitude" content=${monumento.latitude} />
+        <meta itemprop="longitude" content=${monumento.longitude} />
+        </i>
   </div>
-  <div class="card-body">
-      <h5 class="card-title">${monumento.name}</h5>
-      <p class="card-text" id="monumentCardText"> ${monumento.description}
+  <div 
+    itemscope
+    itemtype="https://schema.org/LandmarksOrHistoricalBuildings"  
+    class="card-body" id="monumentCard">
+      <h5 itemprop="name" class="card-title">${monumento.name}</h5>
+      <p itemprop="description" class="card-text" id="monumentCardText"> ${monumento.description}
       </p>
 
   </div>
@@ -259,15 +266,15 @@ function autocomplete(inp) {
         decrease the currentFocus variable:*/
         currentFocus--;
         /*and and make the current item more visible:*/
-        addActive(x);
-      } else if (e.keyCode == 13) {
-        /*If the ENTER key is pressed, prevent the form from being submitted,*/
-        e.preventDefault();
-        if (currentFocus > -1) {
-          /*and simulate a click on the "active" item:*/
-          if (x) x[currentFocus].click();
-        }
-      }
+        addActive(x);}
+      // } else if (e.keyCode == 13) {
+      //   /*If the ENTER key is pressed, prevent the form from being submitted,*/
+      //   e.preventDefault();
+      //   if (currentFocus > -1) {
+      //     /*and simulate a click on the "active" item:*/
+      //     if (x) x[currentFocus].click();
+      //   }
+      // }
   });
   function addActive(x) {
     /*a function to classify an item as "active":*/

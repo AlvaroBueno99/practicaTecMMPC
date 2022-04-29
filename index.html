@@ -2,18 +2,6 @@
 <html lang="en">
 
 <head>
-
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-N69T59R');</script>
-    <!-- End Google Tag Manager -->
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,12 +37,6 @@
 </head>
 
 <body>
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N69T59R" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -71,26 +53,23 @@
     <div class="container-fluid px-0" id="todo">
 
         <!-- ======= Header ======= -->
-        <header id="header" class="fixed-top d-flex align-items-center">
-            <div class="container d-flex align-items-center">
-
+        <header  id="header" class="fixed-top d-flex align-items-center">
+            <div itemscope itemtype="https://schema.org/LocalBusiness" class="container d-flex align-items-center">
                 <div class="logo me-auto">
                     <!-- <h1><a href="index.html">Monumentos España</a></h1> -->
                     <!-- Uncomment below if you prefer to use an image logo -->
-                    <a href="index.html"><img src="https://logomarts.files.wordpress.com/2015/07/logo-example2.jpg"
-                            alt="" class="img-fluid"></a>
+                    <a href="index.html"><img itemprop="logo" src="https://logomarts.files.wordpress.com/2015/07/logo-example2.jpg" alt=""
+                            class="img-fluid"></a>
                 </div>
-
                 <nav id="navbar" class="navbar order-last order-lg-0">
                     <ul>
-                        <li><a class="nav-link scrollto " href="/">Inicio</a></li>
-                        <li><a class="nav-link scrollto" href="/rutas.html">Rutas</a></li>
-                        <li><a class="nav-link scrollto" href="#">Iniciar Sesión</a></li>
+                        <li><a  class="nav-link scrollto " href="/">Inicio</a></li>
+                        <li><a  class="nav-link scrollto" href="/rutas.html">Rutas</a></li>
+                        <li><a  class="nav-link scrollto" href="#">Iniciar Sesión</a></li>
                     </ul>
                     <!-- search bar right align -->
                     <div class="search">
-                        <input type="text" placeholder="Buscar un monumento" name="search" id="searchBarMain"
-                            autocomplete="off">
+                        <input type="text" placeholder="Buscar un monumento" name="search" id="searchBarMain" autocomplete="off">
                         <button onclick="setSearch('searchBarMain')" id="searchButton">
                             <i class="bi bi-search" style="font-size: 1.125rem;">
                             </i>
@@ -107,23 +86,22 @@
                     </script>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav><!-- .navbar -->
-
                 <div class="header-social-links d-flex align-items-center">
-                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    <a itemprop="url" href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a itemprop="url" href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a itemprop="url" href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a itemprop="url" href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
                 </div>
-
             </div>
-        </header><!-- End Header -->
+        </header>
+        <!-- End Header -->
         <!-- E1 -->
 
         <!-- ------------------------------------------------------------------------------------- -->
 
 
         <!--Section: Design Block-->
-        <div class="row table-bordered" id="filaSlider">
+        <section class="row table-bordered" id="filaSlider">
             <div class="container-fluid" id="contenedorSlider">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -137,10 +115,9 @@
                             aria-label="Slide 4"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
                             aria-label="Slide 5"></button>
-
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" id="intro"
+                    <div itemscope itemtype="https://schema.org/LandmarksOrHistoricalBuildings" class="carousel-inner">
+                        <div itemprop="image" class="carousel-item active" id="intro"
                             style="height: 100vh; background-image: url(img/SliderMenu5.jpg)">
                             <div class="mask mt-5">
                                 <div class="container d-flex justify-content-center align-items-center h-100">
@@ -152,7 +129,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item" style="height: 100vh; background-image: url(img/SliderMenu1.webp)">
+                        <div itemprop="image" class="carousel-item"
+                            style="height: 100vh; background-image: url(img/SliderMenu1.webp)">
                             <div class="mask mt-5">
                                 <div class="container d-flex justify-content-center align-items-center h-100">
                                     <div class="row align-items-center">
@@ -163,7 +141,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item" style="height: 100vh; background-image: url(/img/SliderMenu2.webp)">
+                        <div itemprop="image" class="carousel-item"
+                            style="height: 100vh; background-image: url(/img/SliderMenu2.webp)">
                             <div class="mask mt-5">
                                 <div class="container d-flex justify-content-center align-items-center h-100">
                                     <div class="row align-items-center">
@@ -174,7 +153,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item" style="height: 100vh; background-image: url(/img/SliderMenu3.jpg)">
+                        <div itemprop="image" class="carousel-item"
+                            style="height: 100vh; background-image: url(/img/SliderMenu3.jpg)">
                             <div class="mask mt-5">
                                 <div class="container d-flex justify-content-center align-items-center h-100">
                                     <div class="row align-items-center">
@@ -185,7 +165,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item" style="height: 100vh; background-image: url(/img/SliderMenu4.jpg)">
+                        <div itemprop="image" class="carousel-item"
+                            style="height: 100vh; background-image: url(/img/SliderMenu4.jpg)">
                             <div class="mask mt-5">
                                 <div class="container d-flex justify-content-center align-items-center h-100">
                                     <div class="row align-items-center">
@@ -210,7 +191,7 @@
                 </div>
             </div>
             <!--Section: Design Block-->
-        </div>
+        </section>
 
 
 
@@ -231,7 +212,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <section class="row justify-content-center">
                 <!-- <img src="/img/ImagenesGen/Diagrama Barras.gif" alt="" id="graph">
                 <img src="/img/ImagenesGen/Diagrama Tarta.gif" alt="" id="graph"> -->
                 <figure class="highcharts-figure">
@@ -247,7 +228,7 @@
                         comunidad.
                     </p>
                 </figure>
-            </div>
+            </section>
 
             <div class="row justify-content-center" id="filaTituloCatalogo">
                 <div class="title-mask mt-5">
@@ -261,7 +242,7 @@
                 </div>
             </div>
             <div class="row justify-content-center" id="filaCatalogo">
-                <div class="col-xl-2 col-lg-5 col-md-4 col-sm-auto col-auto menuPagPrincipal" id="menu">
+                <aside class="col-xl-2 col-lg-5 col-md-4 col-sm-auto col-auto menuPagPrincipal" id="menu">
                     <div class="row justify-content-center">
                         <div class="sidebar">
 
@@ -326,31 +307,31 @@
                                 favoritos</button>
                         </div>
                     </div>
-                </div>
+                </aside>
                 <!-- Propiedades cartas monumentos-->
-                <div class="col-xl-10 col-lg-7 col-md-8 col-sm-auto col-auto" id="cartas">
+                <article class="col-xl-10 col-lg-7 col-md-8 col-sm-auto col-auto" id="cartas">
                     <div class="row justify-content-center gx-5" id="filaCartas">
 
 
                     </div>
-                </div>
+                </article>
             </div>
             <!-- Footer -->
-            <footer class="text-center text-lg-start bg-light text-muted">
+            <footer itemscope itemtype="https://schema.org/LocalBusiness"
+                class="text-center text-lg-start bg-light text-muted">
                 <!-- Section: Social media -->
                 <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                     <!-- Left -->
                     <div class="me-5 d-none d-lg-block">
                         <span>Visita nuestras redes sociales:&nbsp;</span>
-                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+                        <a itemprop="url" href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                        <a itemprop="url" href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a itemprop="url" href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a itemprop="url" href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
                     </div>
                     <!-- Left -->
                 </section>
                 <!-- Section: Social media -->
-
                 <!-- Section: Links  -->
                 <section class="">
                     <div class="container text-center text-md-start mt-5">
@@ -359,16 +340,15 @@
                             <!-- Grid column -->
                             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                                 <!-- Content -->
-                                <h6 class="text-uppercase fw-bold mb-4">
+                                <h6 itemprop="name" class="text-uppercase fw-bold mb-4">
                                     <i class="fas fa-gem me-3"></i>Monumentos España
                                 </h6>
-                                <p align="justify">
+                                <p itemprop="description" align="justify">
                                     Mostramos un catálogo de los monumentos más importantes de España distribuidos en
                                     las 17 comunidades autónomas. Ofrecemos rutas guiadas en todas las comunidades.
                                 </p>
                             </div>
                             <!-- Grid column -->
-
                             <!-- Grid column -->
                             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                                 <!-- Links -->
@@ -376,33 +356,33 @@
                                     Links de interés
                                 </h6>
                                 <p>
-                                    <a href="https://www.netlify.com/" class="text-reset">Netlify</a>
+                                    <a itemprop="url" href="https://www.netlify.com/" class="text-reset">Netlify</a>
                                 </p>
                                 <p>
-                                    <a href="https://github.com/" class="text-reset">GitHub</a>
+                                    <a itemprop="url" href="https://github.com/" class="text-reset">GitHub</a>
                                 </p>
                                 <p>
-                                    <a href="https://www.w3schools.com/" class="text-reset">W3schools</a>
+                                    <a itemprop="url" href="https://www.w3schools.com/" class="text-reset">W3schools</a>
                                 </p>
                                 <p>
-                                    <a href="https://getbootstrap.com/" class="text-reset">Bootstrap</a>
+                                    <a itemprop="url" href="https://getbootstrap.com/" class="text-reset">Bootstrap</a>
                                 </p>
                             </div>
                             <!-- Grid column -->
-
                             <!-- Grid column -->
                             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                                 <!-- Links -->
                                 <h6 class="text-uppercase fw-bold mb-4">
                                     Contacto
                                 </h6>
-                                <p><i class="fas fa-home me-3"></i> Palma de Mallorca, PM 07001, ESP</p>
-                                <p>
+                                <p itemprop="address"><i class="fas fa-home me-3"></i> Palma de Mallorca, PM 07001, ESP
+                                </p>
+                                <p itemprop="email">
                                     <i class="fas fa-envelope me-3"></i>
                                     MonumentosEspaña@gmail.com
                                 </p>
-                                <p><i class="fas fa-phone me-3"></i> + 34 971 567 885</p>
-                                <p><i class="fas fa-print me-3"></i> + 34 971 567 898</p>
+                                <p itemprop="telephone"><i class="fas fa-phone me-3"></i> + 34 971 567 885</p>
+                                <p itemprop="telephone"><i class="fas fa-print me-3"></i> + 34 971 567 898</p>
                             </div>
                             <!-- Grid column -->
                         </div>
@@ -410,10 +390,8 @@
                     </div>
                 </section>
                 <!-- Section: Links  -->
-
                 <!-- Copyright -->
                 <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-
                     <p class="text-reset fw-bold"> © 2022 Copyright: Álvaro&Adri</p>
                 </div>
                 <!-- Copyright -->
