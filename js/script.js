@@ -519,6 +519,14 @@ function autocomplete(inp) {
   });
 }
 
+function irArriba(){
+  $('.ir-arriba').click(function(){ $('body,html').animate({ scrollTop:'0px' },100); });
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 0){ $('.ir-arriba').slideDown(600); }else{ $('.ir-arriba').slideUp(600); }
+  });
+  $('.ir-abajo').click(function(){ $('body,html').animate({ scrollTop:'1000px' },100); });
+}
+
 window.onload = async function () {
   // ¿Lo tiene que hacer el usuario, o tiene que salir "inmediatamente" cuando cargue la pagina?
   // dentro del onload cuando hay que acceder al DOM "instantaneamente".
@@ -535,4 +543,6 @@ window.onload = async function () {
   filter(false, true);
 
   autocomplete(document.getElementById("searchBarMain"));
+
+  irArriba();
 };
