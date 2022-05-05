@@ -1,6 +1,6 @@
 let dataRutas;
 let map = undefined;
-
+let community;
 
 async function getJSONFile() {
   // lo guarda en la memoria principal (RAM)
@@ -33,31 +33,34 @@ function getQueryParams() {
 //     for ( var j = 0; i<arr.length-1;i++){
 //       if(L.GeometryUtil.distance(map,arr[i].coords,arr[j+1].coords)>aux){
 
-
-
-
-
 //       }
 //     }
-    
+
 //   }
 
 // }
 
+function switchRouteMap(value) {
+  window.location.href = `/rutas.html?comunidad=${value}`;
+}
 
 // Generación dinámica del mapa de routas.
 function getRouteMap() {
-  var container = L.DomUtil.get("map1");
-  if (container != null) {
-    container._leaflet_id = null;
-  }
-  if (map != undefined) {
-    map.remove();
-    map = undefined;
-  }
+  // var container = L.DomUtil.get("map1");
+  // if (container != null) {
+  //   container._leaflet_id = null;
+  // }
+  // if (map != undefined) {
+  //   map.remove();
+  //   map = undefined;
+  // }
 
   const select = document.getElementById("selectComunidad");
+  if (!select.value) {
+    select.value = "Andalucía";
+  }
   console.log(select.value);
+  community = select.value;
 
   /*
   var blueIcon = new L.Icon({
@@ -110,12 +113,8 @@ function getRouteMap() {
           markers.push(
             L.latLng(`${monumento.latitude}`, `${monumento.longitude}`)
           ),
-          name.push(
-            `${monumento.name}`
-          ),
-          identifier.push(
-            `${monumento.identifier}`
-          )
+            name.push(`${monumento.name}`),
+            identifier.push(`${monumento.identifier}`);
           // objects.push(
           //   id
           // ),
@@ -132,7 +131,7 @@ function getRouteMap() {
   });
 
   // d = L.GeometryUtil.distance(map, objects[0].coords, objects[1].coords);
-          // console.log(d);
+  // console.log(d);
 
   /*
   var marker = L.marker([39.56771199239134, 2.648343010456217], {
@@ -168,17 +167,21 @@ function getRouteMap() {
     draggableWaypoints: false,
     addWaypoints: false,
     waypoints: markers,
-    createMarker: function(i,wp,nWps){
-      return L.marker(wp.latLng)
-      .bindPopup(function(){
-        return ' <a href="/monumento.html?identifier='+ identifier[i] +'">'+ name[i] + '</a>';
+    createMarker: function (i, wp, nWps) {
+      return L.marker(wp.latLng).bindPopup(function () {
+        return (
+          ' <a href="/monumento.html?identifier=' +
+          identifier[i] +
+          '">' +
+          name[i] +
+          "</a>"
+        );
       });
     },
     router: L.Routing.mapbox(
       "pk.eyJ1IjoiYWRyaWJlbm5hc2FyIiwiYSI6ImNsMGprcDMyMTAxZHczYmwxaXNsZWp3NjcifQ.5tEEAlSEDIIbUx4NS5E0lQ"
     ),
   }).addTo(map);
-
 
   /*
   L.Routing.control({
@@ -194,6 +197,111 @@ function getRouteMap() {
   // L.control._container.style.display = "None";
 }
 
+function getFromDB() {
+  let comments;
+  // Check from localstorage
+
+  if (localStorage.getItem("comments") === null) {
+    comments = {};
+  } else {
+    comments = JSON.parse(localStorage.getItem("comments"));
+  }
+
+  return comments;
+}
+
+function saveIntoDB(comment) {
+  const comments = this.getFromDB();
+
+  if (!comments[community]) {
+    comments[community] = [];
+  }
+  comments[community].push(comment);
+
+  // Add the new array into the localstorage
+  localStorage.setItem("comments", JSON.stringify(comments));
+  console.log(JSON.stringify(comments));
+}
+
+function writeComment(e) {
+  // e.preventDefault();
+  console.log("submit was clicked");
+  const name = document.getElementById("nameInput");
+  const text = document.getElementById("commentInput");
+  console.log(uuidv4());
+  const comment = {
+    id: uuidv4(),
+    name: name.value,
+    text: text.value,
+    date: Date.now(),
+    liked: false
+  };
+  saveIntoDB(comment);
+  generateCommentFeed();
+  name.value = "";
+  text.value = "";
+}
+
+function generateCommentFeed() {
+  const comments = getFromDB()[community];
+  // console.log(comments);
+  if (!comments) {
+    return;
+  }
+  let commentsHTML = "";
+  
+
+  comments.forEach((comment) => {
+    const date = new Date(comment.date);
+    const commentHTML = /* HTML */
+      `
+        <div class="d-flex flex-start align-items-center ">
+          <img
+            class="rounded-circle shadow-1-strong me-3"
+            src="https://ui-avatars.com/api/?name=${comment.name}"
+            alt="avatar"
+            width="60"
+            height="60"
+          />
+          <div>
+            <h6 class="fw-bold text-primary mb-1">${comment.name}</h6>
+            <p class="text-muted small mb-0">${date.getDay() + 1}/${date.getMonth() + 1}/${date.getFullYear()}</p>
+          </div>
+        </div>
+
+        <p class="ms-3 mt-3 mb-4 pb-2">
+          ${comment.text}
+        </p>
+
+        <div class="small d-flex justify-content-start mb-4">
+          <button onclick="toggleLiked('${comment.id}')" class="btn btn-link d-flex align-items-center me-3 text-decoration-none">
+            
+            <p class="mb-0 fs-2">${comment.liked ? "♥":"♡"}</p>
+          </button>
+          <a href="#!" class="d-flex align-items-center me-3">
+            <i class="far fa-comment-dots me-2"></i>
+            
+          </a>
+        </div>
+      `;
+      commentsHTML+= commentHTML;
+  });
+  document.getElementById("commentsDiv").innerHTML = commentsHTML;
+}
+
+function toggleLiked(id) {
+  let comments = getFromDB();
+  comments[community] = comments[community].map(comment => {
+    if(comment.id === id){
+      comment.liked = !comment.liked;
+    }
+    return comment;
+  });
+  console.log(comments);
+  localStorage.setItem("comments", JSON.stringify(comments));
+  generateCommentFeed();
+}
+
 // Search bar especifica de la pagina monumento
 function submitSearch(e) {
   e.preventDefault();
@@ -206,16 +314,14 @@ function submitSearch(e) {
   window.location.href = `/?term=${term}#filaTituloCatalogo`;
 }
 
-function completeMonumentsArray(){
+function completeMonumentsArray() {
   var monumentsArray = [];
 
   dataRutas.forEach((comunidades) => {
     Object.keys(comunidades).forEach((nombreComunidad) => {
-        comunidades[nombreComunidad].forEach((monumento) => {
-          monumentsArray.push(
-            `${monumento.name}`,
-          )
-        });
+      comunidades[nombreComunidad].forEach((monumento) => {
+        monumentsArray.push(`${monumento.name}`);
+      });
     });
   });
   return monumentsArray;
@@ -227,66 +333,73 @@ function autocomplete(inp) {
   var currentFocus;
   var arr = completeMonumentsArray();
   /*execute a function when someone writes in the text field:*/
-  inp.addEventListener("input", function(e) {
-      var a, b, i, val = this.value;
-      /*close any already open lists of autocompleted values*/
-      closeAllLists();
-      if (!val) { return false;}
-      currentFocus = -1;
-      /*create a DIV element that will contain the items (values):*/
-      a = document.createElement("DIV");
-      a.setAttribute("id", this.id + "autocomplete-list");
-      a.setAttribute("class", "autocomplete-items");
-      /*append the DIV element as a child of the autocomplete container:*/
-      this.parentNode.appendChild(a);
-      /*for each item in the array...*/
-      for (i = 0; i < arr.length; i++) {
-        /*check if the item starts with the same letters as the text field value:*/
-        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-          /*create a DIV element for each matching element:*/
-          b = document.createElement("DIV");
-          /*make the matching letters bold:*/
-          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-          b.innerHTML += arr[i].substr(val.length);
-          /*insert a input field that will hold the current array item's value:*/
-          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-          /*execute a function when someone clicks on the item value (DIV element):*/
-              b.addEventListener("click", function(e) {
-              /*insert the value for the autocomplete text field:*/
-              inp.value = this.getElementsByTagName("input")[0].value;
-              document.getElementById("searchBarRutas").focus();
-              /*close the list of autocompleted values,
+  inp.addEventListener("input", function (e) {
+    var a,
+      b,
+      i,
+      val = this.value;
+    /*close any already open lists of autocompleted values*/
+    closeAllLists();
+    if (!val) {
+      return false;
+    }
+    currentFocus = -1;
+    /*create a DIV element that will contain the items (values):*/
+    a = document.createElement("DIV");
+    a.setAttribute("id", this.id + "autocomplete-list");
+    a.setAttribute("class", "autocomplete-items");
+    /*append the DIV element as a child of the autocomplete container:*/
+    this.parentNode.appendChild(a);
+    /*for each item in the array...*/
+    for (i = 0; i < arr.length; i++) {
+      /*check if the item starts with the same letters as the text field value:*/
+      if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+        /*create a DIV element for each matching element:*/
+        b = document.createElement("DIV");
+        /*make the matching letters bold:*/
+        b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+        b.innerHTML += arr[i].substr(val.length);
+        /*insert a input field that will hold the current array item's value:*/
+        b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+        /*execute a function when someone clicks on the item value (DIV element):*/
+        b.addEventListener("click", function (e) {
+          /*insert the value for the autocomplete text field:*/
+          inp.value = this.getElementsByTagName("input")[0].value;
+          document.getElementById("searchBarRutas").focus();
+          /*close the list of autocompleted values,
               (or any other open lists of autocompleted values:*/
-              closeAllLists();
-          });
-          a.appendChild(b);
-        }
+          closeAllLists();
+        });
+        a.appendChild(b);
       }
+    }
   });
   /*execute a function presses a key on the keyboard:*/
-  inp.addEventListener("keydown", function(e) {
-      var x = document.getElementById(this.id + "autocomplete-list");
-      if (x) x = x.getElementsByTagName("div");
-      if (e.keyCode == 40) {
-        /*If the arrow DOWN key is pressed,
+  inp.addEventListener("keydown", function (e) {
+    var x = document.getElementById(this.id + "autocomplete-list");
+    if (x) x = x.getElementsByTagName("div");
+    if (e.keyCode == 40) {
+      /*If the arrow DOWN key is pressed,
         increase the currentFocus variable:*/
-        currentFocus++;
-        /*and and make the current item more visible:*/
-        addActive(x);
-      } else if (e.keyCode == 38) { //up
-        /*If the arrow UP key is pressed,
+      currentFocus++;
+      /*and and make the current item more visible:*/
+      addActive(x);
+    } else if (e.keyCode == 38) {
+      //up
+      /*If the arrow UP key is pressed,
         decrease the currentFocus variable:*/
-        currentFocus--;
-        /*and and make the current item more visible:*/
-        addActive(x);}
-      // } else if (e.keyCode == 13) {
-      //   /*If the ENTER key is pressed, prevent the form from being submitted,*/
-      //   e.preventDefault();
-      //   if (currentFocus > -1) {
-      //     /*and simulate a click on the "active" item:*/
-      //     if (x) x[currentFocus].click();
-      //   }
-      // }
+      currentFocus--;
+      /*and and make the current item more visible:*/
+      addActive(x);
+    }
+    // } else if (e.keyCode == 13) {
+    //   /*If the ENTER key is pressed, prevent the form from being submitted,*/
+    //   e.preventDefault();
+    //   if (currentFocus > -1) {
+    //     /*and simulate a click on the "active" item:*/
+    //     if (x) x[currentFocus].click();
+    //   }
+    // }
   });
   function addActive(x) {
     /*a function to classify an item as "active":*/
@@ -294,7 +407,7 @@ function autocomplete(inp) {
     /*start by removing the "active" class on all items:*/
     removeActive(x);
     if (currentFocus >= x.length) currentFocus = 0;
-    if (currentFocus < 0) currentFocus = (x.length - 1);
+    if (currentFocus < 0) currentFocus = x.length - 1;
     /*add class "autocomplete-active":*/
     x[currentFocus].classList.add("autocomplete-active");
   }
@@ -310,16 +423,15 @@ function autocomplete(inp) {
     var x = document.getElementsByClassName("autocomplete-items");
     for (var i = 0; i < x.length; i++) {
       if (elmnt != x[i] && elmnt != inp) {
-      x[i].parentNode.removeChild(x[i]);
+        x[i].parentNode.removeChild(x[i]);
+      }
     }
   }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+    closeAllLists(e.target);
+  });
 }
-/*execute a function when someone clicks in the document:*/
-document.addEventListener("click", function (e) {
-  closeAllLists(e.target);
-});
-}
-
 
 window.onload = async function () {
   await getJSONFile();
@@ -327,4 +439,5 @@ window.onload = async function () {
   select.value = getQueryParams();
   getRouteMap();
   autocomplete(document.getElementById("searchBarRutas"));
+  generateCommentFeed();
 };

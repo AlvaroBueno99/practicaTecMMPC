@@ -175,6 +175,7 @@
 
 #sidenavRutas {
   margin-top: 6rem;
+  padding: 0%;
 }
 
 
@@ -238,6 +239,13 @@
   font-size: 0.75rem;
   border: none;
   cursor: pointer;
+  font-size: 1.125rem;
+}
+
+#searchIcon{
+  height: 1.4rem;
+  filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(116deg) brightness(104%) contrast(100%);
+  padding-bottom: 0.2rem;
 }
 
 .search input[type="text"]:hover {
@@ -774,6 +782,20 @@ footer {
   bottom:10px;
   right:10px;
   z-index:2;
+}
+
+.twitter,
+.facebook,
+.instagram,
+.linkedin{
+	filter: invert(74%) sepia(11%) saturate(296%) hue-rotate(165deg) brightness(88%) contrast(87%);
+  height: 1rem;
+}
+.twitter:hover, 
+.facebook:hover, 
+.instagram:hover,
+.linkedin:hover{
+	filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
 }
 
 
