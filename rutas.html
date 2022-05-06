@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/Lumianavbar.css">
 
 
-    <title>Hello, world!</title>
+    <title>Rutas</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
@@ -90,135 +90,145 @@
     </header>
     <!-- End Header -->
 
-    <div class="container-fluid px-0" id="todoRut">
-        <div class="row">
+    <div class="container-fluid" id="todoRut">
+        <div class="row justify-content-center">
             <aside class="col-xl-2 col-lg-5 col-md-4 col-sm-auto col-auto" id="menu">
                 <div class="row justify-content-center">
                     <div class="sidebar" id="sidenavRutas">
+                        <div id="listaDropdown">
+                            <div class="sidenav-content">
 
-                        <div class="sidenav-content" id="selectComunidad">
+                                <select class="form-select" aria-label="Default select example" id="selectComunidad">
+                                    <option selected value="Andalucía">Andalucía</option>
+                                    <option value="Aragón">Aragón</option>
+                                    <option value="Asturias">Asturias</option>
+                                    <option value="Islas Baleares">Islas Baleares</option>
+                                    <option value="Canarias">Canarias</option>
+                                    <option value="Cantabria">Cantabria</option>
+                                    <option value="Castilla y León">Castilla y León</option>
+                                    <option value="Castilla-La Mancha">Castilla-La Mancha</option>
+                                    <option value="Cataluña">Cataluña</option>
+                                    <option value="Extremadura">Extremadura</option>
+                                    <option value="Galicia">Galicia</option>
+                                    <option value="Comunidad de Madrid">Comunidad de Madrid</option>
+                                    <option value="Murcia">Murcia</option>
+                                    <option value="Navarra">Navarra</option>
+                                    <option value="País Vasco">País Vasco</option>
+                                    <option value="La Rioja">La Rioja</option>
+                                    <option value="Valencia">Valencia</option>
+                                </select>
 
-                            <!-- <select class="form-select" aria-label="Default select example" id="selectComunidad">
-                                <option selected value="Andalucía">Andalucía</option>
-                                <option value="Aragón">Aragón</option>
-                                <option value="Asturias">Asturias</option>
-                                <option value="Islas Baleares">Islas Baleares</option>
-                                <option value="Canarias">Canarias</option>
-                                <option value="Cantabria">Cantabria</option>
-                                <option value="Castilla y León">Castilla y León</option>
-                                <option value="Castilla-La Mancha">Castilla-La Mancha</option>
-                                <option value="Cataluña">Cataluña</option>
-                                <option value="Extremadura">Extremadura</option>
-                                <option value="Galicia">Galicia</option>
-                                <option value="Comunidad de Madrid">Comunidad de Madrid</option>
-                                <option value="Murcia">Murcia</option>
-                                <option value="Navarra">Navarra</option>
-                                <option value="País Vasco">País Vasco</option>
-                                <option value="La Rioja">La Rioja</option>
-                                <option value="Valencia">Valencia</option>
-                            </select> -->
+                            
+                            <button class="btn btn-primary" id="filterButton"
+                                onclick="switchRouteMap()">Filtrar</button>
+                            </div>
+                        </div>
+
+                        <div class="sidenav-content" id="listaBotones">
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('Andalucía')">Andalucía</button>
+                                onclick="switchRouteMapB('Andalucía')">Andalucía</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('Aragón')">Aragón</button>
+                                onclick="switchRouteMapB('Aragón')">Aragón</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('Asturias')">Asturias</button>
+                                onclick="switchRouteMapB('Asturias')">Asturias</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('Islas Baleares')">Islas Baleares</button>
+                                onclick="switchRouteMapB('Islas Baleares')">Islas Baleares</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('Canarias')">Canarias</button>
+                                onclick="switchRouteMapB('Canarias')">Canarias</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('Cantabria')">Cantabria</button>
+                                onclick="switchRouteMapB('Cantabria')">Cantabria</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('Castilla y León')">Castilla y León</button>
+                                onclick="switchRouteMapB('Castilla y León')">Castilla y León</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('Castilla-La Mancha')">Castilla-La Mancha</button>
+                                onclick="switchRouteMapB('Castilla-La Mancha')">Castilla-La Mancha</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('Cataluña')">Cataluña</button>
+                                onclick="switchRouteMap('Cataluña')">Cataluña</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('Extremadura')">Extremadura</button>
+                                onclick="switchRouteMapB('Extremadura')">Extremadura</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('Galicia')">Galicia</button>
+                                onclick="switchRouteMapB('Galicia')">Galicia</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('Madrid')">Madrid</button>
+                                onclick="switchRouteMapB('Madrid')">Madrid</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('Murcia')">Murcia</button>
+                                onclick="switchRouteMapB('Murcia')">Murcia</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('Navarra')">Navarra</button>
+                                onclick="switchRouteMapB('Navarra')">Navarra</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('País Vasco')">País Vasco</button>
+                                onclick="switchRouteMapB('País Vasco')">País Vasco</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('La Rioja')">La Rioja</button>
+                                onclick="switchRouteMapB('La Rioja')">La
+                                Rioja</button>
                             <button class="btn btn-primary mt-2" id="filterButton"
-                            onclick="switchRouteMap('Valencia')">Valencia</button>
+                                onclick="switchRouteMapB('Valencia')">Valencia</button>
                         </div>
                     </div>
                 </div>
-            </aside>
+        
+        </aside>
 
-            <!-- columna del mapa + comentarios -->
-            <article class="col-xl-10 col-lg-7 col-md-8 col-sm-auto col-auto" id="contenidoDerecha">
+        <!-- columna del mapa + comentarios -->
+        <article class="col-xl-10 col-lg-7 col-md-8 col-sm-auto col-auto" id="contenidoDerecha">
+
+            <div class="row justify-content-center">
 
                 <div class="row justify-content-center">
-
-                    <div class="row justify-content-center">
-                        <div class="col-auto">
-                            <div class="rutas" id="contMapa">
-                                <div id="map"></div>
-                            </div>
+                    <div class="col-auto">
+                        <div class="rutas" id="contMapa">
+                            <div id="map"></div>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
+                </div>
+                <div class="row justify-content-center">
 
-                        <div class="col-12" id="contVideo">
-                            <div class="container my-5 py-5">
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-md-12 col-lg-10 col-xl-8">
-                                        <div class="card w-100" id="commentSection">
-                                            <div class="pt-3 px-3" id="commentsDiv" style="overflow-y: scroll">
-                                                
-                                            </div>
-                                            <div class="card-footer py-3 border-0" style="background-color: #f8f9fa;">
-                                                <!-- Aunque el return de error, es correcto hacerlo así  -->
-                                                <form id="commentForm" onsubmit="writeComment();return false"> 
-                                                    <div class="d-flex flex-start w-100">
+                    <div class="col-12" id="contVideo">
+                        <div class="container my-5 py-5">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-md-12 col-lg-10 col-xl-8">
+                                    <div class="card w-100" id="commentSection">
+                                        <div class="pt-3 px-3" id="commentsDiv" style="overflow-y: scroll">
 
-                                                        <div class="form-outline w-100">
-                                                            <div class="mb-3">
-                                                                <label for="nameInput"
-                                                                    class="form-label">Nombre</label>*
-                                                                <input required type="text" class="form-control"
-                                                                    id="nameInput" placeholder="Nombre">
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="commentInput"
-                                                                    class="form-label">Comentario</label>*
-                                                                <textarea required class="form-control"
-                                                                    id="commentInput" rows="3"
-                                                                    placeholder="Escriba su comentario aquí"></textarea>
-                                                            </div>
+                                        </div>
+                                        <div class="card-footer py-3 border-0" style="background-color: #f8f9fa;">
+                                            <!-- Aunque el return de error, es correcto hacerlo así  -->
+                                            <form id="commentForm" onsubmit="writeComment();return false">
+                                                <div class="d-flex flex-start w-100">
+
+                                                    <div class="form-outline w-100">
+                                                        <div class="mb-3">
+                                                            <label for="nameInput" class="form-label">Nombre</label>*
+                                                            <input required type="text" class="form-control"
+                                                                id="nameInput" placeholder="Nombre">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="commentInput"
+                                                                class="form-label">Comentario</label>*
+                                                            <textarea required class="form-control" id="commentInput"
+                                                                rows="3"
+                                                                placeholder="Escriba su comentario aquí"></textarea>
                                                         </div>
                                                     </div>
-                                                    <div class="float-end mt-2 pt-1">
-                                                        <button type="submit" class="btn btn-primary btn-sm">Post
-                                                            comment</button>
+                                                </div>
+                                                <div class="float-end mt-2 pt-1">
+                                                    <button type="submit" class="btn btn-primary btn-sm">Post
+                                                        comment</button>
 
-                                                    </div>
-                                                </form>
-                                            </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                 </div>
 
-            </article>
+            </div>
 
-        </div>
+        </article>
+    </div>
+
+    </div>
 
     </div>
 
@@ -305,7 +315,7 @@
 
     </div>
     </div>
-
+    <script src="js/main.js">  </script>
 </body>
 
 </html>

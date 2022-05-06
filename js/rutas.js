@@ -40,7 +40,12 @@ function getQueryParams() {
 
 // }
 
-function switchRouteMap(value) {
+function switchRouteMap() {
+  const select = document.getElementById("selectComunidad");
+  window.location.href = `/rutas.html?comunidad=${select.value}`;
+}
+
+function switchRouteMapB(value) {
   window.location.href = `/rutas.html?comunidad=${value}`;
 }
 

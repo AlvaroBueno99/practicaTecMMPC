@@ -244,6 +244,7 @@
 
 #searchIcon{
   height: 1.4rem;
+  width: 1.4rem;
   filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(116deg) brightness(104%) contrast(100%);
   padding-bottom: 0.2rem;
 }
@@ -587,14 +588,33 @@
   background-color: #555;
   color: white;
 }
-
+/* 
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
+} */
+
+#listaDropdown{
+  display:none;
 }
 
+
 @media screen and (max-width: 767px) {
+  #listaDropdown{
+    display: block;
+    margin-left: 0.4rem;
+  }
+  #listaBotones{
+    display: none;
+  }
+
+  .rutas #map {
+    margin-top: 2rem;
+    height: 41rem;
+    width: 90rem;
+  }
+
   .sidebar {
     display: block;
     height: auto;
@@ -614,15 +634,23 @@ div.content {
 }
 
 @media screen and (max-width: 400px) {
+  #title {
+    font-size: 3rem;
+  }
+
   .sidebar a {
     text-align: center;
     float: none;
+  }
+
+  .search input[type="text"] {
+    width: 3rem;
   }
 }
 
 @media screen and (max-width: 550px) {
   #title {
-    font-size: 3.3rem;
+    font-size: 3.2rem;
   }
 
   .datosCartaMon{
@@ -646,9 +674,17 @@ footer {
 
 .datosCartaMon{
   text-align: center;
+  justify-content: space-between;
   height: auto;
   width: 20rem;
   font-weight: bold;
+  margin: 0%;
+}
+
+.iconoPagMonum{
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .card-header{
@@ -790,12 +826,25 @@ footer {
 .linkedin{
 	filter: invert(74%) sepia(11%) saturate(296%) hue-rotate(165deg) brightness(88%) contrast(87%);
   height: 1rem;
+  width: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 .twitter:hover, 
 .facebook:hover, 
 .instagram:hover,
 .linkedin:hover{
 	filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+#up-arrow{
+  height: 2.7rem;
+  width: 3.7rem;
+}
+
+#up-arrow:hover{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 

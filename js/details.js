@@ -60,18 +60,19 @@ function generateInformationCard(monumento) {
   <div 
     itemscope
     itemtype="https://schema.org/LandmarksOrHistoricalBuildings"class="card-header">
-      <i itemprop="name" class="bi bi-ticket datosCartaMon"><br> ${monumento.name}</i>
-      <i class="bi bi-calendar datosCartaMon"> <br>${antiguedad} años de <br> antigüedad</i> 
-      <i itemprop="address" class="bi bi-house datosCartaMon"> <br>${monumento.address}</i> 
-      <i 
+      
+      <p itemprop="name" class="datosCartaMon"><img src="img/iconos/landmark.svg" class="iconoPagMonum"><br> ${monumento.name}</p>
+      <p class="datosCartaMon"><img src="img/iconos/calendar.svg" class="iconoPagMonum"> <br>${antiguedad} años de <br> antigüedad</p> 
+      <i itemprop="address" class="datosCartaMon"><img src="img/iconos/place.svg" class="iconoPagMonum"> <br>${monumento.address}</i> 
+      <p 
         itemprop="geo"
         itemscope
         itemtype="https://schema.org/GeoCoordinates"
-        class="bi bi-map datosCartaMon"> <br>
+        class=" datosCartaMon"> <img src="img/iconos/map.svg" class="iconoPagMonum"> <br>
         (${latitud} / ${longitud})
         <meta itemprop="latitude" content=${monumento.latitude} />
         <meta itemprop="longitude" content=${monumento.longitude} />
-        </i>
+        </p>
   </div>
   <div 
     itemscope
