@@ -249,17 +249,26 @@ function writeComment(e) {
 
 function generateCommentFeed() {
   const comments = getFromDB()[community];
+  let commentsHTML = "";
   // console.log(comments);
   if (!comments) {
-    return;
+    let commentHTML= /*HTML*/
+    `
+      <div id="contenedorComentarioPorDefecto">
+        <h6> Esto está muy vacío ... </h6>
+        <h5 id="cometarioPorDefecto"> ¡Sé el primero en dejar un comentario! <h5>
+        </div>
+    `
+    document.getElementById("commentsDiv").innerHTML = commentHTML;
   }
-  let commentsHTML = "";
+  
   
 
   comments.forEach((comment) => {
     const date = new Date(comment.date);
     const commentHTML = /* HTML */
       `
+      <div id="commentContainer">
         <div class="d-flex flex-start align-items-center ">
           <img
             class="rounded-circle shadow-1-strong me-3"
@@ -274,7 +283,7 @@ function generateCommentFeed() {
           </div>
         </div>
 
-        <p class="ms-3 mt-3 mb-4 pb-2">
+        <p class="ms-3 mt-3 mb-4 pb-2" id="commentText">
           ${comment.text}
         </p>
 
@@ -283,10 +292,7 @@ function generateCommentFeed() {
             
             <p class="mb-0 fs-2">${comment.liked ? "♥":"♡"}</p>
           </button>
-          <a href="#!" class="d-flex align-items-center me-3">
-            <i class="far fa-comment-dots me-2"></i>
-            
-          </a>
+        </div>
         </div>
       `;
       commentsHTML+= commentHTML;

@@ -63,7 +63,7 @@ function generateInformationCard(monumento) {
       
       <p itemprop="name" class="datosCartaMon"><img src="img/iconos/landmark.svg" class="iconoPagMonum"><br> ${monumento.name}</p>
       <p class="datosCartaMon"><img src="img/iconos/calendar.svg" class="iconoPagMonum"> <br>${antiguedad} años de <br> antigüedad</p> 
-      <i itemprop="address" class="datosCartaMon"><img src="img/iconos/place.svg" class="iconoPagMonum"> <br>${monumento.address}</i> 
+      <p itemprop="address" class="datosCartaMon"><img src="img/iconos/place.svg" class="iconoPagMonum"> <br>${monumento.address}</p> 
       <p 
         itemprop="geo"
         itemscope
