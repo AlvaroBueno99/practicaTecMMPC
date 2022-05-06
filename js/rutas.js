@@ -255,15 +255,13 @@ function generateCommentFeed() {
     let commentHTML= /*HTML*/
     `
       <div id="contenedorComentarioPorDefecto">
-        <h6> Esto está muy vacío ... </h6>
-        <h5 id="cometarioPorDefecto"> ¡Sé el primero en dejar un comentario! <h5>
+        <h5> Esto está muy vacío ... </h5>
+        <h6 id="cometarioPorDefecto"> ¡Sé el primero en dejar un comentario! <h6>
         </div>
     `
     document.getElementById("commentsDiv").innerHTML = commentHTML;
   }
   
-  
-
   comments.forEach((comment) => {
     const date = new Date(comment.date);
     const commentHTML = /* HTML */
