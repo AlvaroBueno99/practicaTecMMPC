@@ -170,7 +170,7 @@ function getWeather(monumento) {
     let temp = Math.floor(data.temp - 273);
     let condition = data.weather[0].description;
     let icon = data.weather[0].icon;
-    let iconURL = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+    let iconURL = `https://openweathermap.org/img/wn/${icon}@2x.png`;
     let humidity = data.humidity;
 
     $("#temp-main").html(`${temp}°C`);

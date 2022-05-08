@@ -285,8 +285,8 @@ function generateCommentFeed() {
           ${comment.text}
         </p>
 
-        <div class="small d-flex justify-content-start mb-4">
-          <button onclick="toggleLiked('${comment.id}')" class="btn btn-link d-flex align-items-center me-3 text-decoration-none">
+        <div class=" d-flex justify-content-start mb-4">
+          <button onclick="toggleLiked('${comment.id}')" class="favorite-btn btn btn-link d-flex align-items-center me-3 text-decoration-none" id="heart">
             
             <p class="mb-0 fs-2">${comment.liked ? "♥":"♡"}</p>
           </button>

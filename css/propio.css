@@ -311,7 +311,7 @@
 
 .rutas #map {
   margin-top: 6rem;
-  height: 50rem;
+  height: 50.1rem;
   width: 90rem;
 }
 
@@ -528,15 +528,10 @@
   margin: 0%;
 }
 
-#commentSection {
-  margin: 0%;
-  border: 0.375rem black solid;
-}
-
 /* 
 * Twitter
 */
-#contTwitter {
+/* #contTwitter {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -545,14 +540,14 @@
   height: 40rem;
   width: 30rem;
   max-width: 100%;
-  /* border: 0.375rem black solid; */
+  /* border: 0.375rem black solid; *//*
   border-width: 0.375rem;
   border-style: solid;
   border-image: linear-gradient(to right, rgba(0, 0, 0, 0.743), rgb(146, 215, 245)) 1;
   background-image: url(/img/twitter.png);
   background-size: contain;
 
-}
+} */
 
 .sidebar {
   padding: 1rem;
@@ -597,6 +592,10 @@ div.content {
 
 #listaDropdown{
   display:none;
+}
+
+#listaBotones{
+  margin-top: 0%;
 }
 
 
@@ -758,7 +757,7 @@ footer {
 
 }
 
-.favorite-btn{
+.favorite-btn-main{
   position:absolute;
   left: 10.5rem;
   bottom: 1rem;
@@ -871,12 +870,27 @@ footer {
 }
 
 #commentForm{
+  background-color: #f8f9fa;
+
 }
 
-#botonPublicarComentario{
+#heart:hover{
+  filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.formatoBoton{
   font-weight: bold;
   border: #000 solid 0.1rem;
 }
+
+.sidenav-content .formatoBoton{
+  font-size: 0.91rem;
+}
+
+/* #botonPublicarComentario{
+  font-weight: bold;
+  border: #000 solid 0.1rem;
+} */
 
 #contenedorComentarioPorDefecto{
   height: 15rem;

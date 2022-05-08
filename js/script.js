@@ -33,8 +33,8 @@ function generateCard(monumento) {
         </div>
         </div>
         </div>
-        <a href="/monumento.html?identifier=${monumento.identifier}" class="btn btn-primary" id="cardBtn">Ver monumento</a>
-        <button type="button" data-id="${monumento.identifier}" class="favorite-btn btn btn-outline-info ${monumento.isFavorite
+        <a href="/monumento.html?identifier=${monumento.identifier}" class="btn btn-primary formatoBoton" id="cardBtn">Ver monumento</a>
+        <button type="button" data-id="${monumento.identifier}" class="favorite-btn favorite-btn-main btn btn-outline-info ${monumento.isFavorite
           ? " is-favorite" : "" }" onclick="resultsDelegation(event)">
           ${monumento.isFavorite ? "♥" : "♡"}
         </button>
