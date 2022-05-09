@@ -618,8 +618,9 @@ div.content {
     display: block;
     height: auto;
     position: relative;
-    width: 105vw;
+    width: 24.5rem;
     margin: 0;
+    margin-top: 2rem;
   }
 
   .sidebar a {
