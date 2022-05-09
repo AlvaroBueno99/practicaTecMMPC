@@ -645,6 +645,10 @@ div.content {
   .search input[type="text"] {
     width: 3rem;
   }
+
+  #cometarioPorDefecto{
+    font-weight: bold;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -893,10 +897,6 @@ footer {
 } */
 
 #contenedorComentarioPorDefecto{
-  height: 15rem;
-  background-image: url(/img/iconos/custom-scenery.svg);
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
 #fondoCajaComentariosVacia{
@@ -909,6 +909,14 @@ footer {
   font-size: 2rem;
   margin-top: 2rem;
   margin-left: 5rem;
+  font-weight: bold;
+}
+
+#svgComentarios{
+  height: 15rem;
+  background-image: url(/img/iconos/custom-scenery.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 

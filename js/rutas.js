@@ -257,6 +257,7 @@ function generateCommentFeed() {
       <div id="contenedorComentarioPorDefecto">
         <h5> Esto está muy vacío ... </h5>
         <h6 id="cometarioPorDefecto"> ¡Sé el primero en dejar un comentario! <h6>
+        <div id="svgComentarios"></div>
         </div>
     `
     document.getElementById("commentsDiv").innerHTML = commentHTML;
