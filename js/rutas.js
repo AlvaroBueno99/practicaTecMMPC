@@ -278,7 +278,7 @@ function generateCommentFeed() {
           />
           <div>
             <h6 class="fw-bold text-primary mb-1">${comment.name}</h6>
-            <p class="text-muted small mb-0">${date.getDay() + 1}/${date.getMonth() + 1}/${date.getFullYear()}</p>
+            <p class="text-muted small mb-0">${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}</p>
           </div>
         </div>
 
