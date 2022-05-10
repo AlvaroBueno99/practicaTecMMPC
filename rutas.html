@@ -117,9 +117,9 @@
                                     <option value="Valencia">Valencia</option>
                                 </select>
 
-                            
-                            <button class="btn btn-primary formatoBoton" id="filterButton"
-                                onclick="switchRouteMap()">Filtrar</button>
+
+                                <button class="btn btn-primary formatoBoton" id="filterButton"
+                                    onclick="switchRouteMap()">Filtrar</button>
                             </div>
                         </div>
 
@@ -141,13 +141,13 @@
                             <button class="btn btn-primary mt-2 formatoBoton" id="filterButton"
                                 onclick="switchRouteMapB('Castilla-La Mancha')">Castilla-La Mancha</button>
                             <button class="btn btn-primary mt-2 formatoBoton" id="filterButton"
-                                onclick="switchRouteMap('Cataluña')">Cataluña</button>
+                                onclick="switchRouteMapB('Cataluña')">Cataluña</button>
                             <button class="btn btn-primary mt-2 formatoBoton" id="filterButton"
                                 onclick="switchRouteMapB('Extremadura')">Extremadura</button>
                             <button class="btn btn-primary mt-2 formatoBoton" id="filterButton"
                                 onclick="switchRouteMapB('Galicia')">Galicia</button>
                             <button class="btn btn-primary mt-2 formatoBoton" id="filterButton"
-                                onclick="switchRouteMapB('Madrid')">Madrid</button>
+                                onclick="switchRouteMapB('Comunidad de Madrid')">Madrid</button>
                             <button class="btn btn-primary mt-2 formatoBoton" id="filterButton"
                                 onclick="switchRouteMapB('Murcia')">Murcia</button>
                             <button class="btn btn-primary mt-2 formatoBoton" id="filterButton"
@@ -162,26 +162,26 @@
                         </div>
                     </div>
                 </div>
-        
-        </aside>
 
-        <!-- columna del mapa + comentarios -->
-        <article class="col-xl-10 col-lg-8 col-md-9 col-sm-auto col-auto" id="contenidoDerecha">
+            </aside>
 
-            <div class="row justify-content-center">
+            <!-- columna del mapa + comentarios -->
+            <article class="col-xl-10 col-lg-8 col-md-9 col-sm-auto col-auto" id="contenidoDerecha">
 
                 <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <div class="rutas" id="contMapa">
-                            <div id="map"></div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <div class="rutas" id="contMapa">
+                                <div id="map"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row justify-content-center">
+                    <div class="row justify-content-center">
 
-                    <div class="col-12" id="contComentarios">
-                        <div class="container my-5 py-5">
-                            <div class="row d-flex justify-content-center">
+                        <div class="col-12" id="contComentarios">
+                            <div class="container my-5 py-5">
+                                <div class="row d-flex justify-content-center">
                                     <div class="card" id="commentSection">
                                         <div class="pt-3 px-3" id="commentsDiv">
                                         </div>
@@ -205,7 +205,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="float-end mt-2 pt-1">
-                                                    <button type="submit" class="btn btn-primary btn-sm formatoBoton" >Publicar</button>
+                                                    <button type="submit"
+                                                        class="btn btn-primary btn-sm formatoBoton">Publicar</button>
 
                                                 </div>
                                             </form>
@@ -213,14 +214,14 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
                     </div>
 
                 </div>
 
-            </div>
-
-        </article>
-    </div>
+            </article>
+        </div>
 
     </div>
 
