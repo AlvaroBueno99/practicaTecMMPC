@@ -10,11 +10,11 @@ async function getJSONFile() {
   dataRutas = monumentos;
 }
 
-async function getExternJSONFile(){
-  const response = await fetch ("https://gastronomiaesp.000webhostapp.com/JSON/cocineros.json");
-  const {restaurantes} = await response.json();
-  dataRestaurantes = restaurantes;
-}
+// async function getExternJSONFile(){
+//   const response = await fetch ("https://gastronomiaesp.000webhostapp.com/JSON/cocineros.json");
+//   const {restaurantes} = await response.json();
+//   dataRestaurantes = restaurantes;
+// }
 
 function getQueryParams() {
   const search = new URLSearchParams(window.location.search);
@@ -142,13 +142,13 @@ function getRouteMap() {
     });
   });
 
-  dataRestaurantes.forEach((restaurantes) => {
-    Object.keys(restaurantes).forEach((nombre) => {
-      comunidades[nombre].forEach((restaurante) => {
-        console.log(restaurante.name);
-      });
-    });
-  });
+  // dataRestaurantes.forEach((restaurantes) => {
+  //   Object.keys(restaurantes).forEach((nombre) => {
+  //     comunidades[nombre].forEach((restaurante) => {
+  //       console.log(restaurante.name);
+  //     });
+  //   });
+  // });
 
   
 
@@ -462,7 +462,7 @@ function autocomplete(inp) {
 
 window.onload = async function () {
   await getJSONFile();
-  await getExternJSONFile();
+  // await getExternJSONFile();
   const select = document.getElementById("selectComunidad");
   select.value = getQueryParams();
   getRouteMap();
