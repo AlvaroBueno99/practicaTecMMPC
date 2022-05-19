@@ -112,6 +112,24 @@
                     ]
                 },
                 {
+                    "name": "Alcazaba de Almería",
+                    "identifier": "and7",
+                    "image": [
+                        "img/Comunidades/Andalucia/alcazabaAlmeria/alcazabaAlmeria1.jpg",
+                        "img/Comunidades/Andalucia/alcazabaAlmeria/alcazabaAlmeria2.jpg",
+                        "img/Comunidades/Andalucia/alcazabaAlmeria/alcazabaAlmeria3.jpg"
+                    ],
+                    "description":"La alcazaba, castillo y murallas del Cerro de San Cristóbal de la ciudad española de Almería es uno de los conjuntos monumentales y arqueológicos andalusíes más importantes de la península ibérica. Sus casi mil años de historia nos ha permitido conocer la evolución experimentada en la arquitectura civil y militar durante la dominación árabe en Al-Ándalus, debido a su construcción en diferentes fases y épocas, como el castillo y torres de época bajomedieval cristiana (siglos XV-XVI), así como el origen y evolución de la ciudad (con un perímetro en total de toda la fortificación, según la Oficina de Turismo de Almería, de 1430 metros, contabilizando el castillo bajomedieval, la alcazaba conservada en la actualidad y el resto de murallas exteriores).<br /><br />Situadas en un cerro aislado, la Alcazaba es una sólida y extensa fortaleza con murallas de más de tres metros de anchura y cinco de altura, formando un recinto cerrado sobre sí mismo, pero conectado con los lienzos de la Muralla que configuran y dan sentido a su propio desarrollo, dentro de una unidad más compleja, como es la fortificación de la ciudad, en el que el barranco de la Hoya y el cerro de San Cristóbal mantiene una conexión directa con la Alcazaba, tanto física como visual, creando un conjunto de extraordinaria magnitud. La Alcazaba-castillo queda al sur conectada con la ciudad, y al norte el Cerro de San Cristóbal, que termina por definir un espacio único, de indudable interés cultural.<br /><br />\n\n\n\n",
+                    "latitude": 36.84019185110255, 
+                    "longitude": -2.470149415162552, 
+                    "address": "C. Almanzor, s/n, 04002 Almería",
+                    "yearBuilt": 955,
+                    "video": [
+                        "/videos/Andalucia/alcazabaAlmeria/alcazabaAlmeria.mp4",
+                        "/videos/Andalucia/alcazabaAlmeria/AlcazabaAlmeria.webm"
+                    ]
+                },
+                {
                     "name": "Alcazaba de Málaga",
                     "identifier": "and8",
                     "image": [
