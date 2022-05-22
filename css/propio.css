@@ -391,8 +391,8 @@
 #carouselMonumento .carousel-inner #slide1 {
   /* background-image: url(/img/Comunidades/Canarias/monumento-a-los-caidos.jpg); */
   /* background-position-y: top; */
-  width: 1000px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   /* object-position: bottom;  */
 }
@@ -401,8 +401,8 @@
   /* background-image: url(/img/Comunidades/Aragon/Torre\ Del\ Pilar.jpg); */
   /* background-position-y: center;
   background-position-x: right; */
-  width: 1000px;
-  height: 500px; 
+  width: 100%;
+  height: 100%; 
   object-fit: cover;
   /* object-position: right; */
 }
@@ -410,8 +410,8 @@
 #carouselMonumento .carousel-inner #slide3 {
   /* background-image: url(/img/Comunidades/Andalucia/catedralCadiz.jpg); */
   /* background-position-y: bottom; */
-  width: 1000px;
-  height: 500px; 
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   /* object-position: bottom; */
 }
