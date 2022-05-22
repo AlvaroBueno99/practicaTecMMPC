@@ -10,11 +10,11 @@ async function getJSONFile() {
   dataRutas = monumentos;
 }
 
-// async function getExternJSONFile(){
-//   const response = await fetch ("https://gastronomiaesp.000webhostapp.com/JSON/cocineros.json");
-//   const {restaurantes} = await response.json();
-//   dataRestaurantes = restaurantes;
-// }
+async function getExternJSONFile() {
+  const response = await fetch("https://gastronomiaesp.000webhostapp.com/JSON/cocineros.json");
+  const { cocineros } = await response.json();
+  dataRestaurantes = cocineros;
+}
 
 function getQueryParams() {
   const search = new URLSearchParams(window.location.search);
@@ -141,16 +141,22 @@ function getRouteMap() {
       }
     });
   });
-
-  // dataRestaurantes.forEach((restaurantes) => {
-  //   Object.keys(restaurantes).forEach((nombre) => {
-  //     comunidades[nombre].forEach((restaurante) => {
-  //       console.log(restaurante.name);
-  //     });
-  //   });
-  // });
-
   
+  let coordsLat = [];
+  let coordsLong = [];
+  dataRestaurantes.forEach((cocinero) => {
+    // console.log(cocinero);
+    cocinero.restaurantes.restaurant.forEach((restaurante)=>{
+      // console.log(restaurante.geo.latitude);
+      // console.log(restaurante.geo.longitude);
+      coordsLat.push(restaurante.geo.latitude);
+      coordsLong.push(restaurante.geo.longitude);
+    })
+  });
+  console.log(coordsLat);
+  console.log(coordsLong);
+
+
 
   // d = L.GeometryUtil.distance(map, objects[0].coords, objects[1].coords);
   // console.log(d);
@@ -269,8 +275,8 @@ function generateCommentFeed() {
   let commentsHTML = "";
   // console.log(comments);
   if (!comments) {
-    let commentHTML= /*HTML*/
-    `
+    let commentHTML = /*HTML*/
+      `
       <div id="contenedorComentarioPorDefecto">
         <h5> Esto está muy vacío ... </h5>
         <h6 id="cometarioPorDefecto"> ¡Sé el primero en dejar un comentario! <h6>
@@ -279,7 +285,7 @@ function generateCommentFeed() {
     `
     document.getElementById("commentsDiv").innerHTML = commentHTML;
   }
-  
+
   comments.forEach((comment) => {
     const date = new Date(comment.date);
     const commentHTML = /* HTML */
@@ -306,12 +312,12 @@ function generateCommentFeed() {
         <div class=" d-flex justify-content-start mb-4">
           <button onclick="toggleLiked('${comment.id}')" class="favorite-btn btn btn-link d-flex align-items-center me-3 text-decoration-none" id="heart">
             
-            <p class="mb-0 fs-2">${comment.liked ? "♥":"♡"}</p>
+            <p class="mb-0 fs-2">${comment.liked ? "♥" : "♡"}</p>
           </button>
         </div>
         </div>
       `;
-      commentsHTML+= commentHTML;
+    commentsHTML += commentHTML;
   });
   document.getElementById("commentsDiv").innerHTML = commentsHTML;
 }
@@ -319,7 +325,7 @@ function generateCommentFeed() {
 function toggleLiked(id) {
   let comments = getFromDB();
   comments[community] = comments[community].map(comment => {
-    if(comment.id === id){
+    if (comment.id === id) {
       comment.liked = !comment.liked;
     }
     return comment;
@@ -462,7 +468,7 @@ function autocomplete(inp) {
 
 window.onload = async function () {
   await getJSONFile();
-  // await getExternJSONFile();
+  await getExternJSONFile();
   const select = document.getElementById("selectComunidad");
   select.value = getQueryParams();
   getRouteMap();
