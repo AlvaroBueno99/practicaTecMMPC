@@ -22,7 +22,9 @@
     text-decoration: none;
   }
   #header .logo img {
-    max-height: 40px;
+    max-height: 150px;
+    max-width: 150px;
+    filter: invert(74%) sepia(11%) saturate(296%) hue-rotate(165deg) brightness(88%) contrast(87%);
   }
   
   /*--------------------------------------------------------------

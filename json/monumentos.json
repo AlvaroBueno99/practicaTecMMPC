@@ -378,7 +378,7 @@
             ]
         },
         {
-            "Canarias": [
+            "Islas Canarias": [
                 {
                     "name": "Monumento a los caídos",
                     "identifier": "can1",
@@ -682,7 +682,7 @@
             ]
         },
         {
-            "Cataluña": [
+            "Catalunya": [
                 {
                     "name": "La Sagrada Familia",
                     "identifier": "cat1",
@@ -1436,7 +1436,7 @@
             ]
         },
         {
-            "Valencia": [
+            "Comunitat Valenciana": [
                 {
                     "name": "Catedral de Santa María de Valencia",
                     "identifier": "val1",

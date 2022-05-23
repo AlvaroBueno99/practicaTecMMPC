@@ -56,6 +56,23 @@ function switchRouteMapB(value) {
   window.location.href = `/rutas.html?comunidad=${value}`;
 }
 
+function reverseGeocoding(lat, long) {
+  var geocodeService = L.esri.Geocoding.geocodeService();
+
+  geocodeService.reverse().latlng([lat, long]).run(function (error, result) {
+    if (error) {
+      return;
+    }
+
+    // console.log(result.address.Match_addr);
+    var arr = result.address.Match_addr.split(',');
+    // console.log(arr[arr.length-1]);
+
+    return arr[arr.length - 1];
+  });
+
+}
+
 // Generación dinámica del mapa de routas.
 function getRouteMap() {
   // var container = L.DomUtil.get("map1");
@@ -100,6 +117,55 @@ function getRouteMap() {
     }
   ).addTo(map);
 
+  // Obtención y procesado de los datos JSON obtenidos de otro grupo.
+  let markersLat = [];
+  let markersLong = [];
+  let nameRest = [];
+  dataRestaurantes.forEach((cocinero) => {
+    // console.log(cocinero);
+    cocinero.restaurantes.restaurant.forEach((restaurante) => {
+      var geocodeService = L.esri.Geocoding.geocodeService();
+
+      geocodeService.reverse().latlng([restaurante.geo.latitude, restaurante.geo.longitude]).run(function (error, result) {
+        if (error) {
+          return;
+        }
+
+        // console.log(result.address.Match_addr);
+        var arr = result.address.Match_addr.split(',');
+        // console.log(arr[arr.length-1]);
+        arr = arr[arr.length - 1].slice(1);
+
+        if (arr.localeCompare(select.value) == 0) {
+          markersLat.push(`${restaurante.geo.latitude}`),
+            markersLong.push(`${restaurante.geo.longitude}`),
+            nameRest.push((`${restaurante.name}`));
+
+          // Para los restaurantes
+          var redIcon = new L.Icon({
+            iconUrl:
+              "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png",
+            shadowUrl:
+              "https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png",
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41],
+          });
+
+          for (let index = 0; index < markersLat.length; index++) {
+            var marker = L.marker([markersLat[index], markersLong[index]], {
+              icon: redIcon,
+            }).addTo(map);
+            marker.bindPopup(nameRest[index]);
+          }
+        }
+
+      });
+    })
+  });
+
+
   // Bucle para generar un marcador para cada monumento de la comunidad.
 
   var markers = [];
@@ -141,20 +207,7 @@ function getRouteMap() {
       }
     });
   });
-  
-  let coordsLat = [];
-  let coordsLong = [];
-  dataRestaurantes.forEach((cocinero) => {
-    // console.log(cocinero);
-    cocinero.restaurantes.restaurant.forEach((restaurante)=>{
-      // console.log(restaurante.geo.latitude);
-      // console.log(restaurante.geo.longitude);
-      coordsLat.push(restaurante.geo.latitude);
-      coordsLong.push(restaurante.geo.longitude);
-    })
-  });
-  console.log(coordsLat);
-  console.log(coordsLong);
+
 
 
 
@@ -346,6 +399,7 @@ function submitSearch(e) {
     .replace(/[\u0300-\u036f]/g, "");
   window.location.href = `/?term=${term}#filaTituloCatalogo`;
 }
+
 
 function completeMonumentsArray() {
   var monumentsArray = [];
