@@ -110,11 +110,11 @@
                                     <option value="Aragón">Aragón</option>
                                     <option value="Asturias">Asturias</option>
                                     <option value="Islas Baleares">Islas Baleares</option>
-                                    <option value="Islas Canarias">Canarias</option>
+                                    <option value="Islas Canarias">Islas Canarias</option>
                                     <option value="Cantabria">Cantabria</option>
                                     <option value="Castilla y León">Castilla y León</option>
                                     <option value="Castilla-La Mancha">Castilla-La Mancha</option>
-                                    <option value="Catalunya">Cataluña</option>
+                                    <option value="Catalunya">Catalunya</option>
                                     <option value="Extremadura">Extremadura</option>
                                     <option value="Galicia">Galicia</option>
                                     <option value="Comunidad de Madrid">Comunidad de Madrid</option>
@@ -141,7 +141,7 @@
                             <button class="btn btn-primary mt-2 formatoBoton" id="filterButton"
                                 onclick="switchRouteMapB('Islas Baleares')">Islas Baleares</button>
                             <button class="btn btn-primary mt-2 formatoBoton" id="filterButton"
-                                onclick="switchRouteMapB('Islas Canarias')">Canarias</button>
+                                onclick="switchRouteMapB('Islas Canarias')">Islas Canarias</button>
                             <button class="btn btn-primary mt-2 formatoBoton" id="filterButton"
                                 onclick="switchRouteMapB('Cantabria')">Cantabria</button>
                             <button class="btn btn-primary mt-2 formatoBoton" id="filterButton"
@@ -149,7 +149,7 @@
                             <button class="btn btn-primary mt-2 formatoBoton" id="filterButton"
                                 onclick="switchRouteMapB('Castilla-La Mancha')">Castilla-La Mancha</button>
                             <button class="btn btn-primary mt-2 formatoBoton" id="filterButton"
-                                onclick="switchRouteMapB('Catalunya')">Cataluña</button>
+                                onclick="switchRouteMapB('Catalunya')">Catalunya</button>
                             <button class="btn btn-primary mt-2 formatoBoton" id="filterButton"
                                 onclick="switchRouteMapB('Extremadura')">Extremadura</button>
                             <button class="btn btn-primary mt-2 formatoBoton" id="filterButton"
@@ -181,7 +181,7 @@
                     <div class="row justify-content-center">
                         <div class="col-auto">
                             <div class="rutas" id="contMapa">
-                                <div id="map"></div>
+                                <div id="map" onclick="alert('Para una mejor experiencia permita la geolocalización. Haga click en el mapa para activarla'); this.onclick=null";></div>
                             </div>
                         </div>
                     </div>

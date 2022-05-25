@@ -60,26 +60,26 @@ function getQueryParams() {
   return search.get("term") || "";
 }
 
-function pruebaObtencionDatosJSON() {
-  let totalMonuments = 0;
-  console.log("number of comunities in JSON: ", dataJSON.length);
-  dataJSON.forEach((comunidades) => {
-    Object.keys(comunidades).forEach((nombreComunidad) => {
-      console.log("comunidad: ", nombreComunidad);
-      console.log(
-        "monuments found in ",
-        nombreComunidad,
-        ": ",
-        comunidades[nombreComunidad].length
-      );
-      comunidades[nombreComunidad].forEach((monumento) => {
-        console.log("monumento: ", monumento);
-        totalMonuments++;
-      });
-    });
-  });
-  console.log("number of monuments found in JSON: ", totalMonuments);
-}
+// function pruebaObtencionDatosJSON() {
+//   let totalMonuments = 0;
+//   console.log("number of comunities in JSON: ", dataJSON.length);
+//   dataJSON.forEach((comunidades) => {
+//     Object.keys(comunidades).forEach((nombreComunidad) => {
+//       console.log("comunidad: ", nombreComunidad);
+//       console.log(
+//         "monuments found in ",
+//         nombreComunidad,
+//         ": ",
+//         comunidades[nombreComunidad].length
+//       );
+//       comunidades[nombreComunidad].forEach((monumento) => {
+//         console.log("monumento: ", monumento);
+//         totalMonuments++;
+//       });
+//     });
+//   });
+//   console.log("number of monuments found in JSON: ", totalMonuments);
+// }
 
 // ----------------------- Dynamic charts -----------------------------
 
@@ -532,7 +532,7 @@ window.onload = async function () {
   // dentro del onload cuando hay que acceder al DOM "instantaneamente".
   await getJSONFile();
 
-  pruebaObtencionDatosJSON();
+  // pruebaObtencionDatosJSON();
 
   generateColumChart();
   setHighchartsOptions();

@@ -221,6 +221,22 @@ function getRouteMap() {
   marker.bindPopup("Catedral-Basílica de Santa María");
   */
 
+  map.addEventListener("click", mostrarGeolocalizacion);
+
+  function mostrarGeolocalizacion() {
+    navigator.geolocation.getCurrentPosition(showCurrentPos);
+    function showCurrentPos(position) {
+      var currentPos = L.marker(
+        [position.coords.latitude, position.coords.longitude],
+        { icon: greenIcon }
+      ).addTo(map);
+      currentPos.bindPopup("Tu posición actual");
+    }
+    map.removeEventListener("click", mostrarGeolocalizacion);
+  }
+
+
+
   // Para la posición del usuario
   var greenIcon = new L.Icon({
     iconUrl:
@@ -232,15 +248,6 @@ function getRouteMap() {
     popupAnchor: [1, -34],
     shadowSize: [41, 41],
   });
-
-  navigator.geolocation.getCurrentPosition(showCurrentPos);
-  function showCurrentPos(position) {
-    var currentPos = L.marker(
-      [position.coords.latitude, position.coords.longitude],
-      { icon: greenIcon }
-    ).addTo(map);
-    currentPos.bindPopup("Tu posición actual");
-  }
 
   L.Routing.control({
     // show: false,
@@ -276,6 +283,38 @@ function getRouteMap() {
   */
 
   // L.control._container.style.display = "None";
+
+
+
+  // Leyenda
+  var legend = L.control({
+    position: "bottomright"
+  });
+
+  legend.onAdd = function (map) {
+    var div = L.DomUtil.create("div", "legend");
+    div.innerHTML += "<h4>Leyenda</h4>";
+    div.innerHTML += '<img class="icon" src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"></img><span>Monumento</span><br>';
+    div.innerHTML += '<img class="icon" src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png"><span>Restaurante Destacado</span><br>';
+    div.innerHTML += '<img class="icon" src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png"><span>Posición Actual</span><br>';
+    div.innerHTML += '<img class="icon" src="./img/iconos/ruta.svg"><span>Ruta a seguir</span><br>';
+    return div;
+  };
+
+  legend.addTo(map);
+
+  // Comunidad
+  var comunidadSeleccionada = L.control({
+    position: "bottomleft"
+  });
+
+  comunidadSeleccionada.onAdd = function (map) {
+    var div = L.DomUtil.create("div", "comunidad");
+    div.innerHTML += "<h4>" + `${select.value}` + "</h4>";
+    return div;
+  };
+
+  comunidadSeleccionada.addTo(map);
 }
 
 function getFromDB() {
