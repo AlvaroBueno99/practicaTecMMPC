@@ -221,7 +221,7 @@ function getRouteMap() {
   marker.bindPopup("Catedral-Basílica de Santa María");
   */
 
-  map.addEventListener("click", mostrarGeolocalizacion, {passive: true});
+  map.addEventListener("click", mostrarGeolocalizacion);
 
   function mostrarGeolocalizacion() {
     navigator.geolocation.getCurrentPosition(showCurrentPos);
