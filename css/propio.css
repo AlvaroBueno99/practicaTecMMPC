@@ -660,6 +660,14 @@ div.content {
   .datosCartaMon{
     font-size: small;
   }
+  #header .logo img {
+    max-height: 80px;
+    max-width: 80px;
+  }
+  .legend,
+  .comunidad{
+    display: none;
+  }
 }
 
 #filaCatalogo {
@@ -896,9 +904,6 @@ footer {
   font-weight: bold;
   border: #000 solid 0.1rem;
 } */
-
-#contenedorComentarioPorDefecto{
-}
 
 #fondoCajaComentariosVacia{
   margin-left: 5rem;

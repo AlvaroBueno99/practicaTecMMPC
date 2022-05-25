@@ -221,19 +221,24 @@ function getRouteMap() {
   marker.bindPopup("Catedral-Basílica de Santa María");
   */
 
-  map.addEventListener("click", mostrarGeolocalizacion);
+  if (navigator.geolocation) {
+    map.addEventListener("click", mostrarGeolocalizacion);
 
-  function mostrarGeolocalizacion() {
-    navigator.geolocation.getCurrentPosition(showCurrentPos);
-    function showCurrentPos(position) {
-      var currentPos = L.marker(
-        [position.coords.latitude, position.coords.longitude],
-        { icon: greenIcon }
-      ).addTo(map);
-      currentPos.bindPopup("Tu posición actual");
+    function mostrarGeolocalizacion() {
+      navigator.geolocation.getCurrentPosition(showCurrentPos);
+      function showCurrentPos(position) {
+        var currentPos = L.marker(
+          [position.coords.latitude, position.coords.longitude],
+          { icon: greenIcon }
+        ).addTo(map);
+        currentPos.bindPopup("Tu posición actual");
+      }
+      map.removeEventListener("click", mostrarGeolocalizacion);
     }
-    map.removeEventListener("click", mostrarGeolocalizacion);
+  } else {
+    alert('La geolocalización no está soportada');
   }
+
 
 
 
