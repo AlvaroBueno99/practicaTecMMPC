@@ -220,11 +220,15 @@ function getRouteMap() {
   }).addTo(map);
   marker.bindPopup("Catedral-Basílica de Santa María");
   */
+ 
+
 
   if (navigator.geolocation) {
-    map.addEventListener("click", mostrarGeolocalizacion);
+    if(sessionStorage.getItem("segundaVez")===null){
+      map.addEventListener("drag", mostrarGeolocalizacion);
 
     function mostrarGeolocalizacion() {
+      alert('Para una mejor experiencia permita la geolocalización. Haga click en el mapa para activarla');
       navigator.geolocation.getCurrentPosition(showCurrentPos);
       function showCurrentPos(position) {
         var currentPos = L.marker(
@@ -233,7 +237,18 @@ function getRouteMap() {
         ).addTo(map);
         currentPos.bindPopup("Tu posición actual");
       }
-      map.removeEventListener("click", mostrarGeolocalizacion);
+      map.removeEventListener("drag", mostrarGeolocalizacion);
+    }
+    sessionStorage.setItem("segundaVez", true);
+    }else{
+      navigator.geolocation.getCurrentPosition(showCurrentPos);
+      function showCurrentPos(position) {
+        var currentPos = L.marker(
+          [position.coords.latitude, position.coords.longitude],
+          { icon: greenIcon }
+        ).addTo(map);
+        currentPos.bindPopup("Tu posición actual");
+      }
     }
   } else {
     alert('La geolocalización no está soportada');
