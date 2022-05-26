@@ -23,7 +23,7 @@ function generateCard(monumento) {
       <img class="card-img-top" itemprop="image" src="${monumento.image[0]}" alt="Card image cap" />
       <div class="card-body align-items-center">
       <div id="monumentProperties">
-        <h5 itemprop="name" class="card-title">${monumento.name}</h5>
+        <h1 itemprop="name" class="card-title">${monumento.name}</h1>
         <div id="direccion">
         <p itemprop="address" class="card-text" id="mainCardText">${monumento.address}</p>
         </div>
@@ -33,7 +33,7 @@ function generateCard(monumento) {
         </div>
         </div>
         </div>
-        <a href="/monumento.html?identifier=${monumento.identifier}" class="btn btn-primary formatoBoton" id="cardBtn">Ver monumento</a>
+        <a href="/monumento.html?identifier=${monumento.identifier}" class="btn btn-primary formatoBoton cardBtn">Ver monumento</a>
         <button type="button" data-id="${monumento.identifier}" class="favorite-btn favorite-btn-main btn btn-outline-info ${monumento.isFavorite
           ? " is-favorite" : "" }" onclick="resultsDelegation(event)">
           ${monumento.isFavorite ? "♥" : "♡"}

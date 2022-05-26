@@ -710,7 +710,7 @@ footer {
   height:37rem;
 }
 
-.card #cardBtn{
+.card .cardBtn{
   position:absolute;
   left: 1rem;
   bottom: 1rem;

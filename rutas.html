@@ -33,12 +33,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
 
     <!-- Load Esri Leaflet from CDN -->
-    <script src="https://unpkg.com/esri-leaflet@2.2.3/dist/esri-leaflet.js" integrity="sha512-YZ6b5bXRVwipfqul5krehD9qlbJzc6KOGXYsDjU9HHXW2gK57xmWl2gU6nAegiErAqFXhygKIsWPKbjLPXVb2g==" crossorigin=""></script>
+    <script src="https://unpkg.com/esri-leaflet@2.2.3/dist/esri-leaflet.js"
+        integrity="sha512-YZ6b5bXRVwipfqul5krehD9qlbJzc6KOGXYsDjU9HHXW2gK57xmWl2gU6nAegiErAqFXhygKIsWPKbjLPXVb2g=="
+        crossorigin=""></script>
 
 
     <!-- Load Esri Leaflet Geocoder from CDN -->
-    <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.2.13/dist/esri-leaflet-geocoder.css" integrity="sha512-v5YmWLm8KqAAmg5808pETiccEohtt8rPVMGQ1jA6jqkWVydV5Cuz3nJ9fQ7ittSxvuqsvI9RSGfVoKPaAJZ/AQ==" crossorigin="">
-    <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.13/dist/esri-leaflet-geocoder.js" integrity="sha512-zdT4Pc2tIrc6uoYly2Wp8jh6EPEWaveqqD3sT0lf5yei19BC1WulGuh5CesB0ldBKZieKGD7Qyf/G0jdSe016A==" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.2.13/dist/esri-leaflet-geocoder.css"
+        integrity="sha512-v5YmWLm8KqAAmg5808pETiccEohtt8rPVMGQ1jA6jqkWVydV5Cuz3nJ9fQ7ittSxvuqsvI9RSGfVoKPaAJZ/AQ=="
+        crossorigin="">
+    <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.13/dist/esri-leaflet-geocoder.js"
+        integrity="sha512-zdT4Pc2tIrc6uoYly2Wp8jh6EPEWaveqqD3sT0lf5yei19BC1WulGuh5CesB0ldBKZieKGD7Qyf/G0jdSe016A=="
+        crossorigin=""></script>
 
     <script src="/js/rutas.js"></script>
 
@@ -68,8 +74,7 @@
             <div class="logo me-auto">
                 <!-- <h1><a href="index.html">Monumentos España</a></h1> -->
                 <!-- Uncomment below if you prefer to use an image logo -->
-                <a href="index.html"><img itemprop="logo"
-                        src="/img/ImagenesGen/Logo.svg" alt="logo de la página"
+                <a href="index.html"><img itemprop="logo" src="/img/ImagenesGen/Logo.svg" alt="logo de la página"
                         class="img-fluid"></a>
             </div>
             <nav id="navbar" class="navbar order-last order-lg-0">
@@ -83,17 +88,18 @@
                         <input type="text" placeholder="Buscar un monumento" name="search" id="searchBarRutas"
                             autocomplete="off">
                         <button type="submit" id="searchButton">
-                            <img src="img/iconos/search.svg" id="searchIcon">
+                            <img src="img/iconos/search.svg" id="searchIcon" alt="" aria-label="boton de búsqueda">
                         </button>
                     </form>
                 </div>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
             <div class="header-social-links d-flex align-items-center">
-                <a itemprop="url" href="#" class="twitter"><img src="img/iconos/twitter.svg"></a>
-                <a itemprop="url" href="#" class="facebook"><img src="img/iconos/facebook.svg"></a>
-                <a itemprop="url" href="#" class="instagram"><img src="img/iconos/instagram.svg"></a>
-                <a itemprop="url" href="#" class="linkedin"><img src="img/iconos/linkedin.svg"></a>
+                <a itemprop="url" href="#" class="twitter"><img src="img/iconos/twitter.svg" alt="twitter link"></a>
+                <a itemprop="url" href="#" class="facebook"><img src="img/iconos/facebook.svg" alt="facebook link"></a>
+                <a itemprop="url" href="#" class="instagram"><img src="img/iconos/instagram.svg"
+                        alt="instagram link"></a>
+                <a itemprop="url" href="#" class="linkedin"><img src="img/iconos/linkedin.svg" alt="linkedin link"></a>
             </div>
         </div>
     </header>
@@ -183,7 +189,9 @@
                     <div class="row justify-content-center">
                         <div class="col-auto">
                             <div class="rutas" id="contMapa">
-                                <div id="map" onclick="alert('Para una mejor experiencia permita la geolocalización. Haga click en el mapa para activarla'); this.onclick=null";></div>
+                                <div id="map"
+                                    onclick="alert('Para una mejor experiencia permita la geolocalización. Haga click en el mapa para activarla'); this.onclick=null"
+                                    ;></div>
                             </div>
                         </div>
                     </div>
@@ -244,10 +252,11 @@
             <!-- Left -->
             <div class="me-5 d-none d-lg-block">
                 <span>Visita nuestras redes sociales:&nbsp;</span>
-                <a itemprop="url" href="#" class="twitter"><img src="img/iconos/twitter.svg"></a>
-                <a itemprop="url" href="#" class="facebook"><img src="img/iconos/facebook.svg"></a>
-                <a itemprop="url" href="#" class="instagram"><img src="img/iconos/instagram.svg"></a>
-                <a itemprop="url" href="#" class="linkedin"><img src="img/iconos/linkedin.svg"></a>
+                <a itemprop="url" href="#" class="twitter"><img src="img/iconos/twitter.svg" alt="twitter link"></a>
+                <a itemprop="url" href="#" class="facebook"><img src="img/iconos/facebook.svg" alt="facebook link"></a>
+                <a itemprop="url" href="#" class="instagram"><img src="img/iconos/instagram.svg"
+                        alt="instagram link"></a>
+                <a itemprop="url" href="#" class="linkedin"><img src="img/iconos/linkedin.svg" alt="linkedin link"></a>
             </div>
             <!-- Left -->
         </section>
