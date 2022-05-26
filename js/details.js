@@ -26,13 +26,13 @@ function generateSlider(monumento) {
     </div>
     <div itemscope itemtype="https://schema.org/LandmarksOrHistoricalBuildings" class="carousel-inner">
       <div class="carousel-item active">
-        <img itemprop="image" src="${monumento.image[0]}" id="slide1">
+        <img itemprop="image" src="${monumento.image[0]}" id="slide1" alt="imagen del monumento">
       </div>
       <div class="carousel-item">
-        <img itemprop="image" src="${monumento.image[1]}" id="slide2">
+        <img itemprop="image" src="${monumento.image[1]}" id="slide2" alt="imagen del monumento">
       </div>
       <div class="carousel-item">
-        <img itemprop="image" src="${monumento.image[2]}" id="slide3">
+        <img itemprop="image" src="${monumento.image[2]}" id="slide3" alt="imagen del monumento">
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselMonumento" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -61,14 +61,14 @@ function generateInformationCard(monumento) {
     itemscope
     itemtype="https://schema.org/LandmarksOrHistoricalBuildings"class="card-header">
       
-      <p itemprop="name" class="datosCartaMon"><img src="img/iconos/landmark.svg" class="iconoPagMonum"><br> ${monumento.name}</p>
-      <p class="datosCartaMon"><img src="img/iconos/calendar.svg" class="iconoPagMonum"> <br>${antiguedad} años de <br> antigüedad</p> 
-      <p itemprop="address" class="datosCartaMon"><img src="img/iconos/place.svg" class="iconoPagMonum"> <br>${monumento.address}</p> 
+      <p itemprop="name" class="datosCartaMon"><img src="img/iconos/landmark.svg" class="iconoPagMonum" alt=""><br> ${monumento.name}</p>
+      <p class="datosCartaMon"><img src="img/iconos/calendar.svg" class="iconoPagMonum" alt=""> <br>${antiguedad} años de <br> antigüedad</p> 
+      <p itemprop="address" class="datosCartaMon"><img src="img/iconos/place.svg" class="iconoPagMonum" alt=""> <br>${monumento.address}</p> 
       <p 
         itemprop="geo"
         itemscope
         itemtype="https://schema.org/GeoCoordinates"
-        class=" datosCartaMon"> <img src="img/iconos/map.svg" class="iconoPagMonum"> <br>
+        class=" datosCartaMon"> <img src="img/iconos/map.svg" class="iconoPagMonum" alt=""> <br>
         (${latitud} / ${longitud})
         <meta itemprop="latitude" content=${monumento.latitude} />
         <meta itemprop="longitude" content=${monumento.longitude} />
@@ -129,13 +129,36 @@ function generateMap(monumento) {
     popupAnchor: [1, -34],
     shadowSize: [41, 41],
   });
-  navigator.geolocation.getCurrentPosition(showCurrentPos);
-  function showCurrentPos(position) {
-    var currentPos = L.marker(
-      [position.coords.latitude, position.coords.longitude],
-      { icon: greenIcon }
-    ).addTo(map);
-    currentPos.bindPopup("Tu posición actual");
+  
+  if (navigator.geolocation) {
+    if(sessionStorage.getItem("segundaVez")===null){
+      map.addEventListener("drag", mostrarGeolocalizacion);
+
+    function mostrarGeolocalizacion() {
+      alert('Para una mejor experiencia permita la geolocalización.');
+      navigator.geolocation.getCurrentPosition(showCurrentPos);
+      function showCurrentPos(position) {
+        var currentPos = L.marker(
+          [position.coords.latitude, position.coords.longitude],
+          { icon: greenIcon }
+        ).addTo(map);
+        currentPos.bindPopup("Tu posición actual");
+      }
+      map.removeEventListener("drag", mostrarGeolocalizacion);
+    }
+    sessionStorage.setItem("segundaVez", true);
+    }else{
+      navigator.geolocation.getCurrentPosition(showCurrentPos);
+      function showCurrentPos(position) {
+        var currentPos = L.marker(
+          [position.coords.latitude, position.coords.longitude],
+          { icon: greenIcon }
+        ).addTo(map);
+        currentPos.bindPopup("Tu posición actual");
+      }
+    }
+  } else {
+    alert('La geolocalización no está soportada');
   }
 
   // return map;

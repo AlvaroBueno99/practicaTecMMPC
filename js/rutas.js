@@ -228,7 +228,7 @@ function getRouteMap() {
       map.addEventListener("drag", mostrarGeolocalizacion);
 
     function mostrarGeolocalizacion() {
-      alert('Para una mejor experiencia permita la geolocalización. Haga click en el mapa para activarla');
+      alert('Para una mejor experiencia permita la geolocalización.');
       navigator.geolocation.getCurrentPosition(showCurrentPos);
       function showCurrentPos(position) {
         var currentPos = L.marker(
@@ -314,10 +314,10 @@ function getRouteMap() {
   legend.onAdd = function (map) {
     var div = L.DomUtil.create("div", "legend");
     div.innerHTML += "<h4>Leyenda</h4>";
-    div.innerHTML += '<img class="icon" src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"></img><span>Monumento</span><br>';
-    div.innerHTML += '<img class="icon" src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png"><span>Restaurante Destacado</span><br>';
-    div.innerHTML += '<img class="icon" src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png"><span>Posición Actual</span><br>';
-    div.innerHTML += '<img class="icon" src="./img/iconos/ruta.svg"><span>Ruta a seguir</span><br>';
+    div.innerHTML += '<img class="icon" src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png" alt=""></img><span>Monumento</span><br>';
+    div.innerHTML += '<img class="icon" src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png" alt=""><span>Restaurante Destacado</span><br>';
+    div.innerHTML += '<img class="icon" src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png" alt=""><span>Posición Actual</span><br>';
+    div.innerHTML += '<img class="icon" src="./img/iconos/ruta.svg" alt=""><span>Ruta a seguir</span><br>';
     return div;
   };
 
@@ -410,6 +410,7 @@ function generateCommentFeed() {
             alt="avatar"
             width="60"
             height="60"
+            alt="Comment Icon Image"
           />
           <div>
             <h6 class="fw-bold text-primary mb-1">${comment.name}</h6>
