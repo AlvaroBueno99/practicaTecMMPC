@@ -224,7 +224,7 @@ function getRouteMap() {
 
 
   if (navigator.geolocation) {
-    if(sessionStorage.getItem("segundaVez")===null){
+    if(sessionStorage.getItem("segundaVezRutas")===null){
       map.addEventListener("drag", mostrarGeolocalizacion);
 
     function mostrarGeolocalizacion() {
@@ -239,7 +239,7 @@ function getRouteMap() {
       }
       map.removeEventListener("drag", mostrarGeolocalizacion);
     }
-    sessionStorage.setItem("segundaVez", true);
+    sessionStorage.setItem("segundaVezRutas", true);
     }else{
       navigator.geolocation.getCurrentPosition(showCurrentPos);
       function showCurrentPos(position) {

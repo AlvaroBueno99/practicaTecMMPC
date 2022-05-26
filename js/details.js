@@ -131,7 +131,7 @@ function generateMap(monumento) {
   });
 
   if (navigator.geolocation) {
-    if(sessionStorage.getItem("segundaVez")===null){
+    if(sessionStorage.getItem("segundaVezMonum")===null){
       map.addEventListener("drag", mostrarGeolocalizacion);
 
     function mostrarGeolocalizacion() {
@@ -146,7 +146,7 @@ function generateMap(monumento) {
       }
       map.removeEventListener("drag", mostrarGeolocalizacion);
     }
-    sessionStorage.setItem("segundaVez", true);
+    sessionStorage.setItem("segundaVezMonum", true);
     }else{
       navigator.geolocation.getCurrentPosition(showCurrentPos);
       function showCurrentPos(position) {
