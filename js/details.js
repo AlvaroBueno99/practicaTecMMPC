@@ -78,7 +78,7 @@ function generateInformationCard(monumento) {
     itemscope
     itemtype="https://schema.org/LandmarksOrHistoricalBuildings"  
     class="card-body" id="monumentCard">
-      <h5 itemprop="name" class="card-title">${monumento.name}</h5>
+      <h1 itemprop="name" class="card-title">${monumento.name}</h1>
       <p itemprop="description" class="card-text" id="monumentCardText"> ${monumento.description}
       </p>
 
@@ -129,7 +129,7 @@ function generateMap(monumento) {
     popupAnchor: [1, -34],
     shadowSize: [41, 41],
   });
-  
+
   if (navigator.geolocation) {
     if(sessionStorage.getItem("segundaVez")===null){
       map.addEventListener("drag", mostrarGeolocalizacion);
