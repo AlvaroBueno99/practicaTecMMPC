@@ -13,10 +13,10 @@ function getQueryParams() {
   return search.get("identifier");
 }
 
-function generateJSONld(){
+function generateJSONld(monumento){
   const script = document.createElement("script");
   script.setAttribute("type","application/ld+json");
-  
+
           let s = {
             "@context":"http://www.schema.org",
             "@type": "LandmarksOrHistoricalBuildings",
@@ -370,7 +370,6 @@ document.addEventListener("click", function (e) {
 window.onload = async function () {
   await getJSONFile();
   const query = getQueryParams();
-  generateJSONld();
   let monument = null;
   detailsData.forEach((comunidades) => {
     Object.keys(comunidades).forEach((nombreComunidad) => {
@@ -385,6 +384,8 @@ window.onload = async function () {
   if (monument == null) {
     window.location.href = "/";
   }
+
+  generateJSONld(monument);
 
   getWeather(monument);
 
