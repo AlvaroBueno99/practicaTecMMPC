@@ -447,6 +447,12 @@
   align-items: center;
   font-size: large;
   font-weight: bold;
+  text-shadow:
+     1px  1px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
 #contGraph {
@@ -716,6 +722,12 @@ footer {
   bottom: 1rem;
   font-weight: bold;
   border: 0.1rem black solid;
+  text-shadow:
+     1px  1px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
 .card-title{
@@ -894,6 +906,12 @@ footer {
 .formatoBoton{
   font-weight: bold;
   border: #000 solid 0.1rem;
+  text-shadow:
+     1px  1px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
 .sidenav-content .formatoBoton{
