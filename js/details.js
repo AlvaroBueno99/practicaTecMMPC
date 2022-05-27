@@ -22,9 +22,11 @@ function generateJSONld(monumento){
             "@type": "LandmarksOrHistoricalBuildings",
             "name":monumento.name,
             "identifier": monumento.identifier,
-            "image": monumento.image[0],
-            "image": monumento.image[1],
-            "image": monumento.image[2],
+            "image":[
+              monumento.image[0],
+              monumento.image[1],
+              monumento.image[2]
+            ],
             "description": monumento.description,
             "geo": {
               "@type": "GeoCoordinates",
