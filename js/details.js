@@ -151,7 +151,6 @@ function generateMap(monumento) {
   ).addTo(map);
   var marker = L.marker([`${monumento.latitude}`, `${monumento.longitude}`], 
   {icon: blueIcon},
-  {title: `${monumento.name}`},
   {alt: 'Map marker'},).addTo(map);
   marker.bindPopup(`${monumento.name}`);
 
