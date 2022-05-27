@@ -16,10 +16,7 @@ function getQueryParams() {
 function generateJSONld(){
   const script = document.createElement("script");
   script.setAttribute("type","application/ld+json");
-
-  detailsData.forEach((comunidades) => {
-    Object.keys(comunidades).forEach((nombreComunidad) => {
-        comunidades[nombreComunidad].forEach((monumento) => {
+  
           let s = {
             "@context":"http://www.schema.org",
             "@type": "LandmarksOrHistoricalBuildings",
@@ -48,9 +45,6 @@ function generateJSONld(){
             }
           };
           script.textContent+=JSON.stringify(s);
-        });
-    });
-  });
   document.head.appendChild(script);
 }
 
