@@ -43,7 +43,7 @@ function generateJSONld(monumento){
               "name": monumento.video[0],
               "thumbnail": "Monument image",
               "description": "Short video about the monument",
-              "uploadDate": "",
+              "uploadDate": "27/05/2022",
               "thumbnailURL": monumento.image[0]
             }
           };
