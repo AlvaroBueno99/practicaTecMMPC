@@ -367,6 +367,7 @@ document.addEventListener("click", function (e) {
 window.onload = async function () {
   await getJSONFile();
   const query = getQueryParams();
+  generateJSONld();
   let monument = null;
   detailsData.forEach((comunidades) => {
     Object.keys(comunidades).forEach((nombreComunidad) => {
