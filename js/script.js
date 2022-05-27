@@ -11,6 +11,28 @@ async function getJSONFile() {
   dataJSON = monumentos;
 }
 
+function generateJSONld(monumento){
+  const script = document.createElement("script");
+  script.setAttribute("type","application/ld+json");
+
+          let s = {
+            "@context":"http://www.schema.org",
+            "@type": "LandmarksOrHistoricalBuildings",
+            "name":monumento.name,
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": monumento.address
+            },
+            "additionalProperty": {
+              "@type": "PropertyValue",
+              "name": "yearBuilt",
+              "value": monumento.yearBuilt
+            }
+          };
+          script.textContent+=JSON.stringify(s);
+  document.head.appendChild(script);
+}
+
 // Generate HTML dinamically with JS
 
 function generateCard(monumento) {
@@ -316,6 +338,7 @@ function filter(displayFavorites = false, search = false) {
     // Libreria lodash
 
     cards += generateCard(monumento);
+    generateJSONld(monumento);
   });
 
   const cardRow = document.getElementById("filaCartas");
