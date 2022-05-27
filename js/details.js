@@ -44,7 +44,10 @@ function generateJSONld(monumento){
             },
             "subjectOf":{
               "@type": "VideoObject",
-              "name": monumento.video[0],
+              "name": [
+                monumento.video[0],
+                monumento.video[1]
+              ],
               "thumbnail": "Monument image",
               "description": "Short video about the monument",
               "uploadDate": "27/05/2022",
