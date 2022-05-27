@@ -173,8 +173,7 @@ function getRouteMap() {
 
           for (let index = 0; index < markersLat.length; index++) {
             var marker = L.marker([markersLat[index], markersLong[index]], {
-              icon: redIcon,
-            }).addTo(map);
+              icon: redIcon,},{alt: ''}).addTo(map);
             marker.bindPopup(nameRest[index]);
           }
         }
@@ -252,7 +251,8 @@ function getRouteMap() {
       function showCurrentPos(position) {
         var currentPos = L.marker(
           [position.coords.latitude, position.coords.longitude],
-          { icon: greenIcon }
+          { icon: greenIcon },
+          {alt: ''}
         ).addTo(map);
         currentPos.bindPopup("Tu posición actual");
       }
@@ -264,7 +264,8 @@ function getRouteMap() {
       function showCurrentPos(position) {
         var currentPos = L.marker(
           [position.coords.latitude, position.coords.longitude],
-          { icon: greenIcon }
+          { icon: greenIcon },
+          {alt: ''}
         ).addTo(map);
         currentPos.bindPopup("Tu posición actual");
       }
@@ -295,7 +296,7 @@ function getRouteMap() {
     addWaypoints: false,
     waypoints: markers,
     createMarker: function (i, wp, nWps) {
-      return L.marker(wp.latLng).bindPopup(function () {
+      return L.marker(wp.latLng, {alt: ''}).bindPopup(function () {
         return (
           ' <a href="/monumento.html?identifier=' +
           identifier[i] +
