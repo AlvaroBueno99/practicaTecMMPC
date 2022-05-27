@@ -149,9 +149,8 @@ function generateMap(monumento) {
         '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
     }
   ).addTo(map);
-  var marker = L.marker([`${monumento.latitude}`, `${monumento.longitude}`], 
-  {icon: blueIcon},
-  {alt: 'Map marker'}).addTo(map);
+  var marker = L.marker({alt: 'Map marker'},[`${monumento.latitude}`, `${monumento.longitude}`], 
+  {icon: blueIcon}).addTo(map);
   marker.bindPopup(`${monumento.name}`);
 
   // Para la posición del usuario
