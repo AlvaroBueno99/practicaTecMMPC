@@ -21,6 +21,24 @@ function getQueryParams() {
   return search.get("comunidad");
 }
 
+function generateJSONld(monumento){
+  const script = document.createElement("script");
+  script.setAttribute("type","application/ld+json");
+
+          let s = {
+            "@context":"http://www.schema.org",
+            "@type": "LandmarksOrHistoricalBuildings",
+            "name":monumento.name,
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": monumento.latitude,
+              "longitude": monumento.longitude
+            },
+          };
+          script.textContent+=JSON.stringify(s);
+  document.head.appendChild(script);
+}
+
 // const marker = {
 //   visited: Boolean,
 //   coords: L.latLng(),
@@ -178,6 +196,7 @@ function getRouteMap() {
     Object.keys(comunidades).forEach((nombreComunidad) => {
       if (nombreComunidad.localeCompare(select.value) == 0) {
         comunidades[nombreComunidad].forEach((monumento) => {
+          generateJSONld(monumento);
           // console.log(monumento.latitude, monumento.longitude);
           if (iteration == 0) {
             map.setView(
