@@ -173,7 +173,7 @@ function getRouteMap() {
 
           for (let index = 0; index < markersLat.length; index++) {
             var marker = L.marker([markersLat[index], markersLong[index]], {
-              icon: redIcon,},{alt: 'Map marker'}).addTo(map);
+              icon: redIcon},{alt: 'Map marker'}).addTo(map);
             marker.bindPopup(nameRest[index]);
           }
         }

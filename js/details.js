@@ -151,7 +151,8 @@ function generateMap(monumento) {
   ).addTo(map);
   var marker = L.marker([`${monumento.latitude}`, `${monumento.longitude}`], {
     icon: blueIcon,
-  }).addTo(map);
+  },
+  {alt: 'Map marker'}).addTo(map);
   marker.bindPopup(`${monumento.name}`);
 
   // Para la posición del usuario
@@ -176,7 +177,8 @@ function generateMap(monumento) {
       function showCurrentPos(position) {
         var currentPos = L.marker(
           [position.coords.latitude, position.coords.longitude],
-          { icon: greenIcon }
+          { icon: greenIcon },
+          {alt: 'Map marker'}
         ).addTo(map);
         currentPos.bindPopup("Tu posición actual");
       }
@@ -188,7 +190,8 @@ function generateMap(monumento) {
       function showCurrentPos(position) {
         var currentPos = L.marker(
           [position.coords.latitude, position.coords.longitude],
-          { icon: greenIcon }
+          { icon: greenIcon },
+          {alt: 'Map marker'}
         ).addTo(map);
         currentPos.bindPopup("Tu posición actual");
       }
