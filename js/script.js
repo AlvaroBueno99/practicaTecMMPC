@@ -18,7 +18,8 @@ function generateJSONld(monumento){
           let s = {
             "@context":"https://www.schema.org",
             "@type": "LandmarksOrHistoricalBuildings",
-            "name":monumento.name,
+            "image": monumento.image[0],
+            "name": monumento.name,
             "address": {
               "@type": "PostalAddress",
               "streetAddress": monumento.address
@@ -40,18 +41,18 @@ function generateCard(monumento) {
   const card =/* HTML */
 
     `
-    <div itemscope itemtype="https://schema.org/LandmarksOrHistoricalBuildings" class="col-auto m-4">
+    <div class="col-auto m-4">
     <div class="card overflow zoom hoverCard" id="card-${monumento.identifier}" style="width: 18rem;">
-      <img class="card-img-top" itemprop="image" src="${monumento.image[0]}" alt="Card image cap" />
+      <img class="card-img-top" src="${monumento.image[0]}" alt="Card image cap" />
       <div class="card-body align-items-center">
       <div id="monumentProperties">
-        <h1 itemprop="name" class="card-title">${monumento.name}</h1>
+        <h1 class="card-title">${monumento.name}</h1>
         <div id="direccion">
-        <p itemprop="address" class="card-text" id="mainCardText">${monumento.address}</p>
+        <p class="card-text" id="mainCardText">${monumento.address}</p>
         </div>
         <div id="año">
-        <div itemscope itemtype="https://schema.org/Accommodation">
-          <p itemprop="yearBuilt" class="card-text" id="mainCardText">Año de construcción: ${añoAjustado}</p>
+        <div>
+          <p class="card-text" id="mainCardText">Año de construcción: ${añoAjustado}</p>
         </div>
         </div>
         </div>

@@ -69,15 +69,15 @@ function generateSlider(monumento) {
       <button type="button" data-bs-target="#carouselMonumento" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselMonumento" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div itemscope itemtype="https://schema.org/LandmarksOrHistoricalBuildings" class="carousel-inner">
+    <div class="carousel-inner">
       <div class="carousel-item active">
-        <img itemprop="image" src="${monumento.image[0]}" id="slide1" alt="imagen del monumento">
+        <img src="${monumento.image[0]}" id="slide1" alt="imagen del monumento">
       </div>
       <div class="carousel-item">
-        <img itemprop="image" src="${monumento.image[1]}" id="slide2" alt="imagen del monumento">
+        <img src="${monumento.image[1]}" id="slide2" alt="imagen del monumento">
       </div>
       <div class="carousel-item">
-        <img itemprop="image" src="${monumento.image[2]}" id="slide3" alt="imagen del monumento">
+        <img src="${monumento.image[2]}" id="slide3" alt="imagen del monumento">
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselMonumento" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -102,29 +102,20 @@ function generateInformationCard(monumento) {
     /* HTML */
 
     `
-  <div 
-    itemscope
-    itemtype="https://schema.org/LandmarksOrHistoricalBuildings"class="card-header">
+  <div class="card-header">
       
-      <p itemprop="name" class="datosCartaMon"><img src="img/iconos/landmark.svg" class="iconoPagMonum" alt=""><br> ${monumento.name}</p>
+      <p class="datosCartaMon"><img src="img/iconos/landmark.svg" class="iconoPagMonum" alt=""><br> ${monumento.name}</p>
       <p class="datosCartaMon"><img src="img/iconos/calendar.svg" class="iconoPagMonum" alt=""> <br>${antiguedad} años de <br> antigüedad</p> 
-      <p itemprop="address" class="datosCartaMon"><img src="img/iconos/place.svg" class="iconoPagMonum" alt=""> <br>${monumento.address}</p> 
-      <p 
-        itemprop="geo"
-        itemscope
-        itemtype="https://schema.org/GeoCoordinates"
-        class=" datosCartaMon"> <img src="img/iconos/map.svg" class="iconoPagMonum" alt=""> <br>
+      <p class="datosCartaMon"><img src="img/iconos/place.svg" class="iconoPagMonum" alt=""> <br>${monumento.address}</p> 
+      <p class=" datosCartaMon"> <img src="img/iconos/map.svg" class="iconoPagMonum" alt=""> <br>
         (${latitud} / ${longitud})
-        <meta itemprop="latitude" content=${monumento.latitude} />
-        <meta itemprop="longitude" content=${monumento.longitude} />
+        <meta content=${monumento.latitude} />
+        <meta content=${monumento.longitude} />
         </p>
   </div>
-  <div 
-    itemscope
-    itemtype="https://schema.org/LandmarksOrHistoricalBuildings"  
-    class="card-body" id="monumentCard">
-      <h1 itemprop="name" class="card-title">${monumento.name}</h1>
-      <p itemprop="description" class="card-text" id="monumentCardText"> ${monumento.description}
+  <div class="card-body" id="monumentCard">
+      <h1 class="card-title">${monumento.name}</h1>
+      <p class="card-text" id="monumentCardText"> ${monumento.description}
       </p>
 
   </div>
