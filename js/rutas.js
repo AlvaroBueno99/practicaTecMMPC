@@ -26,7 +26,7 @@ function generateJSONld(monumento){
   script.setAttribute("type","application/ld+json");
 
           let s = {
-            "@context":"http://www.schema.org",
+            "@context":"https://www.schema.org",
             "@type": "LandmarksOrHistoricalBuildings",
             "name":monumento.name,
             "geo": {
