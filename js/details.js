@@ -13,6 +13,38 @@ function getQueryParams() {
   return search.get("identifier");
 }
 
+function generateJSONld(){
+  const script = document.createElement("script");
+  script.setAttribute("type","application/ld+json");
+
+  detailsData.forEach((comunidades) => {
+    Object.keys(comunidades).forEach((nombreComunidad) => {
+        comunidades[nombreComunidad].forEach((monumento) => {
+          let s = {
+            "@context":"http://www.schema.org",
+            "@type": "LandmarksOrHistoricalBuildings",
+            "name":monumento.name,
+            "identifier": monumento.identifier,
+            "image": monumento.image[0],
+            "description": monumento.description,
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": monumento.latitude,
+              "longitude": monumento.longitude
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": monumento.address
+            },
+            "yearBuilt": monumento.yearBuilt
+          };
+          script.textContent+=JSON.stringify(s);
+        });
+    });
+  });
+  document.head.appendChild(script);
+}
+
 function generateSlider(monumento) {
   const infoSlider =/* HTML */
 
