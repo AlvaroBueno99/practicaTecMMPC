@@ -25,7 +25,7 @@ function generateJSONld(){
             "@type": "LandmarksOrHistoricalBuildings",
             "name":monumento.name,
             "identifier": monumento.identifier,
-            "image": monumento.image[0],
+            "image": monumento.image[0,1,2],
             "description": monumento.description,
             "geo": {
               "@type": "GeoCoordinates",
@@ -36,7 +36,16 @@ function generateJSONld(){
               "@type": "PostalAddress",
               "streetAddress": monumento.address
             },
-            "yearBuilt": monumento.yearBuilt
+            "additionalProperty": {
+              "@type": "PropertyValue",
+              "name": "yearBuilt",
+              "value": monumento.yearBuilt
+            },
+            "subjectOf":{
+              "@type": "VideoObject",
+              "name": monumento.video[0],
+              "thumbnail": monumento.image[0]
+            }
           };
           script.textContent+=JSON.stringify(s);
         });
