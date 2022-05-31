@@ -182,8 +182,8 @@ function generateMap(monumento) {
         currentPos.bindPopup("Tu posición actual");
       }
       map.removeEventListener("drag", mostrarGeolocalizacion);
+      sessionStorage.setItem("segundaVezMonum", true);
     }
-    sessionStorage.setItem("segundaVezMonum", true);
     }else{
       navigator.geolocation.getCurrentPosition(showCurrentPos);
       function showCurrentPos(position) {

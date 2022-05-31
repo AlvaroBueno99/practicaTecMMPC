@@ -258,8 +258,8 @@ function getRouteMap() {
         currentPos.bindPopup("Tu posición actual");
       }
       map.removeEventListener("drag", mostrarGeolocalizacion);
+      sessionStorage.setItem("segundaVezRutas", true);
     }
-    sessionStorage.setItem("segundaVezRutas", true);
     }else{
       navigator.geolocation.getCurrentPosition(showCurrentPos);
       function showCurrentPos(position) {
