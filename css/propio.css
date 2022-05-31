@@ -971,4 +971,8 @@ footer h1 {
   font-size: medium;
 }
 
+.carousel-item img{
+  aspect-ratio: attr(width) / attr(height);
+}
+
 
