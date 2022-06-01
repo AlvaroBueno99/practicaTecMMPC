@@ -236,7 +236,7 @@ function getRouteMap() {
           ).addTo(map);
           currentPos.bindPopup("Tu posición actual");
         }
-        map.removeEventListener("drag", mostrarGeolocalizacion);
+        map.removeEventListener("drag click", mostrarGeolocalizacion);
         sessionStorage.setItem("segundaVezRutas", true);
       }
     } else {
