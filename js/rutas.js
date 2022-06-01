@@ -21,21 +21,21 @@ function getQueryParams() {
   return search.get("comunidad");
 }
 
-function generateJSONld(monumento){
+function generateJSONld(monumento) {
   const script = document.createElement("script");
-  script.setAttribute("type","application/ld+json");
+  script.setAttribute("type", "application/ld+json");
 
-          let s = {
-            "@context":"https://www.schema.org",
-            "@type": "LandmarksOrHistoricalBuildings",
-            "name":monumento.name,
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": monumento.latitude,
-              "longitude": monumento.longitude
-            },
-          };
-          script.textContent+=JSON.stringify(s);
+  let s = {
+    "@context": "https://www.schema.org",
+    "@type": "LandmarksOrHistoricalBuildings",
+    "name": monumento.name,
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": monumento.latitude,
+      "longitude": monumento.longitude
+    },
+  };
+  script.textContent += JSON.stringify(s);
   document.head.appendChild(script);
 }
 
@@ -173,8 +173,8 @@ function getRouteMap() {
 
           for (let index = 0; index < markersLat.length; index++) {
             var marker = L.marker([markersLat[index], markersLong[index]],
-               {icon: redIcon},
-               {alt: 'Map marker'},).addTo(map);
+              { icon: redIcon },
+              { alt: 'Map marker' }).addTo(map);
             marker.bindPopup(nameRest[index]);
           }
         }
@@ -239,34 +239,34 @@ function getRouteMap() {
   }).addTo(map);
   marker.bindPopup("Catedral-Basílica de Santa María");
   */
- 
+
 
 
   if (navigator.geolocation) {
-    if(sessionStorage.getItem("segundaVezRutas")===null){
+    if (sessionStorage.getItem("segundaVezRutas") === null) {
       map.addEventListener("drag", mostrarGeolocalizacion);
 
-    function mostrarGeolocalizacion() {
-      alert('Para una mejor experiencia permita la geolocalización.');
-      navigator.geolocation.getCurrentPosition(showCurrentPos);
-      function showCurrentPos(position) {
-        var currentPos = L.marker(
-          [position.coords.latitude, position.coords.longitude],
-          { icon: greenIcon },
-          {alt: 'Map marker'}
-        ).addTo(map);
-        currentPos.bindPopup("Tu posición actual");
+      function mostrarGeolocalizacion() {
+        alert('Para una mejor experiencia permita la geolocalización.');
+        navigator.geolocation.getCurrentPosition(showCurrentPos);
+        function showCurrentPos(position) {
+          var currentPos = L.marker(
+            [position.coords.latitude, position.coords.longitude],
+            { icon: greenIcon },
+            { alt: 'Map marker' }
+          ).addTo(map);
+          currentPos.bindPopup("Tu posición actual");
+        }
+        map.removeEventListener("drag", mostrarGeolocalizacion);
+        sessionStorage.setItem("segundaVezRutas", true);
       }
-      map.removeEventListener("drag", mostrarGeolocalizacion);
-      sessionStorage.setItem("segundaVezRutas", true);
-    }
-    }else{
+    } else {
       navigator.geolocation.getCurrentPosition(showCurrentPos);
       function showCurrentPos(position) {
         var currentPos = L.marker(
           [position.coords.latitude, position.coords.longitude],
           { icon: greenIcon },
-          {alt: 'Map marker'}
+          { alt: 'Map marker' }
         ).addTo(map);
         currentPos.bindPopup("Tu posición actual");
       }
@@ -297,7 +297,7 @@ function getRouteMap() {
     addWaypoints: false,
     waypoints: markers,
     createMarker: function (i, wp, nWps) {
-      return L.marker(wp.latLng, {alt: 'Map marker'}).bindPopup(function () {
+      return L.marker(wp.latLng, { alt: 'Map marker' }).bindPopup(function () {
         return (
           ' <a href="/monumento.html?identifier=' +
           identifier[i] +
@@ -417,12 +417,12 @@ function generateCommentFeed() {
         </div>
     `
     document.getElementById("commentsDiv").innerHTML = commentHTML;
-  }
+  } else {
 
-  comments.forEach((comment) => {
-    const date = new Date(comment.date);
-    const commentHTML = /* HTML */
-      `
+    comments.forEach((comment) => {
+      const date = new Date(comment.date);
+      const commentHTML = /* HTML */
+        `
       <div id="commentContainer">
         <div class="d-flex flex-start align-items-center ">
           <img
@@ -451,9 +451,10 @@ function generateCommentFeed() {
         </div>
         </div>
       `;
-    commentsHTML += commentHTML;
-  });
-  document.getElementById("commentsDiv").innerHTML = commentsHTML;
+      commentsHTML += commentHTML;
+    });
+    document.getElementById("commentsDiv").innerHTML = commentsHTML;
+  }
 }
 
 function toggleLiked(id) {
