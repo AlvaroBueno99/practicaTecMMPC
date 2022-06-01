@@ -972,6 +972,8 @@ footer h1 {
 }
 
 .carousel-item img{
+  max-width: 100%;
+  height: auto;
   aspect-ratio: attr(width) / attr(height);
 }
 

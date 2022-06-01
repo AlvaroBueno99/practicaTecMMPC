@@ -71,13 +71,13 @@ function generateSlider(monumento) {
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="${monumento.image[0]}" id="slide1" alt="imagen del monumento">
+        <img src="${monumento.image[0]}" id="slide1" alt="imagen del monumento" width="788" height="474">
       </div>
       <div class="carousel-item">
-        <img src="${monumento.image[1]}" id="slide2" alt="imagen del monumento">
+        <img src="${monumento.image[1]}" id="slide2" alt="imagen del monumento" width="788" height="474">
       </div>
       <div class="carousel-item">
-        <img src="${monumento.image[2]}" id="slide3" alt="imagen del monumento">
+        <img src="${monumento.image[2]}" id="slide3" alt="imagen del monumento" width="788" height="474">
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselMonumento" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
