@@ -81,11 +81,7 @@ function reverseGeocoding(lat, long) {
     if (error) {
       return;
     }
-
-    // console.log(result.address.Match_addr);
     var arr = result.address.Match_addr.split(',');
-    // console.log(arr[arr.length-1]);
-
     return arr[arr.length - 1];
   });
 
@@ -106,7 +102,6 @@ function getRouteMap() {
   if (!select.value) {
     select.value = "Andalucía";
   }
-  console.log(select.value);
   community = select.value;
 
   /*
@@ -140,7 +135,6 @@ function getRouteMap() {
   let markersLong = [];
   let nameRest = [];
   dataRestaurantes.forEach((cocinero) => {
-    // console.log(cocinero);
     cocinero.restaurantes.restaurant.forEach((restaurante) => {
       var geocodeService = L.esri.Geocoding.geocodeService();
 
@@ -149,9 +143,7 @@ function getRouteMap() {
           return;
         }
 
-        // console.log(result.address.Match_addr);
         var arr = result.address.Match_addr.split(',');
-        // console.log(arr[arr.length-1]);
         arr = arr[arr.length - 1].slice(1);
 
         if (arr.localeCompare(select.value) == 0) {
@@ -197,7 +189,6 @@ function getRouteMap() {
       if (nombreComunidad.localeCompare(select.value) == 0) {
         comunidades[nombreComunidad].forEach((monumento) => {
           generateJSONld(monumento);
-          // console.log(monumento.latitude, monumento.longitude);
           if (iteration == 0) {
             map.setView(
               [`${monumento.latitude}`, `${monumento.longitude}`],
@@ -205,23 +196,11 @@ function getRouteMap() {
             );
           }
           iteration++;
-          // var id = new Marker(false ,L.latLng(`${monumento.latitude}`, `${monumento.longitude}`),iteration );
-          // console.log(id.visited),
           markers.push(
             L.latLng(`${monumento.latitude}`, `${monumento.longitude}`)
           ),
             name.push(`${monumento.name}`),
             identifier.push(`${monumento.identifier}`);
-          // objects.push(
-          //   id
-          // ),
-          // console.log(objects);
-          /*
-          markers[markerIndex] = L.marker([`${monumento.latitude}`, `${monumento.longitude}`], {
-            icon: blueIcon,
-          }).addTo(map);
-          markers[markerIndex].bindPopup(`${monumento.name}`);
-          */
         });
       }
     });
@@ -465,7 +444,6 @@ function toggleLiked(id) {
     }
     return comment;
   });
-  console.log(comments);
   localStorage.setItem("comments", JSON.stringify(comments));
   generateCommentFeed();
 }
