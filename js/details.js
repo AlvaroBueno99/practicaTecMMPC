@@ -168,7 +168,7 @@ function generateMap(monumento) {
 
   if (navigator.geolocation) {
     if(sessionStorage.getItem("segundaVezMonum")===null){
-      map.addEventListener("drag", mostrarGeolocalizacion);
+      map.addEventListener("drag click", mostrarGeolocalizacion);
 
     function mostrarGeolocalizacion() {
       alert('Para una mejor experiencia permita la geolocalización.');
