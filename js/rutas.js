@@ -89,38 +89,12 @@ function reverseGeocoding(lat, long) {
 
 // Generación dinámica del mapa de routas.
 function getRouteMap() {
-  // var container = L.DomUtil.get("map1");
-  // if (container != null) {
-  //   container._leaflet_id = null;
-  // }
-  // if (map != undefined) {
-  //   map.remove();
-  //   map = undefined;
-  // }
-
   const select = document.getElementById("selectComunidad");
   if (!select.value) {
     select.value = "Andalucía";
   }
   community = select.value;
-
-  /*
-  var blueIcon = new L.Icon({
-    iconUrl:
-      "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png",
-    shadowUrl:
-      "https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png",
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    shadowSize: [41, 41],
-  });
-  */
   map = L.map("map");
-
-  // map.eachLayer(function (layer) {
-  //   map.removeLayer(layer);
-  // });
 
   L.tileLayer(
     "https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Xnyz2NNvIPyLSREOwih7",
@@ -130,51 +104,54 @@ function getRouteMap() {
     }
   ).addTo(map);
 
-  // Obtención y procesado de los datos JSON obtenidos de otro grupo.
-  let markersLat = [];
-  let markersLong = [];
-  let nameRest = [];
-  dataRestaurantes.forEach((cocinero) => {
-    cocinero.restaurantes.restaurant.forEach((restaurante) => {
-      var geocodeService = L.esri.Geocoding.geocodeService();
+  try {
+    // Obtención y procesado de los datos JSON obtenidos de otro grupo.
+    let markersLat = [];
+    let markersLong = [];
+    let nameRest = [];
+    dataRestaurantes.forEach((cocinero) => {
+      cocinero.restaurantes.restaurant.forEach((restaurante) => {
+        var geocodeService = L.esri.Geocoding.geocodeService();
 
-      geocodeService.reverse().latlng([restaurante.geo.latitude, restaurante.geo.longitude]).run(function (error, result) {
-        if (error) {
-          return;
-        }
-
-        var arr = result.address.Match_addr.split(',');
-        arr = arr[arr.length - 1].slice(1);
-
-        if (arr.localeCompare(select.value) == 0) {
-          markersLat.push(`${restaurante.geo.latitude}`),
-            markersLong.push(`${restaurante.geo.longitude}`),
-            nameRest.push((`${restaurante.name}`));
-
-          // Para los restaurantes
-          var redIcon = new L.Icon({
-            iconUrl:
-              "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png",
-            shadowUrl:
-              "https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png",
-            iconSize: [25, 41],
-            iconAnchor: [12, 41],
-            popupAnchor: [1, -34],
-            shadowSize: [41, 41],
-          });
-
-          for (let index = 0; index < markersLat.length; index++) {
-            var marker = L.marker([markersLat[index], markersLong[index]],
-              { icon: redIcon },
-              { alt: 'Map marker' }).addTo(map);
-            marker.bindPopup(nameRest[index]);
+        geocodeService.reverse().latlng([restaurante.geo.latitude, restaurante.geo.longitude]).run(function (error, result) {
+          if (error) {
+            return;
           }
-        }
 
-      });
-    })
-  });
+          var arr = result.address.Match_addr.split(',');
+          arr = arr[arr.length - 1].slice(1);
 
+          if (arr.localeCompare(select.value) == 0) {
+            markersLat.push(`${restaurante.geo.latitude}`),
+              markersLong.push(`${restaurante.geo.longitude}`),
+              nameRest.push((`${restaurante.name}`));
+
+            // Para los restaurantes
+            var redIcon = new L.Icon({
+              iconUrl:
+                "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png",
+              shadowUrl:
+                "https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png",
+              iconSize: [25, 41],
+              iconAnchor: [12, 41],
+              popupAnchor: [1, -34],
+              shadowSize: [41, 41],
+            });
+
+            for (let index = 0; index < markersLat.length; index++) {
+              var marker = L.marker([markersLat[index], markersLong[index]],
+                { icon: redIcon },
+                { alt: 'Map marker' }).addTo(map);
+              marker.bindPopup(nameRest[index]);
+            }
+          }
+        });
+      })
+    });
+  }
+  catch (error) {
+    console.error(error);
+  }
 
   // Bucle para generar un marcador para cada monumento de la comunidad.
 
@@ -205,21 +182,6 @@ function getRouteMap() {
       }
     });
   });
-
-
-
-
-  // d = L.GeometryUtil.distance(map, objects[0].coords, objects[1].coords);
-  // console.log(d);
-
-  /*
-  var marker = L.marker([39.56771199239134, 2.648343010456217], {
-    icon: blueIcon,
-  }).addTo(map);
-  marker.bindPopup("Catedral-Basílica de Santa María");
-  */
-
-
 
   if (navigator.geolocation) {
     if (sessionStorage.getItem("segundaVezRutas") === null) {
@@ -254,9 +216,6 @@ function getRouteMap() {
     alert('La geolocalización no está soportada');
   }
 
-
-
-
   // Para la posición del usuario
   var greenIcon = new L.Icon({
     iconUrl:
@@ -290,21 +249,6 @@ function getRouteMap() {
       "pk.eyJ1IjoiYWRyaWJlbm5hc2FyIiwiYSI6ImNsMGprcDMyMTAxZHczYmwxaXNsZWp3NjcifQ.5tEEAlSEDIIbUx4NS5E0lQ"
     ),
   }).addTo(map);
-
-  /*
-  L.Routing.control({
-      waypoints: [
-          L.latLng(39.56771199239134, 2.648343010456217),
-          L.latLng(39.60, 2.70),
-          L.latLng(39.64, 2.75)
-      ],
-      router: L.Routing.graphHopper('ed1f5692-1b9d-4de6-a4e3-694fd5868ce1')
-  }).addTo(map);
-  */
-
-  // L.control._container.style.display = "None";
-
-
 
   // Leyenda
   var legend = L.control({
@@ -582,10 +526,17 @@ function autocomplete(inp) {
 
 window.onload = async function () {
   await getJSONFile();
-  await getExternJSONFile();
-  const select = document.getElementById("selectComunidad");
-  select.value = getQueryParams();
-  getRouteMap();
-  autocomplete(document.getElementById("searchBarRutas"));
-  generateCommentFeed();
+  try {
+    await getExternJSONFile();
+  }
+  catch (error) {
+    console.error(error);
+  }
+  finally {
+    const select = document.getElementById("selectComunidad");
+    select.value = getQueryParams();
+    getRouteMap();
+    autocomplete(document.getElementById("searchBarRutas"));
+    generateCommentFeed();
+  }
 };
